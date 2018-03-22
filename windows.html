@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Windows</title>
+</head>
+<body>
+
+	<button type="button" id="btn" onclick="teste()">Aperte</button>
+
+	<script>
+
+		function teste(){
+			alert('-' +window.location.href+ '\n' +
+				'-' +window.location.hostname+ '\n' +
+				'-' +window.location.pathname+ '\n' +
+				'-' +window.location.protocol+ '\n' +
+				'-' +window.location.port
+				);
+		}						//window.location.assign("https://www.google.com");
+		
+	</script> 
+</body>
+</html>
