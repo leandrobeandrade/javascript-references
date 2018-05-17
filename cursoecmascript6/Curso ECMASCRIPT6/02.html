@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>ECMASCRIPT6 - 2</title>
+</head>
+<body>
+	<ul id="list">
+		<li>Leandro</li>
+		<li>Karen</li>
+		<li>Alice</li>
+	</ul>
+</body>
+	<script>
+		const list = document.querySelectorAll('#list li');
+		const listArray = Array.from(list);
+
+		console.log(listArray);
+
+		const name = listArray.map((name) => name.textContent);
+		const names = listArray.map((name) => name.tagName);
+
+		console.log(name, names);
+
+		const array = Array.of(1,10,"teste", {name:"Lea"}, [2,3,4]);
+		console.log(array);
+	</script>
+</html>
