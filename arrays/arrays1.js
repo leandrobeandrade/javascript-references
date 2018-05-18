@@ -12,7 +12,7 @@ var teste7 = times1 instanceof Array;
 var teste8 = times2.toString();
 var teste9 = times2.join('-');
 
-console.log(teste1);
+console.log(teste1); 
 console.log(teste2);
 console.log(teste3);
 console.log(times2);
