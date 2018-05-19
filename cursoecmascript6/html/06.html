@@ -34,14 +34,16 @@
         const countries = new Promise((resolve, reject) => {
             resolve(['Ireland', 'England', 'Scotland']);
         });
+        
         // Promise
-        //     .all([currency, countries])
-        //     .then(responses => {
-        //         console.log(responses);
-        //     })
+        // .all([currency, countries])
+        // .then(responses => {
+        //      console.log(responses);
+        // })
+        
         Promise
-            .race([currency, countries])
-            .then(responses => {
+           .race([currency, countries])
+           .then(responses => {
                 console.log(responses);
             })
     </script>
