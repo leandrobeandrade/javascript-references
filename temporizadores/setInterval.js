@@ -12,3 +12,4 @@ function cor() {
 	var div = document.getElementById('teste2');
 	div.style.backgroundColor = div.style.backgroundColor == 'green' ? 'gray' : 'green';
 };
+bnjkdnjksdfdsfd
