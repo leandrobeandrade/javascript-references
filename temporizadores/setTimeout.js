@@ -5,3 +5,4 @@ function inicia() {
 		alert('Testando isto!!!');
 	}, 2000);
 };
+ggfsdgsgg gfdgsg
