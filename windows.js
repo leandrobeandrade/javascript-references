@@ -6,3 +6,4 @@ function teste(){
 		'-' +window.location.port
 	);
 }		//window.location.assign("https://www.google.com");
+gjggjgjg
