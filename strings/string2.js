@@ -14,3 +14,10 @@ console.log(teste4);
 console.log(teste5[0]);
 console.log(teste5[1]);
 console.log(teste6);
+fdgfdg
+fdgfdg
+fdgfdg
+
+
+
+dfgfdg
