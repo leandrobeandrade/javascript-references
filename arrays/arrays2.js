@@ -27,4 +27,3 @@ console.log(teste5);
 	});
 
 	console.log(teste6);
-fdfdfdfdfdf
