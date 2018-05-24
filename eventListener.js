@@ -14,3 +14,4 @@ function funcao2() {
 function funcao3() {
 	alert('alert - 3');
 }
+djndjksds
