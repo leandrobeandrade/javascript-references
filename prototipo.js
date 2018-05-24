@@ -34,4 +34,3 @@ var Objeto2 = {
 console.log("Objeto ->"+ Pessoa2.fullNome(Objeto));
 console.log("Call ->"+ Pessoa2.fullNome.call(Objeto));
 console.log("Apply ->"+ Pessoa2.fullNome.apply(Objeto2));
-fdfdfdf
