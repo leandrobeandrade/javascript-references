@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+</head>
+<body>
+	
+	<div class="sidebar-toggle-box">
+		<i class="fas fa-bars"></i>
+		<input type="search" name="search" value="" placeholder="Pesquisar"/>
+		<button type="button" name="button"><i class="fas fa-search"></i></button>
+	</div>
+		
+	<div class="sidebar-page">
+		<nav>
+			<ul>
+				<li><i class="fas fa-cogs"></i><p>loremsd</p></li>
+				<li><i class="fab fa-btc"></i><p>lorisd</p></li>
+				<li><i class="fas fa-bell"></i><p>losari</p></li>
+				<li><i class="fas fa-chart-line"></i><p>loresa</p></li>
+			</ul>
+		</nav>
+	</div>
+
+	<div class="right-sidebar">
+		<ul>
+			<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+			<li><a href="#"><i class="fab fa-twitch"></i></a></li>
+			<li><a href="#"><i class="fab fa-youtube"></i></a></li>
+			<li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+		</ul>
+	</div>
+
+	<script>
+		let sidebar = document.querySelector('.sidebar-page');
+		let sidebar_toggle = document.querySelector('.sidebar-toggle-box');
+
+		sidebar_toggle.addEventListener('click', function(){
+			if(sidebar.style.display != 'none') {
+				sidebar.style.display = 'none';
+			} else {
+				sidebar.style.display = 'grid';
+			}		
+		})
+	</script>
+
+</body>
+</html>
