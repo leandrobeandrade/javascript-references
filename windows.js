@@ -5,4 +5,5 @@ function teste(){
 	      '-' +window.location.protocol+ '\n' +
 	      '-' +window.location.port
 	);
-}		//window.location.assign("https://www.google.com");
+}		//window.location.assign("https://www.google.com");  Abre uma nova página
+		//window.location.href = "https://www.google.com"; Abre uma nova página
