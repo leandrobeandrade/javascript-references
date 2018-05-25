@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Troca de Icone</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+
+	<style>
+		.container{
+			box-sizing: border-box;
+			background-color: #FF7416;
+			margin: 50px;
+			padding: 30px;
+		}
+		#menos{
+			color: #000;
+		}
+		#mais{
+			color: green;
+		}
+		#vezes{
+			color: red;
+			display: none;
+			margin-top: -10px;
+		}
+		#num{
+			width: 40px;
+			text-align: center;
+		}
+	</style>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<button type="button" id="vezes" onclick="setValue()"><i class="fa fa-times-circle"></i></button>
+				<button type="button" id="menos" onclick="less()"><i class="fa fa-minus-circle"></i></button>  &nbsp; <input type="text" name="num" id="num"> &nbsp; 
+				<button type="button" id="mais" onclick="more()"><i class="fa fa-plus-circle"></i></button>
+			</div>
+		</div>
+	</div>
+
+	<script>
+
+		numero = 1;
+
+		function less() {
+			numero--;
+			setValue(numero);
+		}
+
+		function more() {
+			numero++;
+			setValue(numero);
+		}
+
+		function setValue(numero) {
+			var vezes = document.getElementById('vezes');
+			var menos = document.getElementById('menos');
+
+			document.getElementById('num').value = numero;
+
+				if (numero === 0){
+					vezes.style.display = "inline";
+					vezes.setAttribute('disabled', true);
+					menos.style.display = "none";
+				}
+				else {
+					vezes.style.display = "none";
+					menos.style.display = "inline";
+				}
+			
+		}
+
+		setValue(numero);
+
+	</script>
+
+</body>
+</html>
