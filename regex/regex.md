@@ -4,7 +4,7 @@ Expressões regulares em Javascript, com seus métodos e aplicações.
 <h5><u>FUNÇÕES</u></h5>
 <li>test() - <b>Executa a regex e retorna true ou false</b></li>
 <li>exec() - <b>Executa a regex e retorna a ocorrência da regex *Somente a 1º ocorrência*</b></li>
-<li>str.match - <b>Exibe todas as ocorrências encontradas *tem que ter o modificador g*</b></li>
+<li>match - <b>Exibe todas as ocorrências encontradas *tem que ter o modificador g*</b></li>
 <li>search - <b>Exibe o index da primeira ocorrência encontrada</b></li>
 <li>replace - <b>Substitui uma ocorrência por outra especificada *Exemplo /teste/.replace('Testando')*</b></li>
 <li>split - <b>Separa os caracteres em um vetor por outro caractere especificado como *- , .*</b></li>
