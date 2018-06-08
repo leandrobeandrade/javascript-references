@@ -7,6 +7,7 @@ var teste3 = teste1.concat(" ", teste2); // concatena uma string com outra
 var teste4 = texto1.charAt(51);
 var teste5 = texto1.split(",");
 var teste6 = texto2.toString();
+var teste7 = texto1.repeat(5) // repete uma string |*ECMASCRIPT6*|
 
 console.log(texto1);
 console.log(teste3);
