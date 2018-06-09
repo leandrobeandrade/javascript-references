@@ -5,7 +5,7 @@ document.body.appendChild(p);
 
 /*-------------*/
 
-let numer: number = 10;										              // tipo NUMBER
+let numer: number = 10;// tipo NUMBER
 let boole: boolean = true;									            // tipo BOOLEAN
 let nulos: null;											                  // tipo NULL
 let indef: undefined;										                // tipo UNDEFINED
