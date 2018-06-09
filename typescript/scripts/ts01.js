@@ -46,4 +46,4 @@ var dia1 = Dia.SEGUNDA;
 var dia2 = Dia[1];
 console.log(dia1);
 console.log(dia2);
-console.log(Dia.QUARTA + " | " + Dia.QUINTA); 
+console.log(Dia.QUARTA + " | " + Dia.QUINTA);
