@@ -41,8 +41,8 @@ var Dia;
     Dia[Dia["QUINTA"] = 6] = "QUINTA";
     Dia[Dia["SEXTA"] = 7] = "SEXTA";
 })(Dia || (Dia = {}));
-; // tipo ENUM
-var dia1 = Dia.SEGUNDA;
+; 
+var dia1 = Dia.SEGUNDA; // tipo ENUM
 var dia2 = Dia[1];
 console.log(dia1);
 console.log(dia2);
