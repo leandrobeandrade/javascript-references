@@ -37,4 +37,4 @@ function nome(pessoa) {
     console.log(pessoa.nome);
 }
 var randomObj1 = { nome: 'Fulano', idade: 32 };
-nome(randomObj1);
+nome(randomObj1); 
