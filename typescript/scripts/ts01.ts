@@ -1,6 +1,6 @@
 let p = document.createElement('p');
 let ola: string = 'Começando com Typescript';
-p.textContent = ola;
+p.textContent = ola; 
 document.body.appendChild(p);
 
 /*-------------*/
