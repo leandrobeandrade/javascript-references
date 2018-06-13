@@ -4,7 +4,7 @@ let comprim: number = (<string>teste).length;						// (<string>) força para tip
 let tamanho: string = (teste as string).toUpperCase();
 
 console.log(comprim);
-console.log(tamanho);
+console.log(tamanho); 
 
 /*-------------*/
 
