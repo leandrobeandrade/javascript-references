@@ -10,3 +10,4 @@ nome({ nome: 'Beltrano' }, 2300);
 var diretor = { nome: 'Ciclano', salario: 1800, bonus: 5 };
 diretor.nome = 'OutroQualquer';
 nome(diretor, diretor.bonus); 
+ 
