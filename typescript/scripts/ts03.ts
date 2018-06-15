@@ -23,5 +23,5 @@ interface Diretor extends Empregado {
 }
 
 let diretor: Diretor = {nome:'Ciclano', salario:1800, bonus:5};
-diretor.nome = 'OutroQualquer';													// muda o valor de nome
+diretor.nome = 'OutroQualquer';	 												// muda o valor de nome
 nome(diretor, diretor.bonus);
