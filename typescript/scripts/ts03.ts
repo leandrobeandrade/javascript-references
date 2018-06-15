@@ -19,9 +19,9 @@ nome(pessoas, salario.salario);
 nome({nome:'Beltrano'}, 2300);
 
 interface Diretor extends Empregado {
-	readonly bonus: number;														// mesmo que const
+	readonly bonus: number;						// mesmo que const
 }
 
 let diretor: Diretor = {nome:'Ciclano', salario:1800, bonus:5};
-diretor.nome = 'OutroQualquer';	 												// muda o valor de nome
+diretor.nome = 'OutroQualquer';	 					// muda o valor de nome
 nome(diretor, diretor.bonus);
