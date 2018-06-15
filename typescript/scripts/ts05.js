@@ -9,10 +9,10 @@ function teste(flag) {
 }
 teste(true);
 var somar = function (n1, n2) {
-    console.log("soma: " + (n1 + n2)); // só pode ser chamada após 
-}; // ser construída
+    console.log("soma: " + (n1 + n2)); 
+}; 
 somar(10, 10);
-var arrow1 = function (n1, n2) { return n1 + n2; }; // ARROW FUNCTION
+var arrow1 = function (n1, n2) { return n1 + n2; }; 
 var arrow2 = function (n1, n2) { return n1 + n2; };
 var arrow3 = function (nome, sobrenome) { return nome + sobrenome; };
 var arrow4 = function (nome, sobrenome) { return ({ nome: nome, sobrenome: sobrenome }); };
