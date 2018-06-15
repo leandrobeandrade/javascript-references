@@ -1,9 +1,9 @@
-function imprimir(val:string): void {													// FUNÇÃO NOMEADA
+function imprimir(val:string): void {								// FUNÇÃO NOMEADA
 	console.log(val);
 }
 imprimir('Mensagem');
 
-function teste(flag: boolean=true): void {												// pode inicialzar a flag
+function teste(flag: boolean=true): void {							// pode inicialzar a flag
 	let result = flag ? 'flag está true': 'flag está false';
 	console.log(result);
 }
