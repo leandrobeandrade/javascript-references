@@ -10,13 +10,13 @@ function teste(flag: boolean=true): void {												// pode inicialzar a flag
 teste(true);
 
 
-let somar = function(n1:number, n2:number): void {										// FUNÇÃO ANÔNIMA
-	console.log(`soma: ${n1 + n2}`);													// só pode ser chamada após 
-}																						// ser construída
+let somar = function(n1:number, n2:number): void {						// FUNÇÃO ANÔNIMA
+	console.log(`soma: ${n1 + n2}`);							// só pode ser chamada após 
+}												// ser construída
 somar(10,10);
 
 
-let arrow1 = (n1:number, n2:number) => n1 + n2;											// ARROW FUNCTION
+let arrow1 = (n1:number, n2:number) => n1 + n2;							// ARROW FUNCTION
 let arrow2 = (n1:number, n2:number) => {return n1 + n2};
 let arrow3 = (nome:string, sobrenome:string) => nome + sobrenome;
 let arrow4 = (nome:string, sobrenome:string) => ({nome:nome, sobrenome:sobrenome});
