@@ -13,11 +13,11 @@ class outroExemplo2 {
 
 let exemplo1: Exemplo1;
 console.log(exemplo1 = new outroExemplo1());
-// console.log(exemplo = new outroExemplo2());									erro
+// console.log(exemplo = new outroExemplo2());							erro
 let exemplo2 = {nome:'Fulano', idade:34};
 exemplo1 = exemplo2;
 console.log(exemplo1);
-// exemplo1 = {nome:'Fulano', idade:34};										erro
+// exemplo1 = {nome:'Fulano', idade:34};							erro
 
 
 function testeExemplo1(ex: Exemplo1) {
@@ -27,7 +27,7 @@ function testeExemplo1(ex: Exemplo1) {
 let exemplo3 = {nome:'Ciclano', idade:34};
 testeExemplo1(exemplo3);
 testeExemplo1({nome:'Fulano'});
-//testeExemplo1({nome:'Fulano', idade: 34});									erro
+//testeExemplo1({nome:'Fulano', idade: 34});							erro
 
 let x1 = (a:number) => a;
 let x2 = (b:number, c:string) => b + c;
@@ -36,7 +36,7 @@ let x3 = (b:number, c:string) => b;
 console.log(10);
 console.log(10, 'teste');
 
-//x2 = x1;																		erro - x2 tem mais argumentos
+//x2 = x1;											erro - x2 tem mais argumentos
 x3 = x1;
 console.log(x3(50,'qualquer coisa'));
 
