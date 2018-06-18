@@ -1,4 +1,4 @@
-function listaReversa <T> (lista:Array<T>) {							// ou lista: T[]
+function listaReversa <T> (lista:Array<T>) {						// ou lista: T[]
 	let listaReversada: T[] = [];
 
 	for (let i=lista.length - 1; i >= 0; i--) {
