@@ -1,5 +1,5 @@
 var outroExemplo1 = /** @class */ (function () {
-    function outroExemplo1() {
+    function outroExemplo1() { 
     }
     return outroExemplo1;
 }());
