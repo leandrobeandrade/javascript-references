@@ -45,3 +45,4 @@ var PessoaRepositorio = /** @class */ (function () {
 var pessoaRepositorio = new PessoaRepositorio();
 console.log(pessoaRepositorio.encontrarId(5));
 console.log(pessoaRepositorio.salvar(new PessoaTeste('Testando')));
+ 
