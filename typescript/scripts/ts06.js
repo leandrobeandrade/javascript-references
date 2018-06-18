@@ -3,7 +3,7 @@ function listaReversa(lista) {
     for (var i = lista.length - 1; i >= 0; i--) {
         listaReversada.push(lista[i]);
     }
-    return listaReversada;
+    return listaReversada; 
 }
 var nomes = ['Fulano', 'Beltrano', 'Ciclano'];
 var numer = [1, 2, 3, 4, 5];
