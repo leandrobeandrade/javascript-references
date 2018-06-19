@@ -7,4 +7,4 @@ emailExemplos.forEach(function (email) {
 });
 urlExemplos.forEach(function (url) {
     console.log(url + " " + new validacoesUrl().valido(url));
-});
+}); 
