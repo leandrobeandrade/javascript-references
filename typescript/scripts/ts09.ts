@@ -11,4 +11,4 @@ emailExemplos.forEach(email => {
 
 urlExemplos.forEach(url => {
 	console.log(`${url} ${new validacoesUrl().valido(url)}`);
-})
+}) 
