@@ -11,6 +11,6 @@ namespace Validacao {
 	export class urlValidador {
 		valido(str:string): boolean {         				
 			return urlRegex.test(str);
-		}
+		} 
 	}
 }
