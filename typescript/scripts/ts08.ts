@@ -13,4 +13,4 @@ namespace Validacao {
 			return urlRegex.test(str);
 		} 
 	}
-}
+} 
