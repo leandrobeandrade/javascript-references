@@ -20,4 +20,4 @@ var Validacao;
         return urlValidador;
     }());
     Validacao.urlValidador = urlValidador;
-})(Validacao || (Validacao = {})); 
+})(Validacao || (Validacao = {}));  
