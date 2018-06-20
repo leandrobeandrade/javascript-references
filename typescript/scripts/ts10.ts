@@ -13,15 +13,15 @@ Teste(Executar);
 
 function Calculadora1(num1:number, num2:number, tipo:string): number {
 	switch (tipo) {
-			case "add":
-				return num1 + num2;
-				break;
-			case "mul":
-				return num1 * num2;
-				break;
-			default:
-				return 0;
-		}	
+		case "add":
+			return num1 + num2;
+			break;
+		case "mul":
+			return num1 * num2;
+			break;
+		default:
+			return 0;
+	}	
 }
 
 function Add(num1:number, num2:number): number {
