@@ -2,7 +2,7 @@ function Teste(callback) {
     callback.call(this, 'Fulano');
     callback.apply(this, ['Beltrano', 'Ciclano']);
     callback('Belciclano');
-}
+} 
 function Executar(nome) {
     console.log(nome);
 }
