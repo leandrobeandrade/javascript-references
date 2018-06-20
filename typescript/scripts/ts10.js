@@ -6,7 +6,7 @@ function Teste(callback) {
 function Executar(nome) {
     console.log(nome);
 }
-Teste(Executar);
+Teste(Executar); 
 function Calculadora1(num1, num2, tipo) {
     switch (tipo) {
         case "add":
