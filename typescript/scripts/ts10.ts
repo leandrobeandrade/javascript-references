@@ -4,7 +4,7 @@ function Teste(callback:(name:string) => void): void {
 	callback('Belciclano');
 }
 
-function Executar(nome:string) {
+function Executar(nome:string) { 
 	console.log(nome);
 }
 
