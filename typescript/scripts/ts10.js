@@ -38,4 +38,4 @@ console.log(Calculadora2(25, 25, Add));
 console.log(Calculadora2(25, 25, Mul));
 console.log(Calculadora3(10, 20, function (num1, num2) {
     return num1 - num2;
-}));
+})); 
