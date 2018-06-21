@@ -6,7 +6,7 @@ class clickHandler {
 		let btn2 = document.getElementById('btn2');
 
 		if(main !== null && btn1 !== null && btn2 !== null) {
-			main.addEventListener('click', clickHandler.alertEventMain, true);			// true/false - useCapture 
+			main.addEventListener('click', clickHandler.alertEventMain, true);	// true/false - useCapture 
 			btn1.addEventListener('click', clickHandler.alertEventBtn1, true);
 			btn2.addEventListener('click', clickHandler.alertEventBtn2, true);
 		}
