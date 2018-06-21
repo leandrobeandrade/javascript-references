@@ -16,7 +16,7 @@ var clickHandler = /** @class */ (function () {
     clickHandler.alertEventBtn1 = function () {
         alert('Clicado o btn1');
     };
-    clickHandler.alertEventBtn2 = function () {
+    clickHandler.alertEventBtn2 = function () { 
         alert('Clicado o btn2');
     };
     return clickHandler;
