@@ -18,4 +18,4 @@ test.innerHTML = 'Testando Typescript';
 var novadiv = document.createElement('div');
 novadiv.textContent = 'Typescript + Javascript';
 test.appendChild(novadiv);
-test.insertBefore(novadiv, test.firstChild);
+test.insertBefore(novadiv, test.firstChild); 
