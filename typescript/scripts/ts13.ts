@@ -34,7 +34,7 @@ class AjaxTest {
 		req.open('Post',url,true);
 		req.setRequestHeader('Content-type','aplication/json');
 		req.send(data);
-	}
+	} 
 }
 
 let ajax_get = new AjaxTest();
