@@ -31,7 +31,7 @@ var AjaxTest = /** @class */ (function () {
         req.setRequestHeader('Content-type', 'aplication/json');
         req.send(data);
     };
-    return AjaxTest;
+    return AjaxTest; 
 }());
 var ajax_get = new AjaxTest();
 ajax_get.httpGet('http://httpbin.org/ip', function (status, response) {
