@@ -1,7 +1,7 @@
 let key1 = 'key1';
 let key2 = 'key2';
 
-console.log(sessionStorage.getItem(key1));										// não faz nada
+console.log(sessionStorage.getItem(key1));						// não faz nada
 console.log(sessionStorage.getItem(key2));
 
 sessionStorage.setItem(key1, 'Valor 1');
@@ -17,7 +17,7 @@ console.log(sessionStorage.getItem(key2));
 let key3 = 'key1';
 let key4 = 'key2';
 
-console.log(localStorage.getItem(key1));										// não faz nada
+console.log(localStorage.getItem(key1));						// não faz nada
 console.log(localStorage.getItem(key2));
 
 localStorage.setItem(key3, 'Valor 3');
