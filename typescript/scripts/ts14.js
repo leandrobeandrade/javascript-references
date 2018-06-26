@@ -18,3 +18,4 @@ localStorage.setItem(key4, 'Valor 4');
 console.log(localStorage.getItem(key3));
 console.log(localStorage.getItem(key4));
 //localStorage.clear();
+ 
