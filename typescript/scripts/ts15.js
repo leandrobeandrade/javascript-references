@@ -5,12 +5,12 @@ var nome3 = pessoa.sobrenome; // Acesso normal
 console.log(nome1);
 console.log(nome2);
 console.log(nome3);
-var nomes = pessoa.nome, sobrenomes = pessoa.sobrenome; // Destruturação
+var nomes = pessoa.nome, sobrenomes = pessoa.sobrenome; // Desestruturação
 console.log(nomes, '-', sobrenomes);
 var vetor = ['Javascript', 'Typescript'];
 console.log(vetor[0]); // Acesso normal
 console.log(vetor[1]);
-var a = vetor[0], b = vetor[1]; // Destruturação
+var a = vetor[0], b = vetor[1]; // Desestruturação
 console.log(a, '-', b);
 var Pessoa = /** @class */ (function () {
     function Pessoa(nome) {
@@ -24,7 +24,7 @@ function exemplo1(pessoa) {
 exemplo1(new Pessoa('Fulano'));
 function exemplo2(_a) {
     var nome = _a.nome;
-    console.log(nome); // Destruturação
+    console.log(nome); // Desestruturação
 }
 exemplo2(new Pessoa('Beltrano'));
 exemplo2({ nome: 'Ciclano' });
