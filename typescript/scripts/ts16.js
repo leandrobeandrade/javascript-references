@@ -19,4 +19,4 @@ console.log('---------------');
 var pessoa = { nome: 'Fulano', sobrenome: 'Beltrano' };
 for (var prop in pessoa) {
     console.log(prop);
-}
+} 
