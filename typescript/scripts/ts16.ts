@@ -1,23 +1,23 @@
 let vetor = ['Javascript', 'Typescript'];
 
-for(let i=0; i<vetor.length; i++) {											// Loop normal
+for(let i=0; i<vetor.length; i++) {						// Loop normal
 	console.log(vetor[i]);
 }
 
 console.log('---------------');
 
 vetor.forEach((nome) => {
-	console.log(nome);														// Não suporta break, continue e return
+	console.log(nome);							// Não suporta break, continue e return
 });
 
-for(let array in vetor) {													// Emascript 5
+for(let array in vetor) {							// Ecmascript 5
 	console.log(array);
 	console.log(typeof (array));
 }
 
 console.log('---------------');
 
-for(let array of vetor) {													// Emascript 6
+for(let array of vetor) {							// Ecmascript 6
 	console.log(array);
 }
 
