@@ -15,7 +15,7 @@ for (var _i = 0, _a = nome_idade3.keys(); _i < _a.length; _i++) {
     console.log(key);
 }
 for (var _b = 0, _c = nome_idade3.values(); _b < _c.length; _b++) {
-    var val = _c[_b];
+    var val = _c[_b]; 
     console.log(val);
 }
 for (var _d = 0, _e = nome_idade3.entries(); _d < _e.length; _d++) {
