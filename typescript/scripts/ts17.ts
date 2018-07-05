@@ -16,15 +16,15 @@ console.log(nome_idade3);
 console.log(nome_idade3.get('Ciclano'));
 console.log(nome_idade3.has('Ciclano'));
 
-for(let key of nome_idade3.keys()) {										// Não retornou
+for(let key of nome_idade3.keys()) {								// Não retornou
 	console.log(key);
 }
 
-for(let val of nome_idade3.values()) {										// Não retornou
+for(let val of nome_idade3.values()) {								// Não retornou
 	console.log(val);
 }
 
-for(let ent of nome_idade3.entries()) {										// Não retornou
+for(let ent of nome_idade3.entries()) {								// Não retornou
 	console.log(`${ent[0]} ${ent[1]}`);
 }
 
