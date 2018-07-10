@@ -38,7 +38,7 @@ function deletarArquivo() {
         reject('Não deletado');
     });
 }
-abrirArquivo()
+abrirArquivo() 
     .then(function () { return lerArquivo()
     .then(function () { return deletarArquivo()
     .then(function () { return console.log("Tudo OK!"); })["catch"](function (frj) { return console.log(frj); })["catch"](function (frj) { return console.log(frj); }); }); })["catch"](function (frj) { return console.log(frj); });
