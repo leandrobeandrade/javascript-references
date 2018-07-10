@@ -35,7 +35,7 @@ function deletarArquivo() {
         var aberto = true;
         if (aberto)
             resolve('Deletado');
-        reject('Não deletado');
+        reject('Não deletado'); 
     });
 }
 abrirArquivo() 
