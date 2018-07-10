@@ -63,5 +63,5 @@ abrirArquivo()
     .catch((frj) => console.log(frj));
 
 
-Promisse.all([abrirArquivo(),lerArquivo(),deletarArquivo()]).then().catch();				// retorna todas
-Promisse.race([abrirArquivo(),lerArquivo(),deletarArquivo()]).then().catch();				// retorna 1° encontrada
+Promisse.all([abrirArquivo(),lerArquivo(),deletarArquivo()]).then().catch();			// retorna todas
+Promisse.race([abrirArquivo(),lerArquivo(),deletarArquivo()]).then().catch();			// retorna 1° encontrada
