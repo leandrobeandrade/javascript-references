@@ -14,6 +14,6 @@ console.log(nomes2.has('Ciclano'));
 
 for(let aux of nomes2){														// Não funcionou	
 	console.log(aux);
-} 
+}  
 
 nomes2.forEach(value => console.log(value));
