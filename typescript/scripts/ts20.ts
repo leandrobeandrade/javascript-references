@@ -12,10 +12,6 @@ let pe = new Pessoa();
 console.log(pe.curso());
 
 
-
-
-
-
 @Curso({
 	curso: 'Curso de Javascript'
 })
@@ -26,7 +22,7 @@ class Professor {
 
 function Curso(config:any) {
 	return (target:any) => {
-		Object.defineProperty(target.prototype,"curso",{value: () => config.curso});		// passagem por parâmetro
+		Object.defineProperty(target.prototype,"curso",{value: () => config.curso});	// passagem por parâmetro
 
 	}
 }
