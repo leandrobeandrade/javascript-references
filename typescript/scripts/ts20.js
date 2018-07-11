@@ -30,7 +30,7 @@ var Professor = /** @class */ (function () {
 function Curso(config) {
     return function (target) {
         Object.defineProperty(target.prototype, "curso", { value: function () { return config.curso; } }); // passagem por parâmetro
-    };
+    }; 
 }
 var prof = new Professor();
 console.log(prof.curso());
