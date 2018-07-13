@@ -1,4 +1,4 @@
-var times1 = ['Ceará', 'Grêmio', 'Vasco', 'Atlético-MG']; 
+var times1 = ['Ceará', 'Grêmio', 'Vasco', 'Atlético-MG'];  
 var times2 = ['Santos', 'Cruzeiro'];
 		
 var teste1 = times1.pop(); 			// retira o ultimo elemento do vetor
