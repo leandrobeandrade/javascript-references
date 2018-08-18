@@ -1,5 +1,5 @@
 ### document.getElementById();
-Manipula um elemento pelo seu id.
+Manipula um elemento pelo seu id. 
 + `<p id="teste">Teste</p>`
 + `document.getElementById('teste');`
 
