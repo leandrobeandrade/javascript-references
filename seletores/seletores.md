@@ -11,7 +11,7 @@ Manipula uma coleção de elementos pela sua classe, acessadas pelo índice do e
 ### document.getElementsByTagName();
 Manipula uma tag específica que pode ser acessada pelo seu índice na árvore DOM ou não.
 + `<p>Teste<p>`
-+ `document.getElementsByTagName(); | document.getElementsByTagName()[0];`
++ `document.getElementsByTagName('p'); | document.getElementsByTagName('p')[0];`
 
 ### document.querySelector();
 Manipula um elemento através do seu seletor, mas, apenas o primeiro elemento se houver mais.
@@ -25,4 +25,4 @@ Manipula um elemento ou coleção de elementos através do seu seletor, acessado
 + `<p>Teste<p>`
 + `<p id="teste">Teste<p>`
 + `<p class="teste">Teste<p>`
-+ `document.querySelectorAll('p'); | document.querySelectorAll('#teste'); | document.querySelector('.teste');`
++ `document.querySelectorAll('p')[0]; | document.querySelectorAll('#teste'); | document.querySelector('.teste');`
