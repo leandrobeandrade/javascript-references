@@ -55,12 +55,12 @@ Envia uma mensagem para o console:
 
       console.log("Testando!")
       
-##console.table()
+## console.table()
 Exibe dados tabulares como uma tabela:
 
       console.table(["Audi", "Volvo", "Ford"])
 
-##console.time()
+## console.time()
 Inicia um temporizador (pode controlar quanto tempo uma operação demora):
 
       console.time();
@@ -70,7 +70,7 @@ Inicia um temporizador (pode controlar quanto tempo uma operação demora):
       console.timeEnd();
 
 
-##console.timeEnd()
+## console.timeEnd()
 Cancela o *timer* que foi iniciado anteriormente pelo console.time():
 
       console.time();
@@ -78,7 +78,7 @@ Cancela o *timer* que foi iniciado anteriormente pelo console.time():
         // algum código
       }
       
-##console.trace();
+## console.trace();
 Gera um rastreamento de pilha para o console:
 
       function myFunction() {
@@ -89,9 +89,7 @@ Gera um rastreamento de pilha para o console:
         console.trace();
       }
       
-##console.warn()
+## console.warn()
 Gera uma mensagem de aviso para o console:
 
       console.warn("Isto é um aviso!")
-
-      
