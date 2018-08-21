@@ -6,15 +6,17 @@ Manipula um elemento pelo seu id.
 ### document.getElementsByClassName();
 Manipula uma coleção de elementos pela sua classe, acessadas pelo índice do elemento que quer se manipular.
 + `<p class="teste">Teste</p>`
-+ `document.getElementsByClassName('teste'); | document.getElementsByClassName('teste')[0];`
++ `<p class="teste">Teste</p>`
++ `document.getElementsByClassName('teste')[0]; | document.getElementsByClassName('teste')[1];`
 
 ### document.getElementsByTagName();
-Manipula uma tag específica que pode ser acessada pelo seu índice na árvore DOM ou não.
+Manipula uma tag específica que pode ser acessada pelo seu índice na árvore DOM.
 + `<p>Teste<p>`
-+ `document.getElementsByTagName('p'); | document.getElementsByTagName('p')[0];`
++ `<p>Teste<p>`
++ `document.getElementsByTagName('p')[0]; | document.getElementsByTagName('p')[1];`
 
 ### document.querySelector();
-Manipula um elemento através do seu seletor, mas, apenas o primeiro elemento se houver mais.
+Manipula um elemento através do seu seletor, mas, apenas o primeiro elemento, mesmo se houver mais.
 + `<p>Teste<p>`
 + `<p id="teste">Teste<p>`
 + `<p class="teste">Teste<p>`
@@ -25,4 +27,4 @@ Manipula um elemento ou coleção de elementos através do seu seletor, acessado
 + `<p>Teste<p>`
 + `<p id="teste">Teste<p>`
 + `<p class="teste">Teste<p>`
-+ `document.querySelectorAll('p')[0]; | document.querySelectorAll('#teste'); | document.querySelector('.teste');`
++ `document.querySelectorAll('p')[0]; | document.querySelectorAll('#teste, .teste'); | document.querySelector('p.teste');`
