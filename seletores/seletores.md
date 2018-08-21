@@ -4,7 +4,7 @@ Manipula um elemento pelo seu id.
 + `document.getElementById('teste');`
 
 ### document.getElementsByClassName();
-Manipula uma coleção de elementos pela sua classe, acessadas pelo índice do elemento que quer ser manipulado ou não.
+Manipula uma coleção de elementos pela sua classe, acessadas pelo índice do elemento que quer se manipular.
 + `<p class="teste">Teste</p>`
 + `document.getElementsByClassName('teste'); | document.getElementsByClassName('teste')[0];`
 
