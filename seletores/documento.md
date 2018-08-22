@@ -54,8 +54,8 @@ Importa um nó de outro documento:
 Retorna uma coleção de todos os elementos <a> e <area> no documento que possuem um atributo href:
 
     <p>
-      <a href="www.google.com">HTML</a><br>
-      <a href="www.yahoo.com">CSS</a>
+      <a href="https://www.google.com">HTML</a><br>
+      <a href="https://www.yahoo.com">CSS</a>
     </p>
     
     var a = document.links.length; // 2
