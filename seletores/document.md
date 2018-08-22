@@ -24,7 +24,7 @@ Cria um nó *DocumentFragment* vazio:
 ## createElement()
 Cria um nó de elemento:
 
-    var btn = document.createElement("BUTTON");
+    var btn = document.createElement("button");
     btn.textContent = "Teste"
     document.body.appendChild(btn);
 
