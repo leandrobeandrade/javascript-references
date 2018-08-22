@@ -5,7 +5,7 @@ Retorna o nome de um atributo:
     
     var btn = document.getElementsByTagName("button")[0];
     var x = btn.attributes[0].name; 
-    console.log(x); // onclick
+    console.log(x); // onclick 
 
 ## attr.value 
 Define ou retorna o valor do atributo:
