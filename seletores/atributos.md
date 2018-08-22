@@ -3,7 +3,7 @@ Retorna o nome de um atributo:
 
     <button onclick="myFunction()">Testar</button>
     
-    var btn = document.getElementsByTagName("BUTTON")[0];
+    var btn = document.getElementsByTagName("button")[0];
     var x = btn.attributes[0].name; 
     console.log(x); // onclick
 
@@ -12,7 +12,7 @@ Define ou retorna o valor do atributo:
 
     <button onclick="myFunction()">Testar</button>
     
-    var btn = document.getElementsByTagName("BUTTON")[0];
+    var btn = document.getElementsByTagName("button")[0];
     var x = btn.attributes[0].value;
     console.log(x); // myFunction()
 
@@ -21,7 +21,7 @@ Retorna *true* se o atributo foi especificado, caso contrário, retorna *false*:
 
     <button onclick="myFunction()">Testar</button>
     
-    var btn = document.getElementsByTagName("BUTTON")[0];
+    var btn = document.getElementsByTagName("button")[0];
     var x = btn.getAttributeNode("onclick").specified;
     console.log(x); // true
     
@@ -32,7 +32,7 @@ Retorna um nó de atributo especificado de um NamedNodeMap:
     
     <button onclick="myFunction()">Testar</button>
     
-    var btn = document.getElementsByTagName("BUTTON")[0];
+    var btn = document.getElementsByTagName("button")[0];
     btn.attributes.getNamedItem("onclick").value; 
     console.log(x); // myFunction()
 
@@ -41,7 +41,7 @@ Retorna o nó do atributo em um índice especificado em um NamedNodeMap:
     
     <button onclick="myFunction()" id="teste">Testar</button>
 
-    var btn = document.getElementsByTagName("BUTTON")[0];
+    var btn = document.getElementsByTagName("button")[0];
     var x = btn.attributes.item(0).name;  
     console.log(x); // onclick
 
@@ -50,7 +50,7 @@ Retorna o número de nós de atributos em um NamedNodeMap:
 
     <button onclick="myFunction()" id="teste">Testar</button>
 
-    var btn = document.getElementsByTagName("BUTTON")[0].attributes.length;
+    var btn = document.getElementsByTagName("button")[0].attributes.length;
     console.log(btn); // 2
 
 ## nodemap.removeNamedItem()
@@ -58,7 +58,7 @@ Remove um nó de atributo especificado:
 
     <input type="button" value="OK">
 
-    var btn = document.getElementsByTagName("INPUT")[0]; 
+    var btn = document.getElementsByTagName("input")[0]; 
     btn.attributes.removeNamedItem("type");
 
 ## nodemap.setNamedItem()
@@ -78,7 +78,7 @@ Retorna o valor do atributo com o nome especificado, de um elemento.
 
     <h1 class="teste">Olá Mundo!</h1>
 
-    var h = document.getElementsByTagName("H1")[0].getAttribute("class"); 
+    var h = document.getElementsByTagName("h1")[0].getAttribute("class"); 
     console.log(h); // teste
 
 ## getAttributeNode()
@@ -86,7 +86,7 @@ Retorna o nó do atributo com o nome especificado de um elemento, como um object
 
     <h1 class="teste">Olá Mundo!</h1>
     
-    var h = document.getElementsByTagName("H1")[0];
+    var h = document.getElementsByTagName("h1")[0];
     var attr = h.getAttributeNode("class").value;
     console.log(attr); // teste
     
