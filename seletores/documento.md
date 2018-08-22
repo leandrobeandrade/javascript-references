@@ -90,4 +90,4 @@ Retorna a url do documento:
 ## write()
 Sobrescreve todo Html do documento:
   
-    document.write("Olá mundo!"); // wirteln pula de linha se tiver mais de um
+    document.write("Olá mundo!"); // wirteln pula de linha se tiver mais de um 
