@@ -3,7 +3,7 @@ Cria um nó de atributo:
 
     <h1>Teste</h1>
 
-    var h1 = document.getElementsByTagName("h1")[0];            // Pega o primeiro elemento <h1> no documento
+    var h1 = document.getElementsByTagName("h1")[0];            // Pega o primeiro elemento <h1>
     var att = document.createAttribute("class");                // Cria um atributo "class"
     att.value = "teste";                                        // Define o valor do atributo de classe
     h1.setAttributeNode(att);                                   // Adiciona o atributo de classe ao <h1>
