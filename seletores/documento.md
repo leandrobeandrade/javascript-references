@@ -3,7 +3,7 @@ Cria um nó de atributo:
 
     <h1>Teste</h1>
 
-    var h1 = document.getElementsByTagName("h1")[0];            // Obtém o primeiro elemento <h1> no documento
+    var h1 = document.getElementsByTagName("h1")[0];            // Pega o primeiro elemento <h1> no documento
     var att = document.createAttribute("class");                // Cria um atributo "class"
     att.value = "teste";                                        // Define o valor do atributo de classe
     h1.setAttributeNode(att);                                   // Adiciona o atributo de classe ao <h1>
@@ -46,7 +46,7 @@ Retorna uma coleção de todos os elementos <img> no documento:
 Importa um nó de outro documento:
 
     var frame = document.getElementsByTagName("iframe")[0];     // pega o 1º iframe 
-    var h = frame.contentWindow.document.getElementsByTagName("h1")[0]; // pega o 1º h1 do iframe
+    var h = frame.contentWindow.document.getElementsByTagName("h1")
     var x = document.importNode(h, true);                       // importa o h1 no documento atual
     document.body.appendChild(x);                               // adiciona o h1 no documento atual
 
@@ -90,4 +90,4 @@ Retorna a url do documento:
 ## write()
 Sobrescreve todo Html do documento:
   
-    document.write("Olá mundo!");                               // wirteln pula de linha se tiver mais de um 
+    document.write("Olá mundo!");                               // writeln pula de linha 
