@@ -3,10 +3,10 @@ Cria um nó de atributo:
 
     <h1>Teste</h1>
 
-    var h1 = document.getElementsByTagName("h1")[0];    // Obtém o primeiro elemento <h1> no documento
-    var att = document.createAttribute("class");        // Cria um atributo "class"
-    att.value = "teste";                                // Define o valor do atributo de classe
-    h1.setAttributeNode(att);                           // Adiciona o atributo de classe ao <h1>
+    var h1 = document.getElementsByTagName("h1")[0];            // Obtém o primeiro elemento <h1> no documento
+    var att = document.createAttribute("class");                // Cria um atributo "class"
+    att.value = "teste";                                        // Define o valor do atributo de classe
+    h1.setAttributeNode(att);                                   // Adiciona o atributo de classe ao <h1>
     
 ## createDocumentFragment()
 Cria um nó *DocumentFragment* vazio:
@@ -37,18 +37,18 @@ Cria um nó de texto de elemento:
 ## images
 Retorna uma coleção de todos os elementos <img> no documento:
 
-    var a = document.images.length; // pega a quantidade de imagens no documento
-    var b = document.images[0].src; // pega o src da imagem 1
-    var c = document.images.item(0).src; // pega o src da imagem 1
-    var d = document.images.namedItem("myImg").src; // pega a imagem pelo id "myImg"
+    var a = document.images.length;                             // pega a quantidade de imagens no documento
+    var b = document.images[0].src;                             // pega o src da imagem 1
+    var c = document.images.item(0).src;                        // pega o src da imagem 1
+    var d = document.images.namedItem("myImg").src;             // pega a imagem pelo id "myImg"
 
 ## importNode()
 Importa um nó de outro documento:
 
-    var frame = document.getElementsByTagName("iframe")[0]; // pega o 1º iframe 
+    var frame = document.getElementsByTagName("iframe")[0];     // pega o 1º iframe 
     var h = frame.contentWindow.document.getElementsByTagName("h1")[0]; // pega o 1º h1 do iframe
-    var x = document.importNode(h, true); // importa o h1 no documento atual
-    document.body.appendChild(x); // adiciona o h1 no documento atual
+    var x = document.importNode(h, true);                       // importa o h1 no documento atual
+    document.body.appendChild(x);                               // adiciona o h1 no documento atual
 
 ## links
 Retorna uma coleção de todos os elementos <a> e <area> no documento que possuem um atributo href:
@@ -58,10 +58,10 @@ Retorna uma coleção de todos os elementos <a> e <area> no documento que possue
       <a href="https://www.yahoo.com">CSS</a>
     </p>
     
-    var a = document.links.length; // 2
-    var b = document.links[0].href; // pega a referência do link 1
-    var c = document.links.item(0).href; // pega a referência do link 1
-    var d = document.links.namedItem("myLink").href; // pega a referência com id myLink
+    var a = document.links.length;                              // 2
+    var b = document.links[0].href;                             // pega a referência do link 1
+    var c = document.links.item(0).href;                        // pega a referência do link 1
+    var d = document.links.namedItem("myLink").href;            // pega a referência com id myLink
 
 ## readyState
 Retorna o status (carregamento) do documento:
@@ -90,4 +90,4 @@ Retorna a url do documento:
 ## write()
 Sobrescreve todo Html do documento:
   
-    document.write("Olá mundo!"); // wirteln pula de linha se tiver mais de um 
+    document.write("Olá mundo!");                               // wirteln pula de linha se tiver mais de um 
