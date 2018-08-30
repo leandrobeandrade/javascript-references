@@ -70,23 +70,3 @@ Define o nó do atributo especificado (por nome):
     var tipo = document.createAttribute("class");
     tipo.value = "democlass";
     h.attributes.setNamedItem(tipo);
-  
----
-
-## getAttribute()
-Retorna o valor do atributo com o nome especificado, de um elemento.
-
-    <h1 class="teste">Olá Mundo!</h1>
-
-    var h = document.getElementsByTagName("h1")[0].getAttribute("class"); 
-    console.log(h); // teste
-
-## getAttributeNode()
-Retorna o nó do atributo com o nome especificado de um elemento, como um objecto Attr.
-
-    <h1 class="teste">Olá Mundo!</h1>
-    
-    var h = document.getElementsByTagName("h1")[0];
-    var attr = h.getAttributeNode("class").value;
-    console.log(attr); // teste
-    
