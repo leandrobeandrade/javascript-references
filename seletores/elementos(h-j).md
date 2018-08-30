@@ -101,7 +101,7 @@ Retorna *true* se um namespaceURI especificado for o padrão, caso contrário, *
 
     var d = document.documentElement;
     var x = d.isDefaultNamespace("http://www.seusite.com"); 
-    console.log(x);   // true
+    console.log(x);   // true 
 
 ## isEqualNode()
 Verifica se dois elementos são iguais:
