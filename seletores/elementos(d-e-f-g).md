@@ -67,6 +67,3 @@ Retorna o tamanho de um elemento e sua posição relativa à viewport:
     h = rect.height;
     
     console.log("Left: " + x + ", Top: " + y + ", Width: " + w + ", Height: " + h);
-    
-    
-    
