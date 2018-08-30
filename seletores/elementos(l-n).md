@@ -70,7 +70,7 @@ Define ou retorna o valor de um nó:
 ## normalize()
 Une nós de texto adjacentes e remove nós de texto vazios em um elemento:
 
-    <p id="demo">Clique em um botão para adicionar texto neste parágrafo, e no outro botão para normalizar.</p>
+    <p id="demo">Clique neste botão para adicionar texto no parágrafo, e no outro botão para normalizar.</p>
     <button onclick="addTextNode()"> Adicionar um nó de texto </button>
     <button onclick="normPara()"> Normalizar o parágrafo </button>
     <p> O parágrafo acima tem <span id="cc"> 1 </span> nó(s) filho(s).</p>
