@@ -141,12 +141,12 @@ Compara a posição de dois elementos no documento:
     var x = p1.compareDocumentPosition(p2);
     console.log(x); // 4
     
-    /* retornos possíveis:  1: os dois nós não pertencem ao mesmo documento.
-                            2: p1 é posicionado após p2.
-                            4: p1 está posicionado antes de p2.
-                            8: p1 está posicionado dentro de p2.
-                            16: p2 está posicionado dentro de p1.
-                            32: Os dois nós não têm relacionamento ou são dois atributos no mesmo elemento */
+    /* retornos possíveis: 1: os dois nós não pertencem ao mesmo documento.
+                           2: p1 é posicionado após p2.
+                           4: p1 está posicionado antes de p2.
+                           8: p1 está posicionado dentro de p2.
+                           16: p2 está posicionado dentro de p1.
+                           32: Os dois nós não têm relacionamento ou são dois atributos no mesmo elemento */
                             
 ## contains() 
 Retorna *true* se um nó é um descendente de um nó, caso contrário, *false*:
