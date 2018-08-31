@@ -35,7 +35,6 @@ Retorna o container de deslocamento de um elemento:
     var div = document.querySelectorAll("div");
     console.log(div.offsetParent);      // [object HTMLBodyElement] 
 
-
 ## offsetTop
 Retorna a posição de deslocamento vertical de um elemento:
 
@@ -45,7 +44,6 @@ Retorna a posição de deslocamento vertical de um elemento:
     var div = document.querySelectorAll("div");
     console.log(testDiv.offsetTop);    // 110px de deslocamento do topo
 
-
 ## ownerDocument
 Retorna o elemento raiz (objeto de documento) para um elemento:
 
@@ -53,19 +51,39 @@ Retorna o elemento raiz (objeto de documento) para um elemento:
     
     var x = document.querySelectorAll("p").ownerDocument.nodeType;  
     console.log(x);     // 9
+    
+---    
+    
+## parentNode
+Retorna o nó pai de um elemento:
 
-##
+    <ul><li id="lista">Café</li><li>Chá</li></ul>
+    
+    var x = document.getElementById("lista").parentNode.nodeName;
+    console.log(x);     // ul
+
+## parentElement
+Retorna o nó do elemento pai de um elemento:
+
+    <ul><li>Café</li><li>Chá</li></ul>
+    
+    var x = document.getElementById("myLI").parentElement.nodeName;
+    console.log(x);     // ul
 
 
-##
+## previousSibling
+Retorna o nó anterior no mesmo nível da árvore de nós:
+
+    <ul><li id="item1">Café</li><li id="item2">Chá</li></ul>
+    
+    var x = document.getElementById("item2").previousSibling.innerHTML;
+    console.log(x);     // Café
 
 
+## previousElementSibling
+Retorna o elemento anterior no mesmo nível da árvore do nó:
 
-##
-
-
-##
-
-
-
-##
+    <ul><li id="item1">Café</li><li id="item2">Chá</li></ul>
+    
+    var x = document.getElementById("item2").previousElementSibling.innerHTML; 
+    console.log(x);     // Café
