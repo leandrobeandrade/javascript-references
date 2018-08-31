@@ -16,7 +16,9 @@ Adiciona um novo nó filho a um último elemento de nó já existente:
     var elem = document.createElement("li");
     var textElem = document.createTextNode("Aǵua");
     elem.appendChild(textElem);
-    document.getElementById("lista").appendChild(elem);    
+    document.getElementById("lista").appendChild(elem);   
+    
+---
 
 ## childElementCount
 Retorna o número de elementos filhos que um elemento possui:
