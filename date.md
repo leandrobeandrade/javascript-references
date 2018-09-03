@@ -1,4 +1,4 @@
-## Protótipo
+## Protótipo 
 O construtor de protótipo permite adicionar novas propriedades e métodos ao objeto Date().
 Ao construir uma propriedade, TODOS os objetos de data receberão a propriedade e seu valor, como padrão.Ao construir um método, TODOS os objetos de data terão esse método disponível.
 Permite adicionar propriedades e métodos a um objeto:
