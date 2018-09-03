@@ -4,7 +4,7 @@
       id="teste"
       data-colunas="3"
       data-identificacao="12314"
-      data-nome="Fulano">
+      data-nome-usuario="Fulano">
       ...
     </article>
     
@@ -15,7 +15,7 @@ o prefixo **data-** (note que o hífen é convertido para camelCase).
  
     article.dataset.colunas // "3"
     article.dataset.identificacao // "12314"
-    article.dataset.nome // "Fulano"
+    article.dataset.nomeUsuario // "Fulano"
     
 - Cada propriedade é uma String e pode ser lida e escrita. No exemplo acima a atribuição **article.dataset.columns = 5**
 iria alterar esse atributo para "5".
