@@ -1,4 +1,4 @@
-function Pessoa(primeiro, ultimo, idade, cor) {			//--------> PROTÓTIPO - FUNÇÃO CONSTRUTORA
+function Pessoa(primeiro, ultimo, idade, cor) {		//--------> PROTÓTIPO - FUNÇÃO CONSTRUTORA
 	this.primeiro = primeiro;
 	this.ultimo = ultimo;
 	this.idade = idade;
