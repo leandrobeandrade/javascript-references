@@ -1,4 +1,4 @@
-## console.assert()
+## console.assert() 
 Escreva uma mensagem para o console, apenas se o primeiro argumento for falso:
 
       console.assert(document.getElementById("demo"), "Você não possui nenhum elemento com ID 'demo'");
