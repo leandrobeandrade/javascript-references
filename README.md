@@ -1,6 +1,6 @@
 # Referências Javascript
 
-Referências da Linguagem Javascript como métodos para vetores, strings, números, manipulação do DOM e também novas especificações do ECMASCRIPT-6 e Typescript.
+Referência completa da Linguagem Javascript e também suas novas especificações como ECMASCRIPT-6 e Typescript.
 
 ## Links úteis
 ##### JAVASCRIPT
@@ -15,3 +15,5 @@ Referências da Linguagem Javascript como métodos para vetores, strings, númer
 * http://www.diullei.com/TypeScript-ptBR/tutorial.html
 * https://tableless.com.br/diga-ola-ao-typescript-e-adeus-ao-javascript/ (Português)
 * http://www.typescriptlang.org/play/
+
+> Repositório em constante construção.
