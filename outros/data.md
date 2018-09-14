@@ -1,4 +1,4 @@
-#### Qualquer atributo de qualquer elemento no qual o nome do atributo inicia com data- é um atributo data.
+#### Qualquer atributo de qualquer elemento no qual o nome do atributo inicia com data- é um atributo data. 
 
     <article
       id="teste"
