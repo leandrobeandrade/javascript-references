@@ -20,7 +20,7 @@ let obj4 = {
     name: 'Carlos',
     age: 44
 };
-
+ 
 let wm = new WeakMap();
 wm.set(obj3, 'Info do Marcio');
 wm.set(obj4, 'Info do Carlos');
