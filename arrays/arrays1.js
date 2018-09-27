@@ -3,9 +3,9 @@ var times2 = ['Palmeiras', 'Grêmio', 'Vasco', 'Atlético-MG'];
 
 var teste1 = times1[0];
 var teste2 = times1.length;
-var teste3 = times1.sort(); // ordena por ordem alfabetica
-var teste4 = times2.push('Coritiba'); // adiciona elementos ao vetor
-times2[5] = 'Bahia'; // adicona elemantos na posição informada
+var teste3 = times1.sort();               // ordena por ordem alfabetica
+var teste4 = times2.push('Coritiba');     // adiciona elementos ao vetor
+times2[5] = 'Bahia';                      // adicona elemantos na posição informada
 var teste5 = Array.isArray(times1);
 var teste6 = typeof times1;
 var teste7 = times1 instanceof Array;
