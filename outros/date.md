@@ -48,13 +48,13 @@ Retorna a data como uma string, usando o padrão ISO:
 
     var data = new Date();
     var strg = data.toISOString();
-    console.log(strg);    // retorna 
+    console.log(strg);
     
 ## toJSON()
 Retorna a data como uma string, formatada como uma data JSON:
 
     var data = new Date();
-    var json = data.toJSON();     // retorna 
+    var json = data.toJSON();
 
 ## toLocaleDateString()
 Retorna a parte da data de um objeto Date como uma string, usando convenções de localidade:
