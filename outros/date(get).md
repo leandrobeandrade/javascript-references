@@ -1,4 +1,4 @@
-## getDate()
+## getDate() 
 Retorna o dia do mês (de 1 a 31):
 
     var data = new Date();
