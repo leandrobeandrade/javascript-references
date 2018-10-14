@@ -1,4 +1,4 @@
-function Pessoa(primeiro, ultimo, idade, cor) {		//--------> PROTÓTIPO - FUNÇÃO CONSTRUTORA
+function Pessoa(primeiro, ultimo, idade, cor) {		/* =========> PROTÓTIPO - FUNÇÃO CONSTRUTORA <=========== */
 	this.primeiro = primeiro;
 	this.ultimo = ultimo;
 	this.idade = idade;
@@ -15,7 +15,7 @@ console.log(pai.primeiro);
 console.log(pai.nacionalidade);
 console.log(pai.nome());
 
-var Pessoa2 = {						//--------> OBJETO
+var Pessoa2 = {						/* =========> OBJETO <========= */
 	primeiroNome: 'Leandro',
 	ultimoNome: 'Andrade',
 	fullNome: function(){
