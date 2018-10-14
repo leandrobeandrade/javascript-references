@@ -107,4 +107,4 @@ Retorna a diferença de horário entre a hora UTC e a hora local, em minutos:
 
     var data = new Date();
     var difMin = data.getTimezoneOffset();
-    console.log(tempo);   // retorna 180 - 3 hora
+    console.log(difMin);   // retorna 180 - 3 hora
