@@ -37,7 +37,7 @@ Retorna o próximo nó no mesmo nível da árvore de nós:
 ## nextElementSibling
 Retorna o próximo elemento no mesmo nível da árvore de nós:
 
-     <ul><li id="item1">Café (primeiro li)</li><li id="item2">Chá (segundo li)</li></ul>
+    <ul><li id="item1">Café (primeiro li)</li><li id="item2">Chá (segundo li)</li></ul>
     
     var x = document.getElementById("item1").nextElementSibling.innerHTML;
     console.log(x);   // Chá (segundo li)
