@@ -71,7 +71,7 @@ Aplica a(s) classe(s) a um determinado elemento ou mais elementos:
 
     <div id="minhaDiv" class="meuEstilo1">Teste</div>
     
-    document.getElementById("minhaDiv").classList.; // Obtém o nome da classe
+    document.getElementById("minhaDiv").classList. // Obtém o nome da classe
     document.getElementById("minhaDiv").classList.add("meuEstilo1"); // Adiciona uma classe
     document.getElementById("minhaDiv").classList.add("meuEstilo2, meuEstilo3"); 
     document.getElementById("minhaDiv).classList.remove("meuEstilo1, meuEstilo3"); // Remove as classes
