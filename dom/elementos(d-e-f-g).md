@@ -51,7 +51,7 @@ Retorna o nó do atributo especificado:
     
     var x = document.getElementsByTagName("H1")[0];
     var attr = x.getAttributeNode("class").value; 
-    console.log(x);     // democlass
+    console.log(attr);     // democlass
 
 ## getBoundingClientRect() 
 Retorna o tamanho de um elemento e sua posição relativa à viewport:
