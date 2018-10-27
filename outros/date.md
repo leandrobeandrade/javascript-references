@@ -108,4 +108,4 @@ Retorna o número de milissegundos em uma data desde a meia-noite de 1º de jane
 Retorna o valor primitivo de um objeto Date:
 
     var data = new Date(); 
-    var valor = d.valueOf();
+    var valor = data.valueOf();
