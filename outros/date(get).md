@@ -38,7 +38,7 @@ Retorna o ano:
     
     var data = new Date("January 17, 1984 01:15:00");
     var ano = data.getFullYear()
-    console.log(dia);   // retorna o ano atual especificado 1984
+    console.log(ano);   // retorna o ano atual especificado 1984
 
 ## getHours()
 Retorna a hora (de 0 a 23):
