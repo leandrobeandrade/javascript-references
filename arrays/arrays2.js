@@ -11,12 +11,15 @@ var teste3 = times1.concat(times2);
 var teste4 = times1.slice(3);
 var teste5 = times1.reverse();
 
+var teste6 = times1.forEach((elemento) => console.log(elemento));	
+
 console.log(teste1);
 console.log(teste2);
 console.log(times1);
 console.log(teste3);
 console.log(teste4);
 console.log(teste5);
+console.log(teste6);
 
 
 	// FUNÇÃO DE COMPARAÇÃO
