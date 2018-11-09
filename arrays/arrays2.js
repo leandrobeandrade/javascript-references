@@ -11,7 +11,8 @@ var teste3 = times1.concat(times2);
 var teste4 = times1.slice(3);
 var teste5 = times1.reverse();
 
-var teste6 = times1.forEach((elemento) => console.log(elemento));	
+var teste6 = times1.forEach((elemento) =>       // itera sobre o vetor
+console.log(elemento));	
 
 console.log(teste1);
 console.log(teste2);
