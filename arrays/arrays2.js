@@ -7,9 +7,9 @@ var teste2 = times1.shift(); 			// retira o primeiro elemento do vetor
 times1.unshift('Palmeiras'); 			// adiciona um elemento no primeiro indice[0] do vetor
 times1.splice(1,0, 'Ceará'); 			// adiciona um elemento(1) e não retira nenhum(0) do vetor
 times1.splice(1,1) 				// retira o segundo elemento do vetor
-var teste3 = times1.concat(times2);
-var teste4 = times1.slice(3);
-var teste5 = times1.reverse();
+var teste3 = times1.concat(times2);		// junta os vetores
+var teste4 = times1.slice(3);			// pega o elemento(s) nos índice(s) informado(s)
+var teste5 = times1.reverse();			// reverte a ordem interna do vetor alterando o vetor original
 
 var teste6 = times1.forEach((elemento) =>       // itera sobre o vetor
 console.log(elemento));	
