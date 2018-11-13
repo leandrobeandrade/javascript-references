@@ -20,7 +20,7 @@ Expressões regulares em Javascript, com seus métodos e aplicações.
 <li>^ - <b>Encontra uma ocorrência no início do texto</b></li>
 <li>$ - <b>Encontra uma ocorrência no final do texto</li>
 <li>| - <b>Econtra uma ocorrência ou outra em um padrão como *a|b*</b></li>
-</b><h5><u>QUANTIFICADORES</u></h5>
+</b><h3><u>QUANTIFICADORES</u></h3>
 <li>* - <b>Encontra 0 ou mais ocorrências no texto</li>
 <li>+ - <b>Encontra 1 ou mais ocorrências no texto</b></li>
 <li>? - <b>Encontra o primeiro caractere ou os outros seguintes especificados como *exp - achado em explain, explorer, expression*</b></li>
