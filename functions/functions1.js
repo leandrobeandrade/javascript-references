@@ -1,12 +1,12 @@
 /* ===============================================
-|				ESCREVENDO FUNÇÕES                |
+|		ESCREVENDO FUNÇÕES	          |
 ================================================*/
 
-function somar(a,b) {									// Função declarada
-	return a + b										// Esta maneira é carregada antes da interpretação
-}														// podendo ser invocada antes da sua declaração
+function somar(a,b) {							// Função declarada
+	return a + b							// Esta maneira é carregada antes da interpretação
+}									// podendo ser invocada antes da sua declaração
 
-var somar = function(a,b) {								// Função expressa em uma variável
+var somar = function(a,b) {						// Função expressa em uma variável
 	return a + b
 }
 
@@ -15,14 +15,14 @@ var somar = function somar(a,b) {    					// Função expressa nomeada
 }
 
 /* ===============================================
-|				INVOCANDO FUNÇÕES				  |	
+|		INVOCANDO FUNÇÕES	          |
 ================================================*/
 
 function somar(a,b) {
 	return a + b
 }
 
-somar(1+1)												// Invocada diretamente
+somar(1+1)								// Invocada diretamente
 
 /*_____________________*/
 
@@ -40,7 +40,7 @@ calcula(produto, imposto);
 /*_____________________*/
 
 var teste = function() {
-	return function() {									// Invocada por outra função
+	return function() {						// Invocada por outra função
 		return 'Testando Javascript'
 	}
 }
