@@ -1,5 +1,5 @@
 /* ==============================================
-|				FUNÇÕES FÁBRICAS				 |
+|		FUNÇÕES FÁBRICAS	         |
 ===============================================*/
 
 var criarPessoa = function(nome, idade) {
@@ -12,7 +12,7 @@ var criarPessoa = function(nome, idade) {
 criarPessoa('Fulano', 50)
 
 /* ==============================================
-|				FUNÇÕES CONSTRUTORAS			 |
+|		FUNÇÕES CONSTRUTORAS		 |
 ===============================================*/
 
 var Pessoa = function(nome, idade) {
@@ -30,7 +30,7 @@ Pessoa.call(fulano, 'Fulano', 50);
 console.log(fulano)
 
 /* ==============================================
-|				CLOSURES			  			 |
+|		CLOSURES			 |
 ===============================================*/
 
 var teste = function() {
