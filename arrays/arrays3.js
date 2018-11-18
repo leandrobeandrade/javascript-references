@@ -5,7 +5,7 @@ var carros = [
 ];
 
 /* ===============================================
-|					  FILTER      			      |
+|			FILTER      		  |
 ================================================*/
 
 var filtra = carros.filter(function(elemento) {
@@ -15,7 +15,7 @@ var filtra = carros.filter(function(elemento) {
 console.log(filtra)
 
 /* ===============================================
-|					    MAP    			      	  |
+|			MAP    			  |
 ================================================*/
 
 var mapeia = carros.map(function(elemento) {
@@ -25,7 +25,7 @@ var mapeia = carros.map(function(elemento) {
 console.log(mapeia)
 
 /* ===============================================
-|					   REDUCE   			      |
+|			REDUCE   		  |
 ================================================*/
 
 var carro = [
@@ -40,7 +40,7 @@ carro.reduce(function(anterior, atual) {
 
 
 /* ===============================================
-|					   FOREACH   			      |
+|			FOREACH   	          |
 ================================================*/
 
 var total = 0;
