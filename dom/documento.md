@@ -1,4 +1,4 @@
-## createElement()
+## createAttribute()
 Cria um nó de atributo:
 
     <h1>Teste</h1>
