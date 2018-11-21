@@ -1,4 +1,4 @@
-| Eventos| Descrição|
+| Propriedade | Descrição|
 | ------------- |:-------------:|
 | bubles | *Retorna se um elemento específico é ou não um evento* |
 | cancelable | *Retorna se um evento pode ou não ter sua ação impedida* |
