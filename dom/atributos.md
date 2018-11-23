@@ -5,7 +5,7 @@ Retorna o nome de um atributo:
     
     var btn = document.getElementsByTagName("button")[0];
     var x = btn.attributes[0].name; 
-    console.log(x); // onclick 
+    console.log(x); // onclick
 
 ## attr.value 
 Define ou retorna o valor do atributo:
@@ -17,7 +17,7 @@ Define ou retorna o valor do atributo:
     console.log(x); // myFunction()
 
 ## attr.specified 
-Retorna *true* se o atributo foi especificado, caso contrário, retorna *false*:
+Retorna *true* se o atributo for especificado, caso contrário, retorna *false*:
 
     <button onclick="myFunction()">Testar</button>
     
