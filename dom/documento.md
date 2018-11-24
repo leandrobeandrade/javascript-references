@@ -66,7 +66,7 @@ Retorna uma coleção de todos os elementos <a> e <area> no documento que possue
 ## readyState
 Retorna o status (carregamento) do documento:
 
-    var x = document.readyState;
+    var x = document.readyState; 
     console.log(x);
 
 ## referrer
