@@ -1,4 +1,4 @@
-## dir
+## dir 
 Define ou retorna o valor do atributo direção de um elemento:
 
     var x = document.getElementById("myP").dir;
