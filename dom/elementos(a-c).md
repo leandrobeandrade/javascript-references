@@ -1,4 +1,4 @@
-## accessKey
+## accessKey 
 Define ou retorna o atributo accesskey de um elemento:
 
     <a id="teste" href="https://www.google.com/">Google</a>
