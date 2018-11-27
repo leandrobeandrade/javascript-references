@@ -1,4 +1,4 @@
-## hasAttribute()
+## hasAttribute() 
 Retorna *true* se um elemento tiver o atributo especificado, caso contrário, *false*:
 
     <button id="btn" onclick="myFunction()">Apertar</button>
