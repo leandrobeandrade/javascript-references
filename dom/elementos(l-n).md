@@ -1,4 +1,4 @@
-## lang
+## lang 
 Define ou retorna o valor do atributo lang de um elemento:
 
     var x = document.getElementById("myP").lang;
