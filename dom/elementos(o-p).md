@@ -1,5 +1,5 @@
 ## offsetHeight
-Retorna a altura de um elemento, incluindo preenchimento, borda e barra de rolagem:
+Retorna a altura de um elemento, incluindo preenchimento, borda e barra de rolagem: 
 
     <div style="height:250px;width:400px;padding:10px;margin:15px;border:5px solid red;
     background-color:lightblue;"></div>
