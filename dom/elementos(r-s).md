@@ -1,4 +1,4 @@
-## removeAttribute()
+## removeAttribute() 
 Remove um atributo especificado de um elemento:
 
     <h1 class="democlass">Alô Mundo!</h1>
