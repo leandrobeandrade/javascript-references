@@ -1,4 +1,4 @@
-## tabIndex
+## tabIndex 
 Define ou retorna o valor do atributo tabindex de um elemento:
 
     <p><a id="ancora1" href="https://www.meusite.com">Link 1</a></p>
