@@ -1,4 +1,4 @@
-const nomes = ['Le', 'Ali', 'Ka'];
+const nomes = ['Le', 'Ali', 'Ka']; 
 const love = nomes
 .filter(name => name === 'Le')
 .map(name => `Eu amo ${name}`);
