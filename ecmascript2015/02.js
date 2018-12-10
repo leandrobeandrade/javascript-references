@@ -1,4 +1,4 @@
-const list = document.querySelectorAll('#list li');
+const list = document.querySelectorAll('#list li'); 
 const listArray = Array.from(list);
 
 console.log(listArray);
