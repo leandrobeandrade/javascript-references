@@ -1,4 +1,4 @@
-const data = [
+const data = [ 
 	{
 		name: 'Willian',
 		age: 26,
