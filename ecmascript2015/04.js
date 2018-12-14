@@ -1,4 +1,4 @@
-var data = {
+var data = { 
 	name: 'Willian',
 	surname: 'Justen',
 	age: 25,
