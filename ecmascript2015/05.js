@@ -1,4 +1,4 @@
-let front = ['react', 'vue', 'angular'];
+let front = ['react', 'vue', 'angular']; 
 let back = ['python', 'ruby', 'nodejs'];
 
 //										 JAVASCRIPT
