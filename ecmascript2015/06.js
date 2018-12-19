@@ -1,4 +1,4 @@
-var defer = new Promise((resolve, reject) => {
+var defer = new Promise((resolve, reject) => { 
 	setTimeout(() => {
 		if (true) {
 			resolve('Hello! It works!');
