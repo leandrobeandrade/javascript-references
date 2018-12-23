@@ -1,4 +1,4 @@
- // class
+ // class 
  function Animal(kind, sound) {
     // constructor
     this.kind = kind;
