@@ -1,4 +1,4 @@
-let foo = Symbol('name');
+let foo = Symbol('name'); 
 let bar = Symbol('name');
  console.log(foo == bar);
 
