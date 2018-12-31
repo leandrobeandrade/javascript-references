@@ -1,4 +1,4 @@
-function* genNames() {
+function* genNames() { 
     console.log('Chamando primeiro nome!');
     yield 'Willian';
     console.log('Chamando segundo nome!');
