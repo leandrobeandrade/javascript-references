@@ -133,7 +133,7 @@ Define ou retorna o número de pixels que o conteúdo de um elemento é rolado v
     
     function myFunction() {
         var elmnt = document.getElementById("teste");
-        var x = elmnt.scrollLeft;
+        var x = elmnt.scrollTop;
         console.log("Verticalmente: " + x + "px);
     }
 
