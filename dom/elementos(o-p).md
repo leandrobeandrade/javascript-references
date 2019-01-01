@@ -25,7 +25,7 @@ Retorna a posição de deslocamento horizontal de um elemento:
     </div>
     
     var div = document.querySelectorAll("div");
-    console.log(testDiv.offsetLeft);    // 180px de deslocamento à esquerda
+    console.log(div.offsetLeft);    // 180px de deslocamento à esquerda
     
 ## offsetParent
 Retorna o container de deslocamento de um elemento:
@@ -42,7 +42,7 @@ Retorna a posição de deslocamento vertical de um elemento:
     </div>
     
     var div = document.querySelectorAll("div");
-    console.log(testDiv.offsetTop);    // 110px de deslocamento do topo
+    console.log(div.offsetTop);    // 110px de deslocamento do topo
 
 ## ownerDocument
 Retorna o elemento raiz (objeto de documento) para um elemento:
