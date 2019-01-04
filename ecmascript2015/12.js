@@ -1,4 +1,4 @@
-let obj1 = {
+let obj1 = { 
     name: 'Willian',
     age: 26
 };
