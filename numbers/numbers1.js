@@ -1,4 +1,4 @@
-var numero1 = 1000;
+var numero1 = 1000; 
 var numero2 = 10.3;
 var numero3 = 9.656;
 
