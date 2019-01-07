@@ -1,4 +1,4 @@
-var numero1 = 123;
+var numero1 = 123; 
 var numero2 = '12.56';
 var numero3 = true;
 
