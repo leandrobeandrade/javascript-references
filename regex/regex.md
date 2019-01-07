@@ -1,4 +1,4 @@
-# Regex
+# Regex 
 Expressões regulares em Javascript, com seus métodos e aplicações.
 
 <h3><u>FUNÇÕES</u></h3>
