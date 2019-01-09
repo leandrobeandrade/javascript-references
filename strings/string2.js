@@ -1,4 +1,4 @@
-var texto1 = 'Testando Javascript, exercitando Javascript e mais JAVASCRIPT!';
+var texto1 = 'Testando Javascript, exercitando Javascript e mais JAVASCRIPT!'; 
 var texto2 = 1000;
 
 var teste1 = texto1.slice(9, 19);
