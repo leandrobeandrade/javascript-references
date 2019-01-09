@@ -1,4 +1,4 @@
-var texto =  'Testando Javascript, exercitando Javascript e mais JAVASCRIPT!';
+var texto =  'Testando Javascript, exercitando Javascript e mais JAVASCRIPT!'; 
 var teste1 = texto.length; // mostra o tamanho
 var teste2 = texto.replace('Javascript', 'ECMASCRIPT2015'); // substitui a ocorrência
 var teste3 = texto.indexOf('Javascript'); // acha a 1º ocorrência (aceita 2º parâmetro por onde deve começar)
