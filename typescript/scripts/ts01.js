@@ -1,4 +1,4 @@
-var p = document.createElement('p'); 
+var p = document.createElement('p');
 var ola = 'Começando com Typescript';
 p.textContent = ola;
 document.body.appendChild(p);
