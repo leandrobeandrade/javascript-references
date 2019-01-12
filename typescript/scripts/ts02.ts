@@ -1,4 +1,4 @@
-let teste: any= "Javascript";
+let teste: any= "Javascript"; 
 
 let comprim: number = (<string>teste).length;						// (<string>) força para tipo string
 let tamanho: string = (teste as string).toUpperCase();
