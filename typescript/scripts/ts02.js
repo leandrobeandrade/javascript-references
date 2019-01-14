@@ -1,4 +1,4 @@
-var teste = "Javascript"; 
+var teste = "Javascript";
 var comprim = teste.length; // (<string>) força para tipo string
 var tamanho = teste.toUpperCase();
 console.log(comprim);
