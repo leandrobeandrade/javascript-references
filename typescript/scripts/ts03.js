@@ -1,4 +1,4 @@
-function nome(pessoa, salario) { 
+function nome(pessoa, salario) {
     console.log(pessoa.nome);
     console.log(salario);
 }
