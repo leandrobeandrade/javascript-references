@@ -1,4 +1,4 @@
-function nome(pessoa:{nome:string}, salario:number): void {
+function nome(pessoa:{nome:string}, salario:number): void { 
 	console.log(pessoa.nome);
 	console.log(salario);
 }
