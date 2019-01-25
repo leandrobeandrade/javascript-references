@@ -1,4 +1,4 @@
-class Pessoa { 
+class Pessoa {
 	public nome: string;							// modificador de acesso public
 	constructor(nome:string) {
 		this.nome = nome;
