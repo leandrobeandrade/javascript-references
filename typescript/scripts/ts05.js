@@ -1,4 +1,4 @@
-function imprimir(val) { 
+function imprimir(val) {
     console.log(val);
 }
 imprimir('Mensagem');
