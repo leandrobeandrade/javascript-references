@@ -1,5 +1,5 @@
 function imprimir(val:string): void {								// FUNÇÃO NOMEADA
-	console.log(val); 
+	console.log(val);
 }
 imprimir('Mensagem');
 
