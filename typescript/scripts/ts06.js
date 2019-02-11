@@ -1,4 +1,4 @@
-function listaReversa(lista) { 
+function listaReversa(lista) {
     var listaReversada = [];
     for (var i = lista.length - 1; i >= 0; i--) {
         listaReversada.push(lista[i]);
