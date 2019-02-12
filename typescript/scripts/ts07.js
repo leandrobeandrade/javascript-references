@@ -1,4 +1,4 @@
-var outroExemplo1 = /** @class */ (function () { 
+var outroExemplo1 = /** @class */ (function () {
     function outroExemplo1() { 
     }
     return outroExemplo1;
