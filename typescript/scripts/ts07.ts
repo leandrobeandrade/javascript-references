@@ -1,4 +1,4 @@
-interface Exemplo1 {
+interface Exemplo1 { 
 	nome: string;
 }
 
