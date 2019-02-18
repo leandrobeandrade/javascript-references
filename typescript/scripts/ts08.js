@@ -1,4 +1,4 @@
-var Validacao;
+var Validacao; 
 (function (Validacao) {
     var emailRegex = /^([a-z0-9\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
     var urlRegex = /^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w\.-]*)*\/?$/;
