@@ -25,9 +25,11 @@
 | Eventos| Descrição|
 | ------------- |:-------------:|
 | ontouchcancel | *O evento ocorre quando o toque é interrompido* |
-| ontouchend | *O evento ocorre quando um dedo é removido em uma tela de toque* |
+| ontouchend | *O evento ocorre quando o dedo é removido em uma tela de toque* |
 | ontouchemove | *O evento ocorre quando o dedo é arrastado pela tela* |
-| ontouchstart | *O evento ocorre quando um dedo é colocado em uma tela de toque* |
+| ontouchstart | *O evento ocorre quando o dedo é colocado em uma tela de toque* |
+| ontouchenter | *O evento ocorre quando o dedo entra no elemento. Este evento não borbulha* |
+| ontouchleave | *O evento ocorre quando o dedo deixa o elemento. Este evento não borbulha* |
 
 # Animação
 
