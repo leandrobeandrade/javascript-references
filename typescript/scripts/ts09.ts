@@ -1,4 +1,4 @@
-import validacoesEmail = Validacao.emailValidador;
+import validacoesEmail = Validacao.emailValidador; 
 import validacoesUrl = Validacao.urlValidador;
 
 
