@@ -1,4 +1,4 @@
-function Teste(callback:(name:string) => void): void {
+function Teste(callback:(name:string) => void): void { 
 	callback.call(this, 'Fulano');
 	callback.apply(this, ['Beltrano', 'Ciclano']);
 	callback('Belciclano');
