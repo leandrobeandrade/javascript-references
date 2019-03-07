@@ -1,4 +1,4 @@
-var clickHandler = /** @class */ (function () {
+var clickHandler = /** @class */ (function () { 
     function clickHandler() {
         var main = document.getElementById('main');
         var btn1 = document.getElementById('btn1');
