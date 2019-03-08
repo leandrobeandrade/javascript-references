@@ -1,4 +1,4 @@
-class clickHandler { 
+class clickHandler {
 	constructor() {
 
 		let main = document.getElementById('main');
