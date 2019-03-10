@@ -31,7 +31,7 @@ Define ou retorna o conteúdo textual de um nó e seus descendentes:
     
     function myFunction() {
       var x = document.getElementById("btn").textContent;
-      document.getElementsByTagName("p")[0].textContent = "Trocando o texto dp p";
+      document.getElementsByTagName("p")[0].textContent = "Trocando o texto do p";
       console.log(x);  // Apertar
     }
 
