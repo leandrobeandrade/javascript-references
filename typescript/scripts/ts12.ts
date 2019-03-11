@@ -1,4 +1,4 @@
-let element1 = document.getElementById('btn2');
+let element1 = document.getElementById('btn2'); 
 console.log(element1);
 
 let element2 = document.getElementsByClassName('main');
