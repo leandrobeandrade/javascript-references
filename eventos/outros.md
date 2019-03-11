@@ -1,4 +1,4 @@
-# Clipboard 
+# Clipboard
 
 | Eventos| Descrição|
 | ------------- |:-------------:|
