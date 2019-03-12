@@ -1,4 +1,4 @@
-var AjaxTest = /** @class */ (function () { 
+var AjaxTest = /** @class */ (function () {
     function AjaxTest() {
         // o = inicializado / 1 = enviando / 2 = enviado / 3 = processando / 4 = completado
         this.READY_STATE_CODE = 4;
