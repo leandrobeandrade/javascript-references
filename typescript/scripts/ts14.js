@@ -1,4 +1,4 @@
-var key1 = 'key1'; 
+var key1 = 'key1';
 var key2 = 'key2';
 console.log(sessionStorage.getItem(key1)); // não faz nada
 console.log(sessionStorage.getItem(key2));
