@@ -1,4 +1,4 @@
-var pessoa = { nome: 'Fulano', sobrenome: 'Beltrano' }; 
+var pessoa = { nome: 'Fulano', sobrenome: 'Beltrano' };  
 var nome1 = pessoa;
 var nome2 = pessoa.nome;
 var nome3 = pessoa.sobrenome; // Acesso normal
