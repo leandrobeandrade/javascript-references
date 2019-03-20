@@ -1,4 +1,4 @@
-let pessoa = {nome:'Fulano', sobrenome:'Beltrano'}; 
+let pessoa = {nome:'Fulano', sobrenome:'Beltrano'};
 let nome1 = pessoa;
 let nome2 = pessoa.nome;
 let nome3 = pessoa.sobrenome;					// Acesso normal
