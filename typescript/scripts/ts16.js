@@ -1,4 +1,4 @@
-var vetor = ['Javascript', 'Typescript'];  
+var vetor = ['Javascript', 'Typescript'];
 for (var i = 0; i < vetor.length; i++) { // Loop normal
     console.log(vetor[i]);
 }
