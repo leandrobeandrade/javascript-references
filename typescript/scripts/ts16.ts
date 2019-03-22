@@ -1,4 +1,4 @@
-let vetor = ['Javascript', 'Typescript']; 
+let vetor = ['Javascript', 'Typescript'];      
 
 for(let i=0; i<vetor.length; i++) {						// Loop normal
 	console.log(vetor[i]);
@@ -31,3 +31,4 @@ for(let prop in pessoa){
 	console.log(prop);
 }
 
+ 
