@@ -1,4 +1,4 @@
-var nome_idade1 = new Map(); fdf
+var nome_idade1 = new Map();
 nome_idade1.set('Fulano', 50);
 nome_idade1.set('Beltrano', 40);
 console.log(nome_idade1);
@@ -24,6 +24,3 @@ for (var _d = 0, _e = nome_idade3.entries(); _d < _e.length; _d++) {
 }
 nome_idade3.clear();
 console.log(nome_idade3.size);
-
-
-
