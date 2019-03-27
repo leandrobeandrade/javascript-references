@@ -1,4 +1,4 @@
-let nome_idade1 = new Map<string, number>(); gggg
+let nome_idade1 = new Map<string, number>();
 nome_idade1.set('Fulano', 50);
 nome_idade1.set('Beltrano', 40);
 
