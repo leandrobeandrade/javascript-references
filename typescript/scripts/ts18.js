@@ -1,4 +1,4 @@
-var nomes1 = new Set(); gtg
+var nomes1 = new Set();
 nomes1.add('Fulano');
 nomes1.add('Beltrano');
 nomes1.add('Fulano');
