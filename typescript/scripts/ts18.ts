@@ -1,4 +1,4 @@
-let nomes1 = new Set<string>(); gbgbgb
+let nomes1 = new Set<string>();
 nomes1.add('Fulano');
 nomes1.add('Beltrano');
 nomes1.add('Fulano');
