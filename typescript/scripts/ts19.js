@@ -1,4 +1,4 @@
-var promessa = new Promisse(function (resolve, reject) {
+var promessa = new Promisse(function (resolve, reject) {hhhhh
     // Arquivo aberto
     var aberto = true;
     if (aberto) {
