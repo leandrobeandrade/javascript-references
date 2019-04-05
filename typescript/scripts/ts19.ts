@@ -1,4 +1,4 @@
-let promessa = new Promisse((resolve, reject) => {kuk
+let promessa = new Promisse((resolve, reject) => {
 	// Arquivo aberto
 	let aberto: boolean = true;
 
