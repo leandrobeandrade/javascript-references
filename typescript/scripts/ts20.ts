@@ -1,4 +1,4 @@
-@curso efrerw
+@curso
 
 class Pessoa {
 	nome: string;
