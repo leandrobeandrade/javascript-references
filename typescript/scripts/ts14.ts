@@ -1,4 +1,4 @@
-let key1 = 'key1';
+let key1 = 'key1';dfdfd
 let key2 = 'key2';
 
 console.log(sessionStorage.getItem(key1));						// não faz nada
