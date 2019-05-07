@@ -35,7 +35,7 @@ Cria um nó de texto de elemento:
     document.body.appendChild(t);
 
 ## images
-Retorna uma coleção de todos os elementos <img> no documento:
+Retorna uma coleção de todos os elementos `<img>` no documento:
 
     var a = document.images.length;                             // pega a quantidade de imagens no documento
     var b = document.images[0].src;                             // pega o src da imagem 1
@@ -51,11 +51,12 @@ Importa um nó de outro documento:
     document.body.appendChild(x);                               // adiciona o h1 no documento atual
 
 ## links
-Retorna uma coleção de todos os elementos <a> e <area> no documento que possuem um atributo href:
+Retorna uma coleção de todos os elementos `<a>` e `<area>` no documento que possuem um atributo href:
 
     <p>
       <a href="https://www.google.com">HTML</a><br>
       <a href="https://www.yahoo.com">CSS</a>
+      <a href="https://github.com" id="myLink">Javascript</a>
     </p>
     
     var a = document.links.length;                              // 2
@@ -76,7 +77,7 @@ Retorna a URL do documento que carregou o documento atual:
     console.log(x);
 
 ## title
-Retorna ou define a tag <title> da página
+Retorna ou define a tag `<title>` da página
     
     var x = document.title;
     console.log(x);
