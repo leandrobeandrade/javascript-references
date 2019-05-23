@@ -23,11 +23,11 @@ console.log(teste5);
 console.log(teste6);
 
 
-	// FUNÇÃO DE COMPARAÇÃO
+// FUNÇÃO DE COMPARAÇÃO
 
-	var numeros1 = [80,10,25,70,50];
-	var teste6 = numeros1.sort(function(a,b) {
-		return a - b;
-	});
+var numeros1 = [80,10,25,70,50];
+var teste6 = numeros1.sort(function(a,b) {
+	return a - b;
+});
 
-	console.log(teste6);
+console.log(teste6);
