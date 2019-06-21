@@ -1,6 +1,7 @@
 /* ===============================================
 |	       SPREAD OPERATOR      		  |
 ================================================*/
+
 /* permite distribuir o conteúdo de qualquer objeto iterável em múltiplos elementos. */
 
       const names = ['Lestat', 'Marius', 'Akasha'];
