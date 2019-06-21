@@ -1,4 +1,20 @@
 /* ===============================================
+|	       SPREAD OPERATOR      		  |
+================================================*/
+/* permite distribuir o conteúdo de qualquer objeto iterável em múltiplos elementos. */
+
+      const names = ['Lestat', 'Marius', 'Akasha'];
+      console.log(...names);        // Lestat Marius Akasha
+
+      // Combinar arrays com spread (...)
+      const males = ['Lestat', 'Louis', 'Marius'];
+      const females = ['Pandora', 'Akasha'];
+      const characters = [...males, ...females];
+      console.log(characters);      // ['Lestat', 'Louis', 'Marius', 'Pandora', 'Akasha']
+
+
+
+/* ===============================================
 |	       REST PARAMS      		  |
 ================================================*/
 
