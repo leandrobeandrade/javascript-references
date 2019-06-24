@@ -71,3 +71,28 @@
 
       // COM flat():
       console.log([array1, array2].flat());     // [1, 2, 3, 4, 5, 6]
+
+
+/* ===============================================
+|			FLATMAP      		  |
+================================================*/
+
+/* Mapeia cada elemento usando uma função de mapeamento e, em seguida, nivela o resultado em uma nova array. 
+É idêntico a um map seguido por um flat de profundidade 1 */
+
+      let cestas = [
+            { id: 1, itens: ["Maça", "Banana"]},
+            { id: 2, itens: ["Banana", "Abacaxi"]}
+      ]
+
+      // Apenas com o map teriamos arrays de arrays.
+      console.log(cestas.map(x => x.itens));
+
+      // 0: ["Maça", "Banana"];
+      // 1: ["Banana", "Abacaxi"]
+
+
+      // Com o flatMap já temos a concatenação dos elementos do array e conseguimos obter todos os elementos listados dentro de objetos.
+      console.log(cestas.flatMap(x => x.itens));
+
+      // ["Maça", "Banana", "Banana", "Abacaxi"]
