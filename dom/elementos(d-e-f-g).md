@@ -33,7 +33,7 @@ Retorna o primeiro elemento filho de um elemento:
 
     <ul id="lista"><li>Caé</li><li>Chá</li></ul>
 
-    var prim = document.getElementById("lista").firstChild.innerHTML;
+    var prim = document.getElementById("lista").firstElementChild.innerHTML;
     console.log(prim);    // Café
     
 ## getAttribute()
