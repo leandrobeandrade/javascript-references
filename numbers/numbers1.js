@@ -23,3 +23,17 @@ console.log(teste6);
 console.log(teste7);
 console.log(teste8);
 console.log(teste9);
+
+/*
+  1000
+"1e+3"
+"1.00e+3"
+"1.000e+3"
+10.3
+"10"
+"10.30"
+"10.300"
+"9.656"
+"9.7"
+"9.66"
+*/
