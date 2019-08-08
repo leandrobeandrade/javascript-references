@@ -12,7 +12,7 @@ var teste7 = numero3.toPrecision();
 var teste8 = numero3.toPrecision(2);
 var teste9 = numero3.toPrecision(3);
 
-console.log(numero1);
+console.log(numero1);                 // 1000
 console.log(teste1);
 console.log(teste2);
 console.log(teste3);
