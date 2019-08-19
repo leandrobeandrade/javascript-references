@@ -13,10 +13,10 @@ var teste8 = numero3.toPrecision(2);
 var teste9 = numero3.toPrecision(3);
 
 console.log(numero1);                 // 1000
-console.log(teste1);                  // 1e+3
-console.log(teste2);                  // 1.00e+3
-console.log(teste3);                  // 1.000e+3
-console.log(numero2);
+console.log(teste1);                  // '1e+3'
+console.log(teste2);                  // '1.00e+3'
+console.log(teste3);                  // '1.000e+3'
+console.log(numero2);                 // 10.3
 console.log(teste4);
 console.log(teste5);
 console.log(teste6);
