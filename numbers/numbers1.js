@@ -19,7 +19,7 @@ console.log(teste3);                  // '1.000e+3'
 console.log(numero2);                 // 10.3
 console.log(teste4);                  // '10'
 console.log(teste5);                  // '10.30'
-console.log(teste6);
+console.log(teste6);                  // '10.300'
 console.log(teste7);
 console.log(teste8);
 console.log(teste9);
