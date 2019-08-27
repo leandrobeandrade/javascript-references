@@ -21,7 +21,7 @@ console.log(teste4);                  // '10'
 console.log(teste5);                  // '10.30'
 console.log(teste6);                  // '10.300'
 console.log(teste7);                  // '9.656'
-console.log(teste8);
+console.log(teste8);                  // '9.7'
 console.log(teste9);
  
 /*
