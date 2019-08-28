@@ -22,7 +22,7 @@ console.log(teste5);                  // '10.30'
 console.log(teste6);                  // '10.300'
 console.log(teste7);                  // '9.656'
 console.log(teste8);                  // '9.7'
-console.log(teste9);
+console.log(teste9);                  // '9.66'
  
 /*
   1000 X
