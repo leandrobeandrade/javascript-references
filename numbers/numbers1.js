@@ -25,5 +25,4 @@ console.log(teste8);                  // '9.7'
 console.log(teste9);                  // '9.66'
  
 /*
-  1000 X
 */
