@@ -23,6 +23,3 @@ console.log(teste6);                  // '10.300'
 console.log(teste7);                  // '9.656'
 console.log(teste8);                  // '9.7'
 console.log(teste9);                  // '9.66'
- 
-/*
-*/
