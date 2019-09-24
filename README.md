@@ -18,3 +18,4 @@ Referência completa da Linguagem Javascript e também suas novas especificaçõ
 * http://www.typescriptlang.org/play/
 
 > Repositório em constante construção.
+> Testes e mais ...
