@@ -17,4 +17,4 @@ console.log(teste4);
 console.log(teste5);
 console.log(teste6);
 
-
+//console.log(numero);
