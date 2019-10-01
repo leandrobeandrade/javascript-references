@@ -18,3 +18,5 @@
     const p2 = new Ponto(10, 10);
 
     console.log(Ponto.distancia(p1, p2));      <= Chamado o método após a instanciação da classe
+
+testes
