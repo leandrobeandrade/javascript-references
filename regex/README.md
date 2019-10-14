@@ -2,6 +2,17 @@
 
 Expressões regulares são padrões utilizados para selecionar combinações de caracteres em uma string. Em JavaScript, expressões regulares também são `objetos`. Elas podem ser utilizadas com os métodos ***exec*** e ***test*** do objeto **`RegExp`**, e com os métodos ***match***, ***replace***, ***search***, e ***split*** do objeto **`String`**.
 
+Há duas maneiras de construir uma expressão regular:
+
+- Usando uma expressão literal, que consiste em um padrão fechado entre barras que são compiladas quando o script é carregado, como o exemplo a seguir:
+
+      const re = /ab+c/;                  indicado quando o padrão não vai ser alterado
+      
+- Ou chamando o construtor do objeto RegExp, que a compilação da expressão regular é realizada em tempo de execução:
+      
+      let test = 'ab+c'       
+      let rege = new RegExp(test);        indicado quando o padrão for ser alterado
+
 <h3><u>FUNÇÕES</u></h3>
 <li>test() - <b>Executa a regex e retorna true ou false</b></li>
 <li>exec() - <b>Executa a regex e retorna a ocorrência da regex *Somente a 1º ocorrência*</b></li>
@@ -30,3 +41,6 @@ Expressões regulares são padrões utilizados para selecionar combinações de 
 <li>[0-9] - <b>Encontra qualquer ocorrência de dígito entre os colchetes *por exemplo [\d\,\.] em 23.450,00*</b></li>
 <li>[a-z] - <b>Encontra qualquer ocorrência de caractere entre os colchetes *por exemplo [cao]*</b></li>
 <li>() - <b>Realiza um agrupamento de ocorrências a ser encontrada</b></li>
+
+
+![](https://github.com/leandrobeandrade/javascript-references/blob/master/regex/regex.png)  
