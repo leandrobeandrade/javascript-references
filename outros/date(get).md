@@ -13,7 +13,7 @@ Retorna o dia do mês (de 1 a 31):
 Retorna o dia da semana (de 0 a 6):
 
     var data = new Date();
-    var dia = data.getDate();
+    var dia = data.getDay();
     console.log(dia);   // retorna o dia da semana atual
     
     var data = new Date();
@@ -81,7 +81,7 @@ Retorna o mês (de 0 a 11):
     console.log(mes);   // retorna o mes atual
     
     var data = new Date("January 17, 1984 01:15:00:526");
-    var mes = data.getMinutes();
+    var mes = data.getMonth();
     console.log(mes);    // retorna January
 
 ## getSeconds()
