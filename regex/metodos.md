@@ -32,7 +32,7 @@ Um método String que executa uma pesquisa por uma correspondência em uma strin
      let str = "Expressões regulares em JavaScript!";
      let ret = str.replace(/[r]/ig, "10");   retorna Exp10essões 10egula10es em JavaSc10ipt!
 ## split()
-Um método String  que usa uma expressão regular ou uma string fixa para quebrar uma string dentro de um array de substrings.
+Um método String  que usa uma expressão regular ou uma string fixa para quebrar uma string dentro de um array de substrings. 
 
      let str = "Expressões regulares em JavaScript!";
      let ret = str.split(/[\t\s\n]/i);       retorna ["Expressões", "regulares", "em", "JavaScript!"]
