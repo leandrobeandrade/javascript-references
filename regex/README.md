@@ -13,17 +13,6 @@ Há duas maneiras de construir uma expressão regular:
       let test = 'ab+c'       
       let rege = new RegExp(test);        indicado quando o padrão for ser alterado
 
-<h3><u>FUNÇÕES</u></h3>
-<li>test() - <b>Executa a regex e retorna true ou false</b></li>
-<li>exec() - <b>Executa a regex e retorna a ocorrência da regex *Somente a 1º ocorrência*</b></li>
-<li>match - <b>Exibe todas as ocorrências encontradas *tem que ter o modificador g*</b></li>
-<li>search - <b>Exibe o index da primeira ocorrência encontrada</b></li>
-<li>replace - <b>Substitui uma ocorrência por outra especificada *Exemplo /teste/.replace('Testando')*</b></li>
-<li>split - <b>Separa os caracteres em um vetor por outro caractere especificado como *- , .*</b></li>
-<h3><u>MODIFICADORES</u></h3>
-<li>i - <b>Retorna a ocorrência em maiúscula e mínuscula</b></li>
-<li>g - <b>Retorna todas as ocorrências encontradas</b></li>
-<li>m - <b>Retorna a ocorrência mesmo com quebra de linhas ou seja multilinhas</b></li>
 <h3><u>METACARACTERES</u></h3>
 <li>. - <b>Encontra qualquer ocorrência, caracteres, letras, números *dentro da mesma linha*</b></li>
 <li>\w - <b>Encontra qualquer caractere, número e underline</b></li>
