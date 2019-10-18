@@ -29,5 +29,5 @@
        }
     }
     
-    let nome = new Nome('Fulano')
-    console.log(nome)
+    let nome = new Nome('Fulano', 'de Tal')
+    console.log(nome)           // Fulano de Tal
