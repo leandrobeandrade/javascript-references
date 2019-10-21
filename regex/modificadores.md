@@ -1,7 +1,7 @@
 # Modificadores regex Javascript: 
 
 ## i
-Retorna a ocorrência em maiúscula e mínuscula
+Retorna a ocorrência em maiúscula e minúscula
 
       let str = "ExpresSões regulareS em JavaScript!";
       let regexp = /s/i;
