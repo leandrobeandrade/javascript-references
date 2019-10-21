@@ -6,7 +6,7 @@ Principais:
 
       let str = "nove dias restantes para onze de agosto.";
       let regexp = new RegExp(/.n/g);
-      let ret = str.match(regexp);       // retorna ["an", "on"], não acha no em nove pois está no começo da string
+      let ret = str.match(regexp);  // retorna ["an", "on"], não acha no em nove pois está no começo da string
 
 - **[ ] (conjunto)** => qualquer caractere incluido no conjunto, hífen é utilizado para especificar um intervalo, caracteres especiais como **`.`** e **`*`** não precisam ser escapados e não tem função dentro dos []
 
