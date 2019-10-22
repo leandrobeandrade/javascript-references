@@ -1,7 +1,5 @@
 ## Especificam o conjunto de caracteres a casar em uma posição.
 
-Principais:
-
 - **. (curinga)** =>	curinga	qualquer caractere, exceto a quebra de linha **`\n`**
 
       let str = "nove dias restantes para onze de agosto.";
