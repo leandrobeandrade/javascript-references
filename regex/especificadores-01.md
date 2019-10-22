@@ -80,8 +80,13 @@
       console.log(ret);                   // retorna true
       
 - **| (pipe ou alternativa)** => procura por uma correspondência na regex à direita ou à esquerda
-
+      
+      let str = "Palmeiras são roxas e as nuvens são azuis.";
+      let regexp = new RegExp(/verdes|azuis/);
+      let ret = regexp.exec(str);
+      console.log(ret);                   // retorna ["azuis"]
+      
       let str = "Palmeiras são verdes e as nuvens são azuis.";
       let regexp = new RegExp(/verdes|azuis/);
-      let ret = str.exec(match);
+      let ret = regexp.exec(str);
       console.log(ret);                   // retorna ["verdes", "azuis"]
