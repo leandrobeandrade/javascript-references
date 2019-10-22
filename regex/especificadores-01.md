@@ -1,6 +1,6 @@
 ## Especificam o conjunto de caracteres a casar em uma posição.
 
-- **. (curinga)** =>	curinga	qualquer caractere, exceto a quebra de linha **`\n`**
+- **. (curinga)** => curinga qualquer caractere, exceto a quebra de linha **`\n`**
 
       let str = "nove dias restantes para onze de agosto.";
       let regexp = new RegExp(/.n/g);
@@ -12,55 +12,76 @@
       let regexp = new RegExp(/[abcd]/g) // ou new RegExp(/[a-d]/);
       let ret = str.match(regexp);       // reotrna ["a", "b", "c", "d"]
 
-- **[^]	(conjunto negado)** =>	qualquer caractere não incluído no conjunto
+- **[^] (conjunto negado)** => qualquer caractere não incluído no conjunto
 
       let str = "abcdefgh";
       let regexp = new RegExp(/[^abcd]/g) // ou new RegExp(/[^a-d]/);
       let ret = str.match(regexp);        // retorna ["e", "f", "g", "h"]
 
-- **\d	(dígito)** =>	o mesmo que [0-9]
+- **\d (dígito)** => o mesmo que [0-9]
 
       let str = "Regex é 10.";
       let regexp = new RegExp(/\d/g);
       let ret = str.match(regexp);        // retorna ["1", "0"]
 
-- **\D	(não-digíto)** =>	o mesmo que [^0-9]
+- **\D (não-digíto)** => o mesmo que [^0-9]
 
       let str = "Regex é 10.";
       let regexp = new RegExp(/[^\d]/g);
       let ret = str.match(regexp);  // retorna ["R", "e", "g", "e", "x", " ", "é", " ", "."]
 
-- **\s	(espaços)** => tudo que gere espaços, quebra de linha, tabs etc... O mesmo que [\s\n\t\r\f\v]
+- **\s (espaços)** => tudo que gere espaços, quebra de linha, tabs etc... O mesmo que [\s\n\t\r\f\v]
 
       let str = "Tente outra vez!";
       let regexp = new RegExp(/\s/);
       let ret = str.match(regexp);
       console.log(ret);                   // retorna [" ", " "]
 
-- **\S	(sem espaços)** =>	o mesmo que [^ \t\n\r\f\v]
+- **\S (sem espaços)** => o mesmo que [^ \t\n\r\f\v]
       
       let str = "Tente outra vez!";
       let regexp = new RegExp(/[^\s]/g);
       let ret = str.match(regexp);
       console.log(ret);       // retorna ["T", "e", "n", "t", "e", "o", "u", "t", "r", "a", "v", "e", "z", "!"]
       
-- **\w	(alfanumérico)** =>	o mesmo que [a-zA-Z0-9_]**, embora possa incluir caracteres Unicode
+- **\w (alfanumérico)** => o mesmo que [a-zA-Z0-9_], embora possa incluir caracteres Unicode
 
       let str = "Tente outra vez *&(";
       let regexp = new RegExp(/\w/);
       let ret = str.match(regexp);
       console.log(ret);       // retorna ["T", "e", "n", "t", "e", "o", "u", "t", "r", "a", "v", "e", "z"]
 
-- **\W	(não-alfanumérico)** =>	para caracteres especiais como **`%`** e **`&`** por exemplo
+- **\W (não-alfanumérico)** => para caracteres especiais como **`%`** e **`&`** por exemplo
 
       let str = "Tente outra vez *&(";
       let regexp = new RegExp(/\w/);
       let ret = str.match(regexp);
       console.log(ret);                   // retorna [" ", " ", " ", "*", "&", "("]
 
-- **\	(escape)** =>	anula o significado especial do metacaractere seguinte
+- **\	(escape)** => anula o significado especial do metacaractere seguinte
       
-      let str = "Tente outra vez.;
+      let str = "Tente outra vez.";
       let regexp = new RegExp(/\./);
       let ret = str.match(regexp);
-      console.log(ret);                   // retorna [".", "."]
+      console.log(ret);                   // retorna ["."]
+      
+- **^ (início de texto)** => 	corresponde ao início do texto. Se a flag **`m`** for setada para true, também se aplica imediatamente após um caractere de quebra de linha
+
+      let str = "Tente outra vez.";
+      let regexp = new RegExp(/^T/);
+      let ret = regexp.test(str);
+      console.log(ret);                   // retorna true
+      
+- **$ (fim de texto)** => corresponde ao final do texto. Se a flag **`m`** for setada para true, também se aplica imediatamente antes de um caractere de quebra de linha
+
+      let str = "Correr";
+      let regexp = new RegExp(/r$/);
+      let ret = regexp.test(str);
+      console.log(ret);                   // retorna true
+      
+- **| (pipe ou alternativa)** => procura por uma correspondência na regex à direita ou à esquerda
+
+      let str = "Palmeiras são verdes e as nuvens são azuis.";
+      let regexp = new RegExp(/verdes|azuis/);
+      let ret = str.exec(match);
+      console.log(ret);                   // retorna ["verdes", "azuis"]
