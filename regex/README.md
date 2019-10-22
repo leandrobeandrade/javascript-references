@@ -6,21 +6,19 @@ Há duas maneiras de construir uma expressão regular:
 
 - Usando uma expressão literal, que consiste em um padrão fechado entre barras que são compiladas quando o script é carregado, como o exemplo a seguir:
 
-      const re = /ab+c/;                  indicado quando o padrão não vai ser alterado
+      let regexp = /ab+c/;                      indicado quando o padrão não vai ser alterado
       
 - Ou chamando o construtor do objeto RegExp, que a compilação da expressão regular é realizada em tempo de execução:
       
-      let test = 'ab+c'       
-      let rege = new RegExp(test);        indicado quando o padrão for ser alterado
+      let str = 'ab+c'       
+      let regexp = new RegExp(test);            indicado quando o padrão for ser alterado
 
-<h3><u>METACARACTERES</u></h3>
-<li>. - <b>Encontra qualquer ocorrência, caracteres, letras, números *dentro da mesma linha*</b></li>
-<li>\w - <b>Encontra qualquer caractere, número e underline</b></li>
-<li>\s - <b>Encontra espaços entre caracteres</b></li>
-<li>\d - <b>Encontra qualquer dígito</b></li>
-<li>^ - <b>Encontra uma ocorrência no início do texto</b></li>
-<li>$ - <b>Encontra uma ocorrência no final do texto</li>
-<li>| - <b>Econtra uma ocorrência ou outra em um padrão como *a|b*</b></li>
+<h3><u>Sites para testar regex</u></h3>
+
+- **https://regex101.com**
+- **https://regexr.com**
+
+
 </b><h3><u>QUANTIFICADORES</u></h3>
 <li>* - <b>Encontra 0 ou mais ocorrências no texto</li>
 <li>+ - <b>Encontra 1 ou mais ocorrências no texto</b></li>
