@@ -32,7 +32,7 @@ Principais:
       let regexp = new RegExp(/[^\d]/g);
       let ret = str.match(regexp);  // retorna ["R", "e", "g", "e", "x", " ", "é", " ", "."]
 
-- **\s	(espaços)** => espaço, quebra de linha, tabs etc... O mesmo que [\s\n\t\r\f\v]
+- **\s	(espaços)** => tudo que gere espaços, quebra de linha, tabs etc... O mesmo que [\s\n\t\r\f\v]
 
       let str = "Tente outra vez!";
       let regexp = new RegExp(/\s/);
