@@ -19,4 +19,4 @@ Há duas maneiras de construir uma expressão regular:
 - **https://www.regextester.com**
 - **https://www.regexpal.com**
 
-<span>![](https://github.com/leandrobeandrade/javascript-references/blob/master/regex/regex.png)</span>
+<span style="margin-left: 50%">![](https://github.com/leandrobeandrade/javascript-references/blob/master/regex/regex.png)</span>
