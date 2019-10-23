@@ -2,15 +2,15 @@
 
 - **{n}** => exatamente n ocorrências
 
-	    let str = "Amanda";
-      let regexp = new RegExp("a{2}", "gi");
-	    let ret = str.match(regexp);
-	    console.log(ret);		// retorna ["A", "a", "a"]
+	  let str = "Amanda";
+          let regexp = new RegExp("a{2}", "gi");
+	  let ret = str.match(regexp);
+	  console.log(ret);		// retorna ["A", "a", "a"]
 
-	    let str = "Sandy";
-	    let regexp = new RegExp("a{2}");
-	    let ret = str.match(regexp);
-	    console.log(ret);		// retorna null
+	  let str = "Sandy";
+	  let regexp = new RegExp("a{2}");
+	  let ret = str.match(regexp);
+	  console.log(ret);		// retorna null
 
 - **{n,m}** => no mínimo n ocorrências e no máximo m
 
