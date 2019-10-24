@@ -24,32 +24,32 @@
       let str = "Moon \nLight.";
       let regexp = new RegExp(/\n/)
       let ret = regexp.test(str);
-      console.log(ret);	// retorna posição \n
+      console.log(ret);	// retorna true
 
 - **\r (retorno de carro)** => Encontra correspondência com um caractere de escape retorno de carro
 
       let str = "Moon \nLight.";
       let regexp = new RegExp(/\r/)
       let ret = regexp.test(str);
-      console.log(ret);	// retorna posição \r
+      console.log(ret);	// retorna true
 
 - **\f (avanço de página)** => Encontra correspondência com um caractere de escape avanço de página
 
       let str = "Moon \fLight.";
       let regexp = new RegExp(/\f/)
       let ret = regexp.test(str);
-      console.log(ret);	// retorna posição \f
+      console.log(ret);	// retorna true
 
 - **\t (tabulação)** => Encontra correspondência em uma tabulação
 
       let str = "Moon \tLight.";
       let regexp = new RegExp(/\t/)
       let ret = regexp.test(str);
-      console.log(ret);	// retorna posição \t
+      console.log(ret);	// retorna true
 
 - **\v (tabulação vertical)** => Encontra correspondência em uma tabulação vertical
 
       let str = "Moon \vLight.";
       let regexp = new RegExp(/\v/)
       let ret = regexp.test(str);
-      console.log(ret);	// retorna posição \v
+      console.log(ret);	// retorna true
