@@ -1,18 +1,27 @@
 ## Especificam o conjunto de caracteres a casar em uma posição.
 
-- **. (curinga)** => curinga qualquer caractere, exceto a quebra de linha **`\n`**
+- **. (curinga)** => corresponde a qualquer caractere, exceto a quebra de linha **`\n`**
 
       let str = "nove dias restantes para onze de agosto.";
       let regexp = new RegExp(/.n/g);
       let ret = str.match(regexp);  // retorna ["an", "on"], não acha no em nove pois está no começo da string
+      
+- **() (agrupadores)** => cria grupos de captrua na regex, ver mais [aqui](https://github.com/leandrobeandrade/javascript-references/blob/master/regex/agrupadores.md)
 
-- **[ ] (conjunto)** => qualquer caractere incluido no conjunto, hífen é utilizado para especificar um intervalo, caracteres especiais como **`.`** e **`*`** não precisam ser escapados e não tem função dentro dos []
+      let str = "hahaha";
+      let regexp = new RegExp("(ha){2,}");
+      let ret = regexp.match(str);
+      console.log(ret);	// retorna ["ha", "ha"];
+      
+- **{} (quantificadores)** => indicador que determina quantas vezes a sequência imediatamente precedente deve ocorrer no padrão, ver mais [aqui](https://github.com/leandrobeandrade/javascript-references/blob/master/regex/quantificadores.md)
+
+- **[ ] (conjunto)** => corresponde a qualquer caractere incluido no conjunto, hífen é utilizado para especificar um intervalo, caracteres especiais como **`.`** e **`*`** não precisam ser escapados e não tem função dentro dos []
 
       let str = "abcdefghij";
       let regexp = new RegExp(/[abcd]/g) // ou new RegExp(/[a-d]/);
       let ret = str.match(regexp);       // reotrna ["a", "b", "c", "d"]
 
-- **[^] (conjunto negado)** => qualquer caractere não incluído no conjunto
+- **[^] (conjunto negado)** => corresponde a qualquer caractere não incluído no conjunto
 
       let str = "abcdefgh";
       let regexp = new RegExp(/[^abcd]/g) // ou new RegExp(/[^a-d]/);
