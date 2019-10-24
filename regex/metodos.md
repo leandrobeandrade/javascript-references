@@ -1,4 +1,4 @@
-# Métodos de execução para regex Javascript:
+# Métodos
 
 ## exec()
 Um método RegExp  que execute uma pesquisa por uma correspondência em uma string. Retorna um array de informações.
