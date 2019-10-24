@@ -30,10 +30,10 @@ corresponde a ocorrência exatamente no índice indicado, se não houver caracet
       let regexp = /\w+/g;
       regexp.lastIndex = 5;
       let ret = regexp.exec(str);
-      console.log(ret[0] +': '+ ret.index);  // JavaScript: 6 - pula para o próximo índice
+      console.log(ret[0] +': '+ ret.index);  // retorna JavaScript: 6 - pula para o próximo índice
       
       let str = "Regex JavaScript!";
       let regexp = /\w+/y;
       regexp.lastIndex = 5;
-      console.log(regexp.exec(str));        // null - não pula para o próximo índice
+      console.log(regexp.exec(str));        // retorna null - não pula para o próximo índice
       
