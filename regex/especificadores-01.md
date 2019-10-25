@@ -28,7 +28,7 @@
       let ret = str.match(regexp);
       console.log(ret); // retorna ["hah", "aha"]
       
-- **() (agrupadores)** => cria grupos de captrua na regex, ver mais [aqui](https://github.com/leandrobeandrade/javascript-references/blob/master/regex/agrupadores.md)
+- **() (agrupadores)** => porção de uma regex que cria grupos de captura, ver mais [aqui](https://github.com/leandrobeandrade/javascript-references/blob/master/regex/agrupadores.md)
 
       let str = "hahaha";
       let regexp = new RegExp("(ha){2}");
