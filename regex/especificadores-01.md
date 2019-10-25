@@ -5,21 +5,21 @@
       let str = "nove dias restantes para onze de agosto.";
       let regexp = new RegExp(/.n/g);
       let ret = str.match(regexp);  
-      console.log(ret)  // retorna ["an", "on"], não acha no em nove pois está no começo da string
+      console.log(ret);  // retorna ["an", "on"], não acha no em nove pois está no começo da string
       
 - **[ ] (conjunto)** => corresponde a qualquer caractere incluido no conjunto, hífen é utilizado para especificar um intervalo, caracteres especiais como **`.`** e **`*`** não precisam ser escapados e não tem função dentro dos []
 
       let str = "abcdefghij";
       let regexp = new RegExp(/[abcd]/g) // ou new RegExp(/[a-d]/);
       let ret = str.match(regexp);
-      console.log(ret)  // retorna ["a", "b", "c", "d"]
+      console.log(ret);  // retorna ["a", "b", "c", "d"]
 
 - **[^] (conjunto negado)** => corresponde a qualquer caractere não incluído no conjunto
 
       let str = "abcdefgh";
       let regexp = new RegExp(/[^abcd]/g) // ou new RegExp(/[^a-d]/);
       let ret = str.match(regexp);        
-      console.log(ret)  // retorna ["e", "f", "g", "h"]
+      console.log(ret);  // retorna ["e", "f", "g", "h"]
       
 - **{} (quantificadores)** => indicador que determina quantas vezes a sequência imediatamente precedente deve ocorrer no padrão, ver mais [aqui](https://github.com/leandrobeandrade/javascript-references/blob/master/regex/quantificadores.md)
 
@@ -39,14 +39,15 @@
 
       let str = "Regex é 10.";
       let regexp = new RegExp(/\d/g);
-      let ret = str.match(regexp);        // retorna ["1", "0"]
+      let ret = str.match(regexp);
+      console.log(ret); // retorna ["1", "0"]
 
 - **\D (não-digíto)** => o mesmo que [^0-9]
 
       let str = "Regex é 10.";
       let regexp = new RegExp(/[^\d]/g);
       let ret = str.match(regexp);  
-      console.log(ret)  // retorna ["R", "e", "g", "e", "x", " ", "é", " ", "."]
+      console.log(ret);  // retorna ["R", "e", "g", "e", "x", " ", "é", " ", "."]
 
 - **\s (espaços)** => tudo que gere espaços, quebra de linha, tabs etc... O mesmo que [\s\n\t\r\f\v]
 
