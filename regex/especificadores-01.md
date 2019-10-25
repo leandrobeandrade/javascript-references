@@ -33,7 +33,7 @@
       let str = "hahaha";
       let regexp = new RegExp("(ha){2}");
       let ret = str.match(regexp);
-      console.log(ret);	// retorna ["haha"]
+      console.log(ret); // retorna ["haha"]
 
 - **\d (dígito)** => o mesmo que [0-9]
 
