@@ -126,7 +126,7 @@ console.log(array1.every(maiorQue)); // false
 console.log(array2.every(maiorQue)); // true
 
 
-| findIndex() => O método findIndex () retorna o índice do primeiro elemento em uma matriz que passa em um teste pela função fornecida.
+> findIndex() => O método findIndex () retorna o índice do primeiro elemento em uma matriz que passa em um teste pela função fornecida.
 
 
 let idades = [3, 10, 18, 20];
