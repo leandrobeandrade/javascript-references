@@ -1,4 +1,4 @@
-> # ForEach()
+# forEach()
 Executa uma dada função em cada elemento de um array
     
     let carro = [
@@ -17,7 +17,7 @@ Executa uma dada função em cada elemento de um array
     console.log(carros); // retorna [ {marca: 'Ford', preco: 28800}, {marca: 'GM', preco: 34750}, {marca: 'Fiat', preco: 32000}]
     console.log(total); // retorna 95550
 
-> # Map()
+# map()
 Invoca a função callback passada por argumento para cada elemento do array e devolve um novo array como resultado
     
     let carros = [
@@ -32,7 +32,7 @@ Invoca a função callback passada por argumento para cada elemento do array e d
 
     console.log(mapeia) // retorna [2, 5, 5]
 
-> # Filter()
+# filter()
 Cria um novo array com todos os elementos que passarem no teste implementado pela função fornecida
 
     let carros = [
@@ -47,7 +47,7 @@ Cria um novo array com todos os elementos que passarem no teste implementado pel
 
     console.log(filtra); // retona { marca: "Ford", modelo: "Ka"}
 
-> # Reduce()
+# reduce()
 Executa uma função reducer para cada membro do array, resultando num único valor de retorno
 
     let carro = [
@@ -62,7 +62,7 @@ Executa uma função reducer para cada membro do array, resultando num único va
 
     console.log(reduz); // retorna 95550
 
-> # Find()
+# find()
 Retorna o valor do primeiro elemento do array que satisfizer a função de teste provida
 
     let nums = [5, 12, 8, 130, 44];
@@ -82,7 +82,7 @@ Retorna o valor do primeiro elemento do array que satisfizer a função de teste
     console.log(inventario.find(cerejas)); // retorna {"nome": "cerejas", "quantidade": 5}
     console.log(inventario.find(frutas => frutas.nome === 'cerejas')) // retorna {"nome": "cerejas", "quantidade": 5}
 
-> # Some()
+# some()
 Testa se ao menos **`1`** dos elementos no array passam no teste implementado pela função atribuída
 
     function maiorQue(elemento) {
@@ -98,7 +98,7 @@ Testa se ao menos **`1`** dos elementos no array passam no teste implementado pe
     console.log(nums1.some(element => element > 10));  // retorna false
     console.log(nums2.some(element => element > 10));  // retorna true
 
-> # Every()
+# every()
 Testa se **`todos`** os elementos do array passam pelo teste implementado pela função fornecida
 
     function maiorQue(elemento) {
@@ -112,7 +112,7 @@ Testa se **`todos`** os elementos do array passam pelo teste implementado pela f
     console.log(array2.every(maiorQue)); // true
 
 
-> # findIndex()
+# findIndex()
 Retorna o índice do primeiro elemento em uma matriz que passa em um teste pela função fornecida
 
 
