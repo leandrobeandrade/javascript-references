@@ -24,7 +24,7 @@ Corresponde a ocorrência mesmo com quebras de linhas, ou seja, multilinhas
       let ret = str.match(regexp);          // retorna ["E", "e"]
 
 ## y - sticky
-corresponde a ocorrência exatamente no índice indicado, se não houver caracetere retorna null
+Corresponde a ocorrência exatamente no índice indicado, se não houver caracetere retorna null
 
       let str = "Regex JavaScript!";
       let regexp = /\w+/g;
