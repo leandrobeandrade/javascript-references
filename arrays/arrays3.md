@@ -14,7 +14,7 @@ Executa uma dada função em cada elemento de um array
         total += elementos.preco;
     })
     
-    console.log(carros); // retorna [ {marca: 'Ford', preco: 28800}, {marca: 'GM', preco: 34750}, {marca: 'Fiat', preco: 32000}]
+    console.log(carros); // retorna [{marca: 'Ford', preco: 28800}, {marca: 'GM', preco: 34750}, {marca: 'Fiat', preco: 32000}]
     console.log(total); // retorna 95550
 
 # map()
@@ -80,7 +80,7 @@ Retorna o valor do primeiro elemento do array que satisfizer a função de teste
     }
 
     console.log(inventario.find(cerejas)); // retorna {"nome": "cerejas", "quantidade": 5}
-    console.log(inventario.find(frutas => frutas.nome === 'cerejas')) // retorna {"nome": "cerejas", "quantidade": 5}
+    console.log(inventario.find(frutas => frutas.nome == 'cerejas')) // retorna {"nome": "cerejas", "quantidade": 5}
 
 # some()
 Testa se ao menos **`1`** dos elementos no array passam no teste implementado pela função atribuída
