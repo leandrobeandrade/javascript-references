@@ -61,3 +61,79 @@ var usaforEach = carro.forEach(function(elemento) {
 })
 
 console.log(total)
+
+
+
+/* ===============================================
+|			FIND()   	          |
+================================================*/
+
+//retorna o valor do primeiro elemento do array que satisfizer a função de teste provida.
+
+var array1 = [5, 12, 8, 130, 44];
+
+console.log(array1.find((element) => element > 10));  // retorna 12
+
+const inventario = [
+    {nome: 'maças', quantidade: 2},
+    {nome: 'bananas', quantidade: 0},
+    {nome: 'cerejas', quantidade: 5}
+];
+
+function cerejas(frutas) { 
+    return frutas.nome === 'cerejas';
+}
+
+console.log(inventario.find(cerejas)); // retorna { "nome": "cerejas", "quantidade": 5 }
+console.log(inventario.find(frutas => frutas.nome === 'cerejas')) // retorna { "nome": "cerejas", "quantidade": 5
+
+
+
+/* ===============================================
+|			SOME()   	          |
+================================================*/
+
+//testa se ao menos 1 dos elementos no array passam no teste implementado pela função atribuída.
+
+function maiorQue(elemento) {
+  return elemento > 10;
+}
+
+let array1 = [2, 5, 8, 1, 4];
+let array2 = [12, 5, 8, 1, 4];
+
+console.log(array1.some(maiorQue)); // retorna false
+console.log(array2.some(maiorQue)); // retorna true
+
+console.log(array1.some(element => element > 10))/  // retorna false
+console.log(array2.some(element => element > 10))/  // retorna true
+
+
+
+/* ===============================================
+|			EVERY()   	          |
+================================================*/
+// testa se todos os elementos do array passam pelo teste implementado pela função fornecida.
+
+function maiorQue(elemento) {
+  return elemento > 10;
+}
+
+let array1 = [12, 5, 8, 130, 44];
+let array2 = [12, 54, 18, 130, 44];
+
+console.log(array1.every(maiorQue)); // false
+console.log(array2.every(maiorQue)); // true
+
+
+> findIndex() => O método findIndex () retorna o índice do primeiro elemento em uma matriz que passa em um teste pela função fornecida.
+
+
+let idades = [3, 10, 18, 20];
+
+function adulto(idade) {
+  return idade >= 18;
+}
+
+console.log(idades.findIndex(Adulto); // retorna 2
+console.log(idades.findIndex(idade => idade >= 18)); // retorna 2
