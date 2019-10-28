@@ -4,7 +4,7 @@
 Um método RegExp  que execute uma pesquisa por uma correspondência em uma string. Retorna um array de informações.
 
      let str = "Expressões regulares em JavaScript!";
-     let regexp = new RegExp(/j/i);
+     let regexp = /j/i;
      let ret = regexp.exec(str);
      console.log(ret);  // retorna ["J"]
      
