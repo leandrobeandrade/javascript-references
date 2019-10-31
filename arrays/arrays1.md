@@ -1,5 +1,5 @@
-### let times = ['Palmeiras', 'Grêmio', 'Vasco', 'Atlético-MG'];
-
+ let times = ['Palmeiras', 'Grêmio', 'Vasco', 'Atlético-MG'];
+ ---
 **length =>** retorna o tamanho, ou seja, a quantidade de elementos no array
 
     console.log(times.length)   // retorna 4
