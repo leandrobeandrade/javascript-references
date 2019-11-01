@@ -83,7 +83,7 @@ Retorna o valor do primeiro elemento do array que satisfizer a função de teste
     console.log(inventario.find(frutas => frutas.nome == 'cerejas')) // retorna {"nome": "cerejas", "quantidade": 5}
 
 # some()
-Testa se ao menos **`1`** dos elementos no array passam no teste implementado pela função atribuída
+Testa se ao menos **`1`** dos elementos do array passa no teste implementado pela função atribuída
 
     function maiorQue(elemento) {
       return elemento > 10;
@@ -113,7 +113,7 @@ Testa se **`todos`** os elementos do array passam pelo teste implementado pela f
 
 
 # findIndex()
-Retorna o índice do primeiro elemento em uma matriz que passa em um teste pela função fornecida
+Retorna o índice do primeiro elemento em um array que passar no teste pela função fornecida
 
 
     let idades = [3, 10, 18, 20];
@@ -126,13 +126,13 @@ Retorna o índice do primeiro elemento em uma matriz que passa em um teste pela 
     console.log(idades.findIndex(idade => idade >= 18)); // retorna 2
     
 # fill()
-Prenche o array com elementos preeviamente fornecidos
+Preenche o array com elementos preeviamente fornecidos
 
     let array = ["BMW", "GM", "Honda", "Audi"];
     array.fill("Jeep");
     console.log(array); // retorna ["Jeep", "Jeep", "Jeep", "Jeep"]
 
-	let array = ["BMW", "GM", "Honda", "Audi"];
+    let array = ["BMW", "GM", "Honda", "Audi"];
     arr.fill('Jeep', 1); // (1) posição que começa o preenchimento
     console.log(array); // retorna ["BMW", "Jeep", "Jeep", "Jeep"]
     
