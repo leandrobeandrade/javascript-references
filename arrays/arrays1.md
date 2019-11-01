@@ -80,6 +80,6 @@
     times.join('-');
     console.log(times); // retorna "Vasco-Palmeiras-Grêmio-Coritiba-Atlético-MG"
 
-**isArray(x) =>** Testa se o elemento passado como parametro é um array
+**isArray(x) =>** testa se o elemento passado como parametro é um array
 
     console.log(Array.isArray(times));  // retorna true
