@@ -1,10 +1,10 @@
-/* ===============================================
-|		ESCREVENDO FUNÇÕES	          |
-================================================*/
+# Declarando funções
 
-function somar(a,b) {							// Função declarada
-	return a + b							// Esta maneira é carregada antes da interpretação
-}									// podendo ser invocada antes da sua declaração
+> rfrf
+
+    function somar(a,b) {							// Função declarada
+	    return a + b							// Esta maneira é carregada antes da interpretação
+    }									// podendo ser invocada antes da sua declaração
 
 var somar = function(a,b) {						// Função expressa em uma variável
 	return a + b
