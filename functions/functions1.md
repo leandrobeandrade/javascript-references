@@ -1,48 +1,62 @@
 # Declarando funções
 
-> rfrf
+> **Função em forma declarada =>** é carregada antes da interpretação, podendo ser invocada antes da sua declaração
 
-    function somar(a,b) {							// Função declarada
-	    return a + b							// Esta maneira é carregada antes da interpretação
-    }									// podendo ser invocada antes da sua declaração
+    function somar(a,b) {
+	    return a + b;
+    }
 
-var somar = function(a,b) {						// Função expressa em uma variável
-	return a + b
-}
+> **Função expressa em uma variável =>** sua execução é dada pelo uso da variável onde a função foi declarada 
 
-var somar = function somar(a,b) {    					// Função expressa nomeada
-	return a + b
-}
+    let somar = function(a,b) {						
+	    return a + b;
+    }
 
-/* ===============================================
-|		INVOCANDO FUNÇÕES	          |
-================================================*/
+> **Função expressa nomeada =>** sua execução é dada pelo uso da variável onde a função foi declarada 
 
-function somar(a,b) {
-	return a + b
-}
+    var somar = function somar(a,b) {
+	    return a + b;
+    }
 
-somar(1+1)								// Invocada diretamente
+# Invocando funções
 
-/*_____________________*/
+> **Invocada diretamente**
 
-var produto = {id: 1, preco: 55.00};
-var imposto = function(preco) {
-	return preco * 0.1
-};
+    function somar(a,b) {
+	    return a + b;
+    }
 
-var calcula = function(produto, impostos) {				// Invocada como parâmetro
-	return produto.preco + impostos(produto.preco)
-}
+    somar(1+1)								
 
-calcula(produto, imposto);
+> **Invocada como parâmetro**
 
-/*_____________________*/
+    let produto = {id: 1, preco: 55.00};
+    let imposto = function(preco) {
+	    return preco * 0.1;
+    }
 
-var teste = function() {
-	return function() {						// Invocada por outra função
-		return 'Testando Javascript'
-	}
-}
+    let calcula = function(prod, imp) {
+	    return prod.preco + imp(produto.preco);
+    }
 
-teste()()
+    calcula(produto, imposto);
+
+> **Invocada por outra função**
+
+    let teste = function() {
+        return function() {
+            return 'Testando Javascript';
+        }
+    }
+
+    teste()()
+----
+    function ret() {
+        return 'Testando Javascript';
+    }
+    
+    let teste = function() {
+        return ret()
+    }
+
+    teste()
