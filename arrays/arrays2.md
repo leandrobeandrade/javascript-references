@@ -124,3 +124,18 @@ Retorna o índice do primeiro elemento em uma matriz que passa em um teste pela 
 
     console.log(idades.findIndex(Adulto); // retorna 2
     console.log(idades.findIndex(idade => idade >= 18)); // retorna 2
+    
+# fill()
+Prenche o array com elementos preeviamente fornecidos
+
+    let array = ["BMW", "GM", "Honda", "Audi"];
+    array.fill("Jeep");
+    console.log(array); // retorna ["Jeep", "Jeep", "Jeep", "Jeep"]
+
+	let array = ["BMW", "GM", "Honda", "Audi"];
+    arr.fill('Jeep', 1); // (1) posição que começa o preenchimento
+    console.log(array); // retorna ["BMW", "Jeep", "Jeep", "Jeep"]
+    
+    let array = ["BMW", "GM", "Honda", "Audi"];
+    arr.fill('Jeep', 1, 3); // (1) posição que começa o preenchimento, (3) posição onde deve parar o preenchimento
+    console.log(array); // retorna ["BMW", "Jeep", "Jeep", "Audi"]
