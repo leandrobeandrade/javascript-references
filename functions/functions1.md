@@ -50,7 +50,9 @@
     }
 
     teste()()
+    
 ----
+
     function ret() {
         return 'Testando Javascript';
     }
