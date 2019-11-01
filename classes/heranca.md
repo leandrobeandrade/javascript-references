@@ -28,7 +28,7 @@ A palavra-chave **extends** é usada em uma declaração de classe, ou em uma ex
 
 ## Palavra chave super()
 
-Se existir um contrutor nas subclasses, é necessário primeiro chamar super() antes de usar a keyword **this**.
+Se existir um construtor nas subclasses, é necessário primeiro chamar super() antes de usar a keyword **this**.
 
     class Automovel { 
       constructor(marca, modelo) {
