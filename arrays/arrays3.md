@@ -8,7 +8,7 @@ Permite distribuir o conteúdo de qualquer objeto iterável em múltiplos elemen
       const males = ['Lestat', 'Louis', 'Marius'];
       const females = ['Pandora', 'Akasha'];
       const characters = [...males, ...females];
-      console.log(characters);  // retorna ['Lestat', 'Louis', 'Marius', 'Pandora', 'Akasha']
+      console.log(characters); // retorna ['Lestat', 'Louis', 'Marius', 'Pandora', 'Akasha']
 
 
 # Rest params (...)
@@ -34,24 +34,24 @@ Permite representar um número indefinido de elementos como um array
 # flat()
 Deixa o Array plano recursivamente em uma profundidade especificada como argumento, ou seja, é uma operação que concatena os elementos de um array
 
-      console.log([1, 2, [3, 4]].flat());   // [ 1, 2, 3, 4] 
-      console.log([1, 2, [3, 4, [5, 6]]].flat());   // [ 1, 2, 3, 4, [5, 6]]
+      console.log([1, 2, [3, 4]].flat());  // retorna [ 1, 2, 3, 4] 
+      console.log([1, 2, [3, 4, [5, 6]]].flat());  // retorna [ 1, 2, 3, 4, [5, 6]]
 
       /* Passando o número 2 como argumento a função fica plana em 2 níveis */
 
-      console.log([1, 2, [3, 4, [5, 6]]].flat(2));   // [ 1, 2, 3, 4, 5, 6 ]
+      console.log([1, 2, [3, 4, [5, 6]]].flat(2));  // retorna [ 1, 2, 3, 4, 5, 6 ]
 
       const array1 = [1, 2, 3];
       const array2 = [4, 5, 6];
       
       // SEM flat()
-      console.log(array1.push(...array2));    // [1, 2, 3, 4, 5, 6]
+      console.log(array1.push(...array2));  // retorna [1, 2, 3, 4, 5, 6]
 
       const array3 = [...array1, ...array2];   
-      console.log(array3);     // [1, 2, 3, 4, 5, 6]
+      console.log(array3);  // retorna [1, 2, 3, 4, 5, 6]
 
       // COM flat():
-      console.log([array1, array2].flat());     // [1, 2, 3, 4, 5, 6]
+      console.log([array1, array2].flat());  // retorna [1, 2, 3, 4, 5, 6]
 
 # flatMap()
 Mapeia cada elemento usando uma função de mapeamento e, em seguida, nivela o resultado em uma nova array. 
@@ -68,5 +68,5 @@ Mapeia cada elemento usando uma função de mapeamento e, em seguida, nivela o r
       // 0: ["Maça", "Banana"];
       // 1: ["Banana", "Abacaxi"]
 
-      // Com o flatMap já temos a concatenação dos elementos do array e conseguimos obter todos os elementos listados dentro de objetos
+      // Com o flatMap já temos a concatenação dos elementos e conseguimos obter todos os elementos listados dentro de objetos
       console.log(cestas.flatMap(x => x.itens));    // retorna ["Maça", "Banana", "Banana", "Abacaxi"]
