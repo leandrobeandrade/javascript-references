@@ -1,4 +1,4 @@
-# SPREAD OPERATOR (...)
+# Spread operator (...)
 Permite distribuir o conteúdo de qualquer objeto iterável em múltiplos elementos
 
       const names = ['Lestat', 'Marius', 'Akasha'];
@@ -11,7 +11,7 @@ Permite distribuir o conteúdo de qualquer objeto iterável em múltiplos elemen
       console.log(characters);  // retorna ['Lestat', 'Louis', 'Marius', 'Pandora', 'Akasha']
 
 
-# REST PARAMS (...)
+# Rest params (...)
 Permite representar um número indefinido de elementos como um array
 
       const author = ['Anne Rice', 1941, 'USA', 'Interview With The Vampire', 'The Vampire Lestat', 'The Queen of the Damned'];
