@@ -17,7 +17,7 @@ Formata um número utilizando notação de ponto fixo
     console.log(numero.toFixed(3));  // retorna 10.300
 
 # toPrecision()
-Retorna uma string que representa o valor do objeto Number com uma precisão especí.
+Retorna uma string que representa o valor do objeto Number com uma precisão específica
 
     let numero = 9.656;
 
