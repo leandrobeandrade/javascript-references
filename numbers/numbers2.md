@@ -1,5 +1,13 @@
+# toString()
+Retorna uma string representando o objeto Number especificado
+
+    let numero = 10;
+
+    console.log(numero.toString());    // retorna '10'
+    console.log((17).toString());      // retorna '17'
+
 # toExponential()
- Retorna uma string representando o objeto Number por meio de notação exponencial
+Retorna uma string representando o objeto Number por meio de notação exponencial
 
     let numero = 1000; 
    
