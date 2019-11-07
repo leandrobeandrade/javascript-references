@@ -1,0 +1,75 @@
+# length
+Retorna o tamanho da string
+
+    let texto = 'É Javascript, e mais javascript!'; 
+    console.log(texto.length);  // retorna 32
+
+# replace()
+Substitui a primeira ocorrência encontrada por outra especificada ou várias com regex sendo case sensitive
+
+    let texto = 'É Javascript, e mais javascript!';
+    console.log(texto.replace('Javascript', 'Ecmascript'));     // retorna É Ecmascript, e mais Javascript!
+
+    console.log(texto.replace('javascript', 'Ecmascript'));     // retorna É Javascript, e mais Ecmascript!
+
+    console.log(texto.replace(\javascript\gi, 'Ecmascript'));   // retorna É Ecmascript, e mais Ecmascript!
+    
+# indexOf()
+Retorna a posição da primeira ocorrência especificada e aceita um segundo parâmetro por onde deve começar a busca
+
+    let texto = 'É Javascript, e mais Javascript!';
+    console.log(texto.indexOf('Jasvascript'));      // retorna 2
+
+    console.log(texto.indexOf('Javascript', 3));    // retorna 21 
+
+# lastIndexOf()
+Retorna a posição da última ocorrência especificada e aceita um segundo parâmetro por onde deve começar a busca
+    
+    let texto = 'É Javascript, e mais Javascript!';
+    console.log(texto.lastIndexOf('Javascript'));       // retorna 21
+
+    console.log(texto.lastIndexOf('Javascript', 9));    // retorna 2
+
+# search()
+Retorna a posição da primeira ocorrência especificada encontrada sendo case sensitive
+
+    let texto = 'É Javascript, e mais javascript!';
+    console.log(texto.search('Javascript'));    // retorna 2
+
+    console.log(texto.search(/javascript/i));   // retorna 2
+
+# charAt()
+Retorna o caractere especificado a partir de uma string
+
+    let texto = 'É Javascript, e mais javascript!';
+    console.log(texto.charat(0));                   // retorna É
+
+    console.log(texto.charAt(texto.length -1));     // retorna !
+
+    console.log(texto.charAt(texto.length -2));     // retorna t
+
+# toUpperCase()
+Converte a string para maiúscula
+
+    let texto = 'É Javascript, e mais javascript!';
+    console.log(texto.toUpperCase());   // retorna É JAVASCRIPT, E MAIS JAVASCRIPT!
+
+# toLowerCase()
+Converte a string para minúscula
+
+    let texto = 'É Javascript, e mais javascript!';
+    console.log(texto.toLowerCase());   // retorna é javascript, e mais javascript!
+
+# toString()
+Converte um número para string usando diferentes bases
+
+    let numero = 10;
+    console.log(numero.toString());     // retorna '10'
+
+    console.log(numero.toString(2));    // retorna '1010'
+
+    console.log(numero.toString(3));    // retorna '101'
+
+    console.log(numero.toString(5));    // retorna '20'
+
+
