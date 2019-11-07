@@ -67,7 +67,21 @@ Retorna o resultado da junção de várias strings em uma só
     let t2 = 'é muito ';
     let t3 = 'legal mesmo!';
 
-    console.log(t1.concat(t2, t3));     // retorna Javascript é muito legal mesmo!
+    console.log(t1.concat(t2, t3));   // retorna Javascript é muito legal mesmo!
+    
+# trim()
+Retorna a string sem espaços
+
+    let texto = '  É Javascript, e mais javascript!  ';
+    console.log(texto.trim());   // retorna  'É Javascript, e mais javascript!'
+    
+    console.log(texto.trimstart());   // retorna '  É Javascript, e mais javascript!'
+    
+    console.log(texto.trimEnd());   // retorna 'É Javascript, e mais javascript!  '
+    
+    console.log(texto.trimLeft());   // retorna 'É Javascript, e mais javascript!  '
+    
+    console.log(texto.trimRight());   // retorna '  É Javascript, e mais javascript!'
 
 # repeat()
 Repete a string determinada vezes
