@@ -8,6 +8,10 @@
 
     console.log(times[0]+' - '+times[3]);   // retorna Palmeiras - Atlético-MG
     
+**indexOf() =>** retorna o índice do primeiro elemento encontrado no array
+
+    console.log(times.indexOf('Vasco'));  // retorna 2
+    
 **push() =>** adiciona um ou mais elementos no final do array
 
     time.push('Coritiba');
