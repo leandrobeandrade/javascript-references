@@ -95,10 +95,12 @@ Retorna o valor do primeiro elemento do array que satisfizer a função de teste
         {nome: 'peras', quantidade: 5}
     ];
 
-    function cerejas(frutas) return frutas.nome === 'cerejas';
+    function _frutas(frutas) {
+    	return frutas.nome === 'peras';
+    }	 
 
-    console.log(inventario.find(cerejas)); // retorna {"nome": "cerejas", "quantidade": 5}
-    console.log(inventario.find(frutas => frutas.nome == 'cerejas')) // retorna {"nome": "peras", "quantidade": 5}
+    console.log(inventario.find(_frutas)); // retorna {"nome": "peras", "quantidade": 5}
+    console.log(inventario.find(frutas => frutas.nome == 'peras')) // retorna {"nome": "peras", "quantidade": 5}
 
 # some()
 Testa se ao menos **`1`** dos elementos do array passa no teste implementado pela função atribuída
