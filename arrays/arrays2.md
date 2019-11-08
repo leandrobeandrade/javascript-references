@@ -2,20 +2,44 @@
 Executa uma dada função em cada elemento de um array
     
     let carro = [
-        {marca: 'Ford', preco: 28800},
-        {marca: 'GM', preco: 34750},
-        {marca: 'Fiat', preco: 32000}
+        {marca: 'Ford', preco: 28000},
+        {marca: 'GM', preco: 32000},
     ];
     let carros = [];
     let total = 0;
     
-    carro.forEach(function(elementos) {
-        carros.push(elementos)
+    carro.forEach(elemento => {
+        carros.push(elemento);
         total += elementos.preco;
     })
     
-    console.log(carros); // retorna [{marca: 'Ford', preco: 28800}, {marca: 'GM', preco: 34750}, {marca: 'Fiat', preco: 32000}]
-    console.log(total); // retorna 95550
+    console.log(carros); // retorna [{marca: 'Ford', preco: 28800}, {marca: 'GM', preco: 34750}]
+    console.log(total); // retorna 60000
+    
+# for...of
+Executa uma dada função agindo sobre elementos iteraveis como arrays, string, etc..
+    
+    let usuarios = [
+        {usuario: "Fulano", filhos: ["João", "Maria", "Carlos"]},
+        {usuario: "ciclano", filhos: ["Marcos", "Alberto", "Pedro"]}
+    ];
+
+    for(let usu of usuarios) console.log(`O ${usu.usuario} tem os filhos: ${usu.filhos.join(", ")}`);
+    
+    // retorna O Fulano tem os filhos João, Maria, Carlos
+    // retrona O Ciclano tem os filhos Marcos, Alberto, Pedro
+    
+    let texto = "teste";
+
+    for (let valor of texto) console.log(valor);  // retorna t e s t e
+    
+# for...in
+Itera sobre todas as propriedades enumeráveis de um objeto
+
+    let obj = {a: 1, b: 2, c: 3};
+    
+    for(let prop in obj) console.log(`${prop} = ${obj[prop]}`); // retorna a = 1 b = 2 c = 3 
+	
 
 # map()
 Invoca a função callback passada por argumento para cada elemento do array e devolve um novo array como resultado
@@ -26,9 +50,7 @@ Invoca a função callback passada por argumento para cada elemento do array e d
 	    {marca: 'Fiat', modelo: 'Palio'}
     ];
     
-    let mapeia = carros.map(function(elemento) {
-        return elemento.modelo.length;
-    })
+    let mapeia = carros.map(elemento => elemento.modelo.length);
 
     console.log(mapeia) // retorna [2, 5, 5]
 
@@ -41,9 +63,7 @@ Cria um novo array com todos os elementos que passarem no teste implementado pel
 	    {marca: 'Fiat', modelo: 'Palio'}
     ];
 
-    let filtra = carros.filter(function(elemento) {
-	    return elemento.marca === 'Ford';
-    })
+    let filtra = carros.filter(elemento => elemento.marca === 'Ford');
 
     console.log(filtra); // retona { marca: "Ford", modelo: "Ka"}
 
@@ -72,15 +92,13 @@ Retorna o valor do primeiro elemento do array que satisfizer a função de teste
     const inventario = [
         {nome: 'maças', quantidade: 2},
         {nome: 'bananas', quantidade: 0},
-        {nome: 'cerejas', quantidade: 5}
+        {nome: 'peras', quantidade: 5}
     ];
 
-    function cerejas(frutas) { 
-        return frutas.nome === 'cerejas';
-    }
+    function cerejas(frutas) return frutas.nome === 'cerejas';
 
     console.log(inventario.find(cerejas)); // retorna {"nome": "cerejas", "quantidade": 5}
-    console.log(inventario.find(frutas => frutas.nome == 'cerejas')) // retorna {"nome": "cerejas", "quantidade": 5}
+    console.log(inventario.find(frutas => frutas.nome == 'cerejas')) // retorna {"nome": "peras", "quantidade": 5}
 
 # some()
 Testa se ao menos **`1`** dos elementos do array passa no teste implementado pela função atribuída
