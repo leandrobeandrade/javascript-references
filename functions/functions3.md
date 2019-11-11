@@ -18,6 +18,14 @@
 
     let pessoa = new Pessoa('Fulano', 50)
     console.log(pessoa);  // retorna {"nome": "Fulano", "idade": 50}
+    
+    pessoa.nacionalidade = 'brasileiro';    // seta uma nova propriedade com um valor
+    console.log(pessoa.nacionalidade);  // retorna brasileiro
+    
+    pessoa.usuario = function() {
+        return `${this.nome} - ${this.idade}`;
+    }
+    console.log(pessoa.usuario());  // retorna Fulano - 50
 
 ---
 
