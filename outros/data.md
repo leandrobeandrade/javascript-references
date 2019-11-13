@@ -15,7 +15,7 @@ o prefixo **data-** (note que o hífen é convertido para camelCase)
 > Cada propriedade é uma string e pode ser lida e escrita
 
     article.dataset.colunas = 5;
-    console.log(article.colunas);
+    console.log(article.colunas);   retorna 5
 
 ## data - Css
 Atributos data são atributos em HTML puro, e você pode inclusive acessá-los via CSS
