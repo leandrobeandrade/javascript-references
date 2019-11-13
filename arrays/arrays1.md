@@ -83,6 +83,10 @@
 
     times.join('-');
     console.log(times); // retorna "Vasco-Palmeiras-Grêmio-Coritiba-Atlético-MG"
+    
+**includes() =>** retorna true ou false fazendo uma bsuca no array
+
+    console.log(times.include('Palmeiras')); // retrona true
 
 **isArray(x) =>** testa se o elemento passado como parametro é um array
 
