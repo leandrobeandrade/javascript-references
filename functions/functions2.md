@@ -47,7 +47,7 @@
     let carro = {
         marca: 'Ford',
         modelo: 'Mustang',
-        getModel: getModel
+        getModelo: getModelo
     }
 
-    getModel.apply(carro, [2018]);   // retorna Mustang 2018
+    getModelo.apply(carro, [2018]);   // retorna Mustang 2018
