@@ -32,15 +32,7 @@ Executa uma dada função agindo sobre elementos iteraveis como arrays, string, 
     let texto = "teste";
 
     for (let valor of texto) console.log(valor);  // retorna t e s t e
-    
-# for...in
-Itera sobre todas as propriedades enumeráveis de um objeto
-
-    let obj = {a: 1, b: 2, c: 3};
-    
-    for(let prop in obj) console.log(`${prop} = ${obj[prop]}`); // retorna a = 1 b = 2 c = 3 
 	
-
 # map()
 Invoca a função callback passada por argumento para cada elemento do array e devolve um novo array como resultado
     
