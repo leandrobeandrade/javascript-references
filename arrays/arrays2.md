@@ -96,7 +96,7 @@ Retorna o valor do primeiro elemento do array que satisfizer a função de teste
     ];
 
     function _frutas(frutas) {
-    	return frutas.nome === 'peras';
+        return frutas.nome === 'peras';
     }	 
 
     console.log(inventario.find(_frutas)); // retorna {"nome": "peras", "quantidade": 5}
