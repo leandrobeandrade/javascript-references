@@ -1,5 +1,5 @@
 # Map()
-   Mapa é uma coleção de itens de dados com chave, assim como um Objeto. Mas a principal diferença é que o Map permite chaves de qualquer tipo
+É uma coleção de itens de dados com chave, assim como um Objeto. Mas a principal diferença é que o Map permite chaves de qualquer tipo
 
    - **new map() =>** cria o mapa
    - **map.set(key, value) =>** armazena o valor pela chave
