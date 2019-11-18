@@ -71,7 +71,7 @@ Determina se uma string começa com os mesmo caracteres de outra string, retorna
     console.log(texto.startsWith('SER'));           // retorna false
     
 # endsWith()
-determina se uma string termina com os caracteres da string especificada, retorna true ou false
+Determina se uma string termina com os caracteres da string especificada, retorna true ou false
 
     let texto = 'Ser, ou não ser, eis a questão.';
 
