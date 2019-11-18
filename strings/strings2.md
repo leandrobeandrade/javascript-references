@@ -87,4 +87,28 @@ Retorna a string sem espaços
 Repete a string determinada vezes
 
     let texto = 'Javascript ';
-    console.log(texto.repeat(2));   // retorna Javascript Javascript 
+    console.log(texto.repeat(2));   // retorna Javascript Javascript
+    
+# toUpperCase()
+Converte a string para maiúscula
+
+    let texto = 'É Javascript, e mais javascript!';
+    console.log(texto.toUpperCase());   // retorna É JAVASCRIPT, E MAIS JAVASCRIPT!
+
+# toLowerCase()
+Converte a string para minúscula
+
+    let texto = 'É Javascript, e mais javascript!';
+    console.log(texto.toLowerCase());   // retorna é javascript, e mais javascript!
+
+# toString()
+Converte um número para string usando diferentes bases
+
+    let numero = 10;
+    console.log(numero.toString());     // retorna '10'
+
+    console.log(numero.toString(2));    // retorna '1010'
+
+    console.log(numero.toString(3));    // retorna '101'
+
+    console.log(numero.toString(5));    // retorna '20'
