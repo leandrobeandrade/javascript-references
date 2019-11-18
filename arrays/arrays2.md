@@ -32,7 +32,15 @@ Executa uma dada função agindo sobre elementos iteraveis como arrays, string, 
     let texto = "teste";
 
     for (let valor of texto) console.log(valor);  // retorna t e s t e
+    
+# for...in
+Interage sobre as chaves de um array, na ordem original de inserção
 	
+    let arr = ["Apple", "Orange", "Pear"];
+    let nums = [5, 12, 8, 130, 44];
+
+    for (let key in nums) console.log(nums[key]);   // retorna 5 12 8 130 44
+    
 # map()
 Invoca a função callback passada por argumento para cada elemento do array e devolve um novo array como resultado
     
