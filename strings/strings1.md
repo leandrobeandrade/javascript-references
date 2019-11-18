@@ -1,5 +1,5 @@
 # length
-Retorna o tamanho da string
+Retorna o tamanho da string hhhyhhth
 
     let texto = 'É Javascript, e mais javascript!'; 
     console.log(texto.length);  // retorna 32
