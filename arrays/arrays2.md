@@ -159,3 +159,11 @@ Preenche o array com elementos preeviamente fornecidos
     let array = ["BMW", "GM", "Honda", "Audi"];
     arr.fill('Jeep', 1, 3); // (1) posição que começa o preenchimento, (3) posição onde deve parar o preenchimento
     console.log(array); // retorna ["BMW", "Jeep", "Jeep", "Audi"]
+
+# Array.from()
+Cria uma nova instância de um Array quando for passado um array-like ou um iterable object como argumento
+
+    let texto = "Hello";
+    
+    console.log(Array.from(texto)); // retorna ["H", "e", "l", "l", "o"]
+    
