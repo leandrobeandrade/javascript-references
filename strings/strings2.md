@@ -1,5 +1,5 @@
 # slice()
-Retorna a parte extraída da string em uma nova string
+Retorna a parte extraída da string em uma nova string ththt
 
     let texto = 'É Javascript, e mais javascript!';
     console.log(texto.slice(0));        // retorna É Javascript, e mais javascript!
