@@ -48,28 +48,35 @@ Retorna o caractere especificado a partir de uma string
 
     console.log(texto.charAt(texto.length -2));     // retorna t
 
-# toUpperCase()
-Converte a string para maiúscula
+# includes()
+Determina se uma string pode ser encontrada dentro de outra string, retorna true ou false, aceita segundo parâmetro para posição
 
-    let texto = 'É Javascript, e mais javascript!';
-    console.log(texto.toUpperCase());   // retorna É JAVASCRIPT, E MAIS JAVASCRIPT!
+    let texto = 'Ser, ou não ser, eis a questão.';
 
-# toLowerCase()
-Converte a string para minúscula
+    console.log(texto.includes('Ser'));         // retorna true
+    console.log(texto.includes('questão'));     // retorna true
+    console.log(texto.includes('não existe'));  // retorna false
+    console.log(texto.includes('Ser', 1));      // retorna false
+    console.log(texto.includes('SER'));         // retorna false
+    
+# startsWith()
+Determina se uma string começa com os mesmo caracteres de outra string, retorna true ou false, aceita segundo parâmero para posição
 
-    let texto = 'É Javascript, e mais javascript!';
-    console.log(texto.toLowerCase());   // retorna é javascript, e mais javascript!
+    let texto = 'Ser, ou não ser, eis a questão.';
 
-# toString()
-Converte um número para string usando diferentes bases
+    console.log(texto.startsWith('Ser'));           // retorna true
+    console.log(texto.startsWith('questão.', 23));  // retorna true
+    console.log(texto.startsWith('não existe'));    // retorna false
+    console.log(texto.startsWith('Ser', 0));        // retorna true
+    console.log(texto.startsWith('SER'));           // retorna false
+    
+# endsWith()
+determina se uma string termina com os caracteres da string especificada, retorna true ou false
 
-    let numero = 10;
-    console.log(numero.toString());     // retorna '10'
+    let texto = 'Ser, ou não ser, eis a questão.';
 
-    console.log(numero.toString(2));    // retorna '1010'
-
-    console.log(numero.toString(3));    // retorna '101'
-
-    console.log(numero.toString(5));    // retorna '20'
-
-
+    console.log(texto.endsWith('Ser'));         // retorna false
+    console.log(texto.endsWith('questão.'));    // retorna true
+   	console.log(texto.endsWith('não existe'));  // retorna false
+    console.log(texto.endsWith('Ser', 0));      // retorna false
+    console.log(texto.endsWith('não ser', 15)); // retorna true
