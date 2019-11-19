@@ -167,3 +167,8 @@ Cria uma nova instância de um Array quando for passado um array-like ou um iter
     
     console.log(Array.from(texto)); // retorna ["H", "e", "l", "l", "o"]
     
+# Array.of()
+Cria um nova instância do Array com um número variável de argumentos, independentemente do número ou do tipo dos argumentos
+
+    const array = Array.of(1, 10, "teste", {nome: "Fulano"}, [2, 3, 4]);
+    console.log(array); // retorna [1, 10, "teste", {nome: "Fulano"}, [2, 3, 4]]
