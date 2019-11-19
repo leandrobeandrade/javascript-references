@@ -20,7 +20,7 @@ Retorna um array cujo os elementos são strings correspondentes para a proprieda
 
 	console.log(Object.keys(user)); // retorna ["nome", "idade"]
 	
-	// ordena pelas chaves
+	// ordena pela chave
 	let nums = { 100: 'a', 2: 'b', 7: 'c' };
 	console.log(Object.keys(nums)); // retorna ["2", "7", "100"]
 
@@ -34,7 +34,7 @@ Retorna um array cujos elementos são os valores das propriedades enumeradas enc
 
 	console.log(Object.values(user)); // retorna ["Fulano", 30]
 	
-	// ordena pelo valor
+	// ordena pela chave
 	let nums = { 100: 'a', 2: 'b', 7: 'c' };
 	console.log(Object.keys(nums)); // retorna ["b", "c", "a"]
 
@@ -45,12 +45,10 @@ Retorna um array cujos elementos são também arrays correspondentes aos pares d
   	    nome: "Fulano",
   	    idade: 30
 	};
-
-	console.log(Object.values(user)); // retorna ["nome", "Fulano"] ["idade", 30]
-
-	// ordena pelas chaves
-	let nums = { 100: 'a', 2: 'b', 7: 'c' };
-	console.log(Object.keys(nums)); // retorna [ ['2', 'b'], ['7', 'c'], ['100', 'a'] ]
+	
+	console.log(Object.entries(user)); // retorna ["nome", "Fulano"] ["idade", 30]
+	
+	console.log(Object.fromEntries(Object.entries(user)));	// retorna {nome: "Fulano", idade: 30}
 
 	let idadeDobrada = Object.fromEntries(Object.entries(user).map(([key, value]) => [key, value * 2]));
 
