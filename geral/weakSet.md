@@ -1,5 +1,5 @@
 # WeakSet()
-É uma coleçãos de objetos que pode ocorrer uma vez e permite que você armazene objetos mantidos "fracamente" na coleção
+É uma coleção de objetos que pode ocorrer uma vez e permite que você armazene objetos mantidos "fracamente" na coleção
 
 - **weakSet.add(value) =>** anexa um novo objeto com o valor fornecido ao objeto WeakSet
 - **weakSet.delete(value) =>** remove o elemento associado ao valor e retorna false posteriormente
