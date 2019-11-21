@@ -1,72 +1,94 @@
-## attr.name
-Retorna o nome de um atributo:
+## atributes
+Retorna um objeto com as informações dos atributos em um elemento Html especificado
 
-    <button onclick="myFunction()">Testar</button>
+    <button class="btn" id="bt" onclick="myFunction()">Testar</button>
     
-    var btn = document.getElementsByTagName("button")[0];
-    var x = btn.attributes[0].name; 
-    console.log(x); // onclick
+    let btn = document.getElementById("bt");
+    let x = btn.attributes; 
+    console.log(x); // retorna {0: class, 1: id, 2: onclick, class: class, id: id, onclick: onclick, length: 3}
 
-## attr.value 
-Define ou retorna o valor do atributo:
+## attributes.name
+Retorna o nome de um atributo na posição especificada
 
-    <button onclick="myFunction()">Testar</button>
+    <button class="btn" id="bt" onclick="myFunction()">Testar</button>
     
-    var btn = document.getElementsByTagName("button")[0];
-    var x = btn.attributes[0].value;
-    console.log(x); // myFunction()
+    let btn = document.getElementById("bt");
+    let x = btn.attributes[0].name; 
+    console.log(x); // retorna class
 
-## attr.specified 
-Retorna *true* se o atributo for especificado, caso contrário, retorna *false*:
+## attributes.value 
+Define ou retorna o valor do atributo na posição especificada
 
-    <button onclick="myFunction()">Testar</button>
+    <button class="btn" id="bt" onclick="myFunction()">Testar</button>
     
-    var btn = document.getElementsByTagName("button")[0];
-    var x = btn.getAttributeNode("onclick").specified;
-    console.log(x); // true
+    let btn = document.getElementById("bt");
+    let x = btn.attributes[0].value;
+    console.log(x); // retorna btn
+
+## attributes.specified 
+Retorna *true* se o atributo for especificado, caso contrário, retorna *false*
+
+    <button class="btn" id="bt" onclick="myFunction()">Testar</button>
     
----
+    let btn = document.getElementById("bt");
+    let x = btn.getAttributeNode("onclick").specified;
+    console.log(x); // retorna true
     
-## nodemap.getNamedItem()
-Retorna um nó de atributo especificado de um NamedNodeMap:
+## attributes.getNamedItem()
+Retorna um nó de atributo especificado de um NamedNodeMap
     
-    <button onclick="myFunction()">Testar</button>
+    <button class="btn" id="bt" onclick="myFunction()">Testar</button>
     
-    var btn = document.getElementsByTagName("button")[0];
-    btn.attributes.getNamedItem("onclick").value; 
-    console.log(x); // myFunction()
+    let btn = document.getElementById("bt");
+    let x = btn.attributes.getNamedItem("onclick"); 
+    console.log(x); // retorna onclick="myFunction()"
 
-## nodemap.item()
-Retorna o nó do atributo em um índice especificado em um NamedNodeMap:
+## attributes.item()
+Retorna o nó do atributo em um índice especificado em um NamedNodeMap
     
-    <button onclick="myFunction()" id="teste">Testar</button>
+    <button class="btn" id="bt" onclick="myFunction()">Testar</button>
+    
+    let btn = document.getElementById("bt");
+    let x = btn.attributes.item(0);  
+    console.log(x); // retorna class="btn"
 
-    var btn = document.getElementsByTagName("button")[0];
-    var x = btn.attributes.item(0).name;  
-    console.log(x); // onclick
+## attributes.length 
+Retorna o número de nós de atributos em um NamedNodeMap
 
-## nodemap.length 
-Retorna o número de nós de atributos em um NamedNodeMap:
+    <button class="btn" id="bt" onclick="myFunction()">Testar</button>
+    
+    let btn = document.getElementById("bt");
+    let x = btn.attributes.length;
+    console.log(x); // retorna 3
+    
+## attributes.createAttribute()
+Cria um atributo em um elemento Html especificado
 
-    <button onclick="myFunction()" id="teste">Testar</button>
+    <button class="btn" id="bt" onclick="myFunction()">Testar</button>
+    
+    let btn = document.getElementById("bt");
+    let x = btn.attributes.createAttribute('style');
+    x.value = "margin: 20px"
+    console.log(x); // retorna 3
 
-    var btn = document.getElementsByTagName("button")[0].attributes.length;
-    console.log(btn); // 2
+## attributes.removeNamedItem()
+Remove um nó de um atributo especificado
 
-## nodemap.removeNamedItem()
-Remove um nó de atributo especificado:
+    <button class="btn" id="bt" onclick="myFunction()">Testar</button>
+    
+    let btn = document.getElementById("bt");
+    let x =  btn.attributes.removeNamedItem("class");
+    console.log(x); // retorna class="btn"
+    console.log(btn); // retorna <button id="bt" onclick="myFunction()">Testar</button>
+   
 
-    <input type="button" value="OK">
-
-    var btn = document.getElementsByTagName("input")[0]; 
-    btn.attributes.removeNamedItem("type");
-
-## nodemap.setNamedItem()
+## attributes.setNamedItem()
 Define o nó do atributo especificado (por nome):
 
-    <h1>Olá Mundo!</h1>
+    <button class="btn" id="bt" onclick="myFunction()">Testar</button>
     
-    var h = document.getElementsByTagName("H1")[0];
-    var tipo = document.createAttribute("class");
-    tipo.value = "democlass";
-    h.attributes.setNamedItem(tipo);
+    let btn = document.getElementById("bt");
+    let attr = document.createAttribute('style');
+    attr.value = 'margin: 20px';
+    btn.attributes.setNamedItem(attr);
+    console.log(btn); // retorna <button class="btn" id="bt" onclick="myFunction()" style="margin: 20px">Testar</button>
