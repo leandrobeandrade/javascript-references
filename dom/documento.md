@@ -52,7 +52,7 @@ Importa um nó de outro documento
     var x = document.importNode(h, true);                           // importa o h1 no documento atual
     document.body.appendChild(x);                                   // adiciona o h1 no documento atual
 
-## links
+## document.links
 Retorna uma coleção de todos os elementos **`<a>`** e **`<area>`** no documento que possuem um atributo href:
 
     <p>
@@ -66,31 +66,31 @@ Retorna uma coleção de todos os elementos **`<a>`** e **`<area>`** no document
     let c = document.links.item(0).href;                        // pega a referência do link 1 - https://www.google.com
     let d = document.links.namedItem("link").href;              // pega a referência com id link - https://www.yahoo.com
 
-## readyState
+## document.readyState
 Retorna o status (carregamento) do documento podendo ser *loading*, *complete* e *interactive* para imagens, vídeos etc.. ainda não carregados
 
     let x = document.readyState; 
     console.log(x); // retorna complete
 
-## referrer
+## document.referrer
 Retorna a URL do documento que carregou o documento atual
 
     var x = document.referrer;
     console.log(x); // retorna github.com
 
-## title
+## document.title
 Retorna ou define a tag **`<title>`** da página
     
     var x = document.title;
     console.log(x); // retorna Github
     
-## URL
+## document.URL
 Retorna a url do documento
 
     var x = document.URL;
     console.log(x); // retorna github.com/user
     
-## write()
+## document.write()
 Sobrescreve todo Html do documento
   
     document.write("Olá mundo!");  // writeln pula de linha 
