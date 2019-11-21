@@ -1,4 +1,4 @@
-## atributes
+## attributes
 Retorna um objeto com as informações dos atributos em um elemento Html especificado
 
     <button class="btn" id="bt" onclick="myFunction()">Testar</button>
