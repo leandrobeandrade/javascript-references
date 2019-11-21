@@ -30,7 +30,7 @@ Cria um nó de elemento
     btn.textContent = "Teste";
     document.body.appendChild(btn);
 
-## documentcreateTextNode()
+## document.createTextNode()
 Cria um nó de texto de elemento
 
     let texto = document.createTextNode("Olá Mundo!");
