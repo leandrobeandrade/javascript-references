@@ -61,10 +61,10 @@ Retorna uma coleção de todos os elementos **`<a>`** e **`<area>`** no document
       <a href="https://github.com">Javascript</a>
     </p>
     
-    let a = document.links.length;                              // 3
-    let b = document.links[0].href;                             // pega a referência do link 1 - https://www.google.com
-    let c = document.links.item(0).href;                        // pega a referência do link 1 - https://www.google.com
-    let d = document.links.namedItem("link").href;              // pega a referência com id link - https://www.yahoo.com
+    let a = document.links.length;                         // 3
+    let b = document.links[0].href;                        // pega a referência do link 1 - https://www.google.com
+    let c = document.links.item(0).href;                   // pega a referência do link 1 - https://www.google.com
+    let d = document.links.namedItem("link").href;         // pega a referência com id link - https://www.yahoo.com
 
 ## document.readyState
 Retorna o status (carregamento) do documento podendo ser *loading*, *complete* e *interactive* para imagens, vídeos etc.. ainda não carregados
