@@ -50,7 +50,7 @@ Manipula um elemento através do seu seletor, mas, apenas o primeiro elemento, m
     
     console.log(p1); // retorna <p>paragrafo 01<p>
     console.log(p2); // retorna <p id="p2">paragrafo 02<p>
-    console.log(p3); // retorna <p class="p3">paragrafo 03<p> - apenas o primeiro elemento p com a classe p3 
+    console.log(p3); // retorna <p class="p3">paragrafo 03<p> - só o primeiro elemento p com a classe p3 
 
 ## document.querySelectorAll();
 Manipula um elemento ou coleção de elementos através do seu seletor como Css, acessados pelo seu índice ou não
@@ -63,7 +63,7 @@ Manipula um elemento ou coleção de elementos através do seu seletor como Css,
     let ps = document.querySelectorAll('p');
     let p1 = document.querySelectorAll('p')[0];
     let p2 = document.querySelectorAll('#p2');
-    let p3 = document.querySelector('p.p3');    // retorna <p class="p3">paragrafo 03<p> - apenas o primeiro p com a classe p3
+    let p3 = document.querySelector('p.p3'); // retorna <p class="p3">paragrafo 03<p> - só o primeiro p com a classe p3
     
     console.log(ps); // retorna [p, p, p#p2, p, p.p3, p, p.p3, p]
     console.log(p1); // retorna <p>paragrafo<p>
