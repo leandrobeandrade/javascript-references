@@ -37,7 +37,7 @@
  
 > catch => Adiciona um callback que trata rejeição para a promise e, retorna uma nova promise resolvendo o valor retornado do callback, se ele for chamado, ou para seu valor original de conclusão se a promise for realizada.
 
-Uma promise pode receber em seu resolve uma outra promise. Esta, será resolvida então, somente quando a outra promise for resolvida
+Uma promise pode receber em seu resolve uma outra promise. Esta, será resolvida então, somente quando a outra promise for resolvida. No exemplo abaixo mesmo a **Promise_2** sendo executada ela só será resolvida após a **Promise_1** também ser rersolvida , ou seja, após 10 segundos:
 
     function Promise_1() {
         return new Promise((resolve, reject) => {
