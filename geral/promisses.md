@@ -37,17 +37,25 @@
  
 > catch => Adiciona um callback que trata rejeição para a promise e, retorna uma nova promise resolvendo o valor retornado do callback, se ele for chamado, ou para seu valor original de conclusão se a promise for realizada.
 
-Uma promise pode receber em seu resolve uma outra promise. Esta, será resolvida então, somente quando a segunda promise for resolvida
+Uma promise pode receber em seu resolve uma outra promise. Esta, será resolvida então, somente quando a outra promise for resolvida
 
-    function Endereco() { 
-        return new Promise((resolve, reject) => { setTimeout(resolve, 2000); }); 
+    function Promise_1() {
+        return new Promise((resolve, reject) => {
+            let res = 'Retorne isto também!';
+
+            setTimeout(() => {
+                resolve(res)
+            }, 10000);
+        });
     }
 
-    function Usuario() { 
-        return new Promise((resolve, reject) => { setTimeout(() => resolve(Endereco()), 1000); }); 
+    function Promise_2() {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => resolve(Promise_1()), 2000);
+        });
     }
 
-    Usuario().then(result => console.log('FEITO!!!'));  // retorna FEITO!!!
+    Promise_2().then(result => console.log('Sucesso.', result)); // retorna Sucesso. Retorne isto também!
     
 ### Promise.all()
 Retorna uma promise pendente que será resolvida quando todas as promises passadas por parâmetro (em uma array) forem resolvidas. Ela será rejeitada se qualquer uma das promises rejeitar
