@@ -1,0 +1,48 @@
+# Async
+
+A palavra **async** antes de uma função significaque esta função sempre retornará uma promessa. Outros valores são agrupados em uma promessa resolvida automaticamente
+
+    async function minhaFuncao() {
+        return Promise.resolve('Retorna isto!');
+    }
+
+    minhaFuncao().then(console.log);  // retorna Retorna isto!
+    
+Portanto, o async garante que a função retorne uma promessa e envolva não promessas
+
+# Await
+
+A palavra-chave **await** faz com que o JavaScript espere até que a promessa seja estabelecida e retorne seu resultado
+
+    async function minhaFuncao() {
+
+        let promise = new Promise((resolve, reject) => {
+            setTimeout(() => resolve('Feito!'), 1000)
+        });
+
+        let result = await promise; // aguarda o resultado enquanto a promisse é resolvida
+
+        console.log(result); // "feito!"
+    }
+
+    minhaFuncao();  // retorna Feito!
+    
+Como promise.then(), await permite usar objetos que podem ser editados (aqueles com um método que pode ser chamado). A idéia é que um objeto de terceiros possa não ser uma promessa, mas compatível com a promessa: se suportar. Então, isso é o suficiente para o await
+
+    class Aguardando {
+        constructor(num) {
+            this.num = num;
+        }
+        then(resolve, reject) {
+            console.log(resolve);
+
+            setTimeout(() => resolve(this.num * 2), 1000);
+        }
+    };
+
+    async function minhaFuncao() {
+        let result = await new Aguardando(2);
+        console.log(result);
+    }
+
+    minhaFuncao();  // retorna 4
