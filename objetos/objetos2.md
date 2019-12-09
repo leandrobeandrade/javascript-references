@@ -11,7 +11,7 @@ Copia os valores de todas as propriedades próprias enumeráveis ​​de um ou 
 
 
 # Object.keys()
-Retorna um array cujo os elementos são strings correspondentes para a propriedade enumerável encontrada diretamento sobre o objeto
+Retorna um array cujo os elementos são strings correspondentes para a propriedade enumerável encontrada diretamente sobre o objeto
 	
 	let user = {
   	    nome: "Fulano",
@@ -56,7 +56,12 @@ Retorna um array cujos elementos são também arrays correspondentes aos pares d
     
  # Object.hasOwnProperty()
  Retorna um booleano indicando se o objeto possui a propriedade especificada como uma propriedade definida no próprio objeto em questão
- 
+    
+    let user = {
+  	    nome: "Fulano",
+  	    idade: 30
+    };
+    
     console.log(user.hasOwnProperty('nome'));   // retorna true
     
     let countries = {
