@@ -88,5 +88,3 @@ Retorna um array cujos elementos são também arrays correspondentes aos pares d
                    4 -> e - index -> 4 */
     })
     
-    
-    fdsfsdfsdfsdfsd
