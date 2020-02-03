@@ -19,7 +19,7 @@
          console.log(map.get('1')); // string 1
          console.log(map.get(true));   // boolean 1
          console.log(map.size); // 3
-         console.log(map.has(true)); 
+         console.log(map.has(true)); // true
          console.log(map.delete('1')); // deleta o valor string 1
          console.log(map.clear());  // reseta o mapa
 
