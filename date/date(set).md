@@ -58,7 +58,7 @@ Define os segundos de um objeto de data:
 
 
 ## setTime()
-Define uma data para um número especificado de milissegundos após / antes de 1 de janeiro de 1970:
+Define uma data para um número especificado de milissegundos após / antes de 1 de janeiro de 1970: 
 
     var data = new Date();
     data.setTime(1332403882588);
