@@ -1,12 +1,11 @@
 # data
 Qualquer atributo de qualquer elemento no qual o nome do atributo inicia com data- é um atributo data 
 
-    <article id="teste" data-colunas="3" data-identificacao="12314" data-nome-usuario="Fulano"></article>
+    <article id="elemento" data-colunas="3" data-identificacao="12314" data-nome-usuario="Fulano"></article>
     
-> Para obter o atributo data através do objeto dataset, acesse a propriedade utilizando a parte do nome do atributo após
-o prefixo **data-** (note que o hífen é convertido para camelCase)
+> Para obter o atributo data através do objeto dataset, acesse a propriedade utilizando a parte do nome do atributo após o prefixo **data-** (note que o hífen é convertido para camelCase)
 
-    let article = document.getElementById('teste');
+    let article = document.getElementById('elemento');
  
     console.log(article.dataset.colunas);       // retorna 3
     console.log(article.dataset.identificacao); // retorna 12314

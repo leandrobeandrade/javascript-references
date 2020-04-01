@@ -1,3 +1,9 @@
+## document.close
+Fecha um fluxo de documentos para gravação
+
+## document.cookie
+Retorna uma lista separada por ponto e vírgula dos cookies para esse documento ou define um único cookie
+
 ## document.createAttribute()
 Cria um nó de atributo
 
@@ -36,6 +42,28 @@ Cria um nó de texto de elemento
     let texto = document.createTextNode("Olá Mundo!");
     document.body.appendChild(texto);
 
+## document.dir
+Obtém / define a direcionalidade (rtl - direita => esquerda / ltr - esquerda => direita) do documento
+
+    console.log(document.dir); // retorna "ltr"
+
+## document.docType
+Retorna o nome do tipo de conteúdo do documento HTML
+
+    console.log(document.docType); // retorna <!doctype html>
+
+## document.domain
+Retorna o dominío ao qual aquele documento pertence
+
+## document.embeds
+Retorna uma lista dos elementos incorporados **`<embed>`** no documento atual
+
+## document.forms
+Retorna uma lista dos elementos de formulários **`<form>`** no documento atual
+
+## document.head
+Retorna todo o conteúdo da tag **`<head>`** do documento atual
+
 ## document.images
 Retorna uma coleção de todos os elementos **`<img>`** no documento
 
@@ -52,6 +80,9 @@ Importa um nó de outro documento
     var x = document.importNode(h, true);                           // importa o h1 no documento atual
     document.body.appendChild(x);                                   // adiciona o h1 no documento atual
 
+## document.lastModified
+Retorna a data e horário em que o documento foi modificado pela última vez
+
 ## document.links
 Retorna uma coleção de todos os elementos **`<a>`** e **`<area>`** no documento que possuem um atributo href:
 
@@ -66,6 +97,15 @@ Retorna uma coleção de todos os elementos **`<a>`** e **`<area>`** no document
     let c = document.links.item(0).href;                   // pega a referência do link 1 - https://www.google.com
     let d = document.links.namedItem("link").href;         // pega a referência com id link - https://www.yahoo.com
 
+## document.location
+Retorna a URI do documento
+
+## document.open
+Abre um fluxo de documentos para gravação
+
+## document.plugins
+Retorna uma lista de plugins disponíveis no documento
+
 ## document.readyState
 Retorna o status (carregamento) do documento podendo ser *loading*, *complete* e *interactive* para imagens, vídeos etc.. ainda não carregados
 
@@ -77,6 +117,12 @@ Retorna a URL do documento que carregou o documento atual
 
     var x = document.referrer;
     console.log(x); // retorna github.com
+
+## document.scripts
+Retorna a data e horário em que o documento foi modificado pela última vez
+
+## document.styleSheets
+Retorna uma lista dos conjuntos de folhas de estilo disponíveis no documento
 
 ## document.title
 Retorna ou define a tag **`<title>`** da página
