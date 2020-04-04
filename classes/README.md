@@ -21,3 +21,5 @@ Classes em JavaScript são consideradas funções com poderes especiais e como f
     class Retangulo {...}
 
     const r = new Retangulo(); // Correto uso
+
+![](https://github.com/leandrobeandrade/javascript-references/blob/master/classes/classes.png)
