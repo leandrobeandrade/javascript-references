@@ -19,4 +19,4 @@ Referência completa da Linguagem Javascript e também suas novas especificaçõ
 * https://tableless.com.br/diga-ola-ao-typescript-e-adeus-ao-javascript/ (Português)
 * http://www.typescriptlang.org/play/
 
-> Repositório em constante construção.
+> Repositório em constante construção
