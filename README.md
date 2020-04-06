@@ -8,15 +8,11 @@ Referência completa da Linguagem Javascript e também suas novas especificaçõ
 * https://developer.mozilla.org/en-US/docs/Learn/JavaScript
 * https://javascript.info/
 * https://www.todoespacoonline.com/w/2014/05/aprender-javascript/ (Português)
+
 ##### ECMASCRIPT
 * http://es6-features.org/#Constants
 * https://flaviocopes.com/javascript-promises/ (Promisses)
 * https://braziljs.org/blog/promises-no-javascript/ (Promisses)
 * https://showmethecode.com.br/async-await/ (Async/await)
-##### TYPESCRIPT
-* https://www.youtube.com/playlist?list=PL62G310vn6nGg5OzjxE8FbYDzCs_UqrUs (Português)
-* http://www.diullei.com/TypeScript-ptBR/tutorial.html
-* https://tableless.com.br/diga-ola-ao-typescript-e-adeus-ao-javascript/ (Português)
-* http://www.typescriptlang.org/play/
 
 > Repositório em constante construção
