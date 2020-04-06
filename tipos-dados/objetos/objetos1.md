@@ -1,15 +1,20 @@
 # Objetos
 São usados para armazenar coleções codificadas de vários dados e entidades mais complexas. Em JavaScript, os objetos penetram em quase todos os aspectos da linguagem.
-Um objeto pode ser criado com colchetes {…} com uma lista opcional de propriedades. Uma propriedade é um par "chave: valor", em que chave é uma sequência (também chamada de "nome da propriedade") e o valor pode ser qualquer coisa
+Um objeto pode ser criado com colchetes {…} com uma lista opcional de propriedades assim também como instanciando um objeto com a assinatura **new Object()**. Uma propriedade é um par "chave: valor", em que chave é uma sequência (também chamada de "nome da propriedade") e o valor pode ser qualquer coisa
     
     // Objeto exemplo
     let users = {
         primeiroNome: 'Fulano',
-        ultimoNome: 'Ciclano',
+        ultimoNome: 'de Tal',
         nomeCompleto: function(){
             return `${this.primeiroNome} ${this.ultimoNome}`
         }
     }
+
+    let users = new Object();
+    users.primeiroNome = 'Fulano';
+    users.ultimoNome = "de Tal";
+    users.ano = 1969;
 
 ## Setando valores no objeto
     
