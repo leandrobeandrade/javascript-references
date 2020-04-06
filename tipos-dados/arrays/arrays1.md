@@ -4,7 +4,7 @@
 
     console.log(times.length)   // retorna 4
 
-**[x]** => retorna o elemento na posição indicada pelo índice informado
+**[x] =>** retorna o elemento na posição indicada pelo índice informado
 
     console.log(times[0]+' - '+times[3]);   // retorna Palmeiras - Atlético-MG
     

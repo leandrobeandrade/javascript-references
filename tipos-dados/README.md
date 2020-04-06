@@ -60,4 +60,6 @@ Um objeto é uma coleção de propriedades, e uma propriedade é uma associaçã
 Assim como objetos, arrays também são implementados na linguagem como sendo do tipo **Object**:
 
     let vetor = [1, 2, 3, 4];
-    console.log(typeof vetor);   // retorna object 
+    console.log(typeof vetor);   // retorna object
+
+![](https://github.com/leandrobeandrade/javascript-references/blob/master/tipos-dados/types.png)
