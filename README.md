@@ -1,6 +1,6 @@
 # Referências Javascript  
 
-Referência completa da Linguagem Javascript e também suas novas especificações como ECMASCRIPT-6
+Referência completa da Linguagem Javascript e também suas novas especificações como ECMASCRIPT versões 6 e 7
 
 ## Links úteis
 ##### JAVASCRIPT
@@ -10,9 +10,12 @@ Referência completa da Linguagem Javascript e também suas novas especificaçõ
 * https://www.todoespacoonline.com/w/2014/05/aprender-javascript/ (Português)
 
 ##### ECMASCRIPT
-* http://es6-features.org/#Constants
+* http://es6-features.org
+* https://medium.com/@matheusml/o-guia-do-es6-tudo-que-voc%C3%AA-precisa-saber-8c287876325f
 * https://flaviocopes.com/javascript-promises/ (Promisses)
 * https://braziljs.org/blog/promises-no-javascript/ (Promisses)
-* https://showmethecode.com.br/async-await/ (Async/await)
+* https://braziljs.org/blog/async-await-js-assincronamente-sincrono/
+
+![](https://github.com/leandrobeandrade/javascript-references/blob/master/js.png)
 
 > Repositório em constante construção

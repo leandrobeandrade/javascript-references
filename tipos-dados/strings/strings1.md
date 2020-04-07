@@ -1,11 +1,35 @@
 # length
-Retorna o tamanho da string
+Retorna o tamanho da string:
 
     let texto = 'É Javascript, e mais javascript!'; 
     console.log(texto.length);  // retorna 32
 
+# toString()
+Converte um número para string usando diferentes bases:
+
+    let numero = 10;
+    console.log(numero.toString());     // retorna '10'
+
+    console.log(numero.toString(2));    // retorna '1010'
+
+    console.log(numero.toString(3));    // retorna '101'
+
+    console.log(numero.toString(5));    // retorna '20'
+
+# toUpperCase()
+Converte a string para maiúscula:
+
+    let texto = 'É Javascript, e mais javascript!';
+    console.log(texto.toUpperCase());   // retorna É JAVASCRIPT, E MAIS JAVASCRIPT!
+
+# toLowerCase()
+Converte a string para minúscula:
+
+    let texto = 'É Javascript, e mais javascript!';
+    console.log(texto.toLowerCase());   // retorna é javascript, e mais javascript!
+
 # replace()
-Substitui a primeira ocorrência encontrada por outra especificada ou várias com regex sendo case sensitive
+Substitui a primeira ocorrência encontrada por outra especificada ou várias com regex sendo case sensitive:
 
     let texto = 'É Javascript, e mais javascript!';
     console.log(texto.replace('Javascript', 'Ecmascript'));     // retorna É Ecmascript, e mais Javascript!
@@ -15,7 +39,7 @@ Substitui a primeira ocorrência encontrada por outra especificada ou várias co
     console.log(texto.replace(\javascript\gi, 'Ecmascript'));   // retorna É Ecmascript, e mais Ecmascript!
     
 # indexOf()
-Retorna a posição da primeira ocorrência especificada e aceita um segundo parâmetro por onde deve começar a busca
+Retorna a posição da primeira ocorrência especificada e aceita um segundo parâmetro por onde deve começar a busca:
 
     let texto = 'É Javascript, e mais Javascript!';
     console.log(texto.indexOf('Jasvascript'));      // retorna 2
@@ -23,7 +47,7 @@ Retorna a posição da primeira ocorrência especificada e aceita um segundo par
     console.log(texto.indexOf('Javascript', 3));    // retorna 21 
 
 # lastIndexOf()
-Retorna a posição da última ocorrência especificada e aceita um segundo parâmetro por onde deve começar a busca
+Retorna a posição da última ocorrência especificada e aceita um segundo parâmetro por onde deve começar a busca:
     
     let texto = 'É Javascript, e mais Javascript!';
     console.log(texto.lastIndexOf('Javascript'));       // retorna 21
@@ -31,7 +55,7 @@ Retorna a posição da última ocorrência especificada e aceita um segundo par�
     console.log(texto.lastIndexOf('Javascript', 9));    // retorna 2
 
 # search()
-Retorna a posição da primeira ocorrência especificada encontrada sendo case sensitive
+Retorna a posição da primeira ocorrência especificada encontrada sendo case sensitive:
 
     let texto = 'É Javascript, e mais javascript!';
     console.log(texto.search('Javascript'));    // retorna 2
@@ -39,7 +63,7 @@ Retorna a posição da primeira ocorrência especificada encontrada sendo case s
     console.log(texto.search(/javascript/i));   // retorna 2
 
 # charAt()
-Retorna o caractere especificado a partir de uma string
+Retorna o caractere especificado a partir de uma string:
 
     let texto = 'É Javascript, e mais javascript!';
     console.log(texto.charat(0));                   // retorna É
@@ -49,7 +73,7 @@ Retorna o caractere especificado a partir de uma string
     console.log(texto.charAt(texto.length -2));     // retorna t
 
 # includes()
-Determina se uma string pode ser encontrada dentro de outra string, retorna true ou false, aceita segundo parâmetro para posição
+Determina se uma string pode ser encontrada dentro de outra string, retorna true ou false, aceita segundo parâmetro para posição:
 
     let texto = 'Ser, ou não ser, eis a questão.';
 
@@ -60,7 +84,7 @@ Determina se uma string pode ser encontrada dentro de outra string, retorna true
     console.log(texto.includes('SER'));         // retorna false
     
 # startsWith()
-Determina se uma string começa com os mesmo caracteres de outra string, retorna true ou false, aceita segundo parâmero para posição
+Determina se uma string começa com os mesmo caracteres de outra string, retorna true ou false, aceita segundo parâmero para posição:
 
     let texto = 'Ser, ou não ser, eis a questão.';
 
@@ -71,7 +95,7 @@ Determina se uma string começa com os mesmo caracteres de outra string, retorna
     console.log(texto.startsWith('SER'));           // retorna false
     
 # endsWith()
-Determina se uma string termina com os caracteres da string especificada, retorna true ou false, aceita segundo parâmero para posição
+Determina se uma string termina com os caracteres da string especificada, retorna true ou false, aceita segundo parâmero para posição:
 
     let texto = 'Ser, ou não ser, eis a questão.';
 

@@ -46,4 +46,4 @@ Um método String que usa uma expressão regular ou uma string fixa para quebrar
      let str = "Expressões regulares em JavaScript!";
      let regexp = /[\t\s\n]/i;
      let ret = str.split(regexp);
-     console.log(ret);  // retorna ["Expressões", "regulares", "em", "", "JavaScript!"]
+     console.log(ret);  // retorna ["Expressões", "regulares", "em", "JavaScript!"]

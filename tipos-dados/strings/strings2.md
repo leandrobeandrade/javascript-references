@@ -1,5 +1,5 @@
 # slice()
-Retorna a parte extraída da string em uma nova string
+Retorna a parte extraída da string em uma nova string:
 
     let texto = 'É Javascript, e mais javascript!';
     console.log(texto.slice(0));        // retorna É Javascript, e mais javascript!
@@ -13,7 +13,7 @@ Retorna a parte extraída da string em uma nova string
     console.log(texto.slice(0, -1))     // retorna É Javascript, e mais javascript!
 
 # substr()
-Retorna parte de uma string começando na localização especificada pelo número especificado de caracteres
+Retorna parte de uma string começando na localização especificada pelo número especificado de caracteres:
     
     let texto = 'É Javascript, e mais javascript!';
     console.log(texto.substr(0, 12));                  // retorna É Javascript
@@ -31,7 +31,7 @@ Retorna parte de uma string começando na localização especificada pelo númer
     console.log(texto.substr(-32, 1));                 // retorna , É
 
 # substring()
-Extrai uma parte de uma string a partir da posição indicada
+Extrai uma parte de uma string a partir da posição indicada:
     
     let texto = 'É Javascript, e mais javascript!';
     console.log(texto.substring(2));                // retorna Javascript, e mais javascript!
@@ -45,7 +45,7 @@ Extrai uma parte de uma string a partir da posição indicada
     console.log(texto.substring(texto.length -1));  // retorna !
 
 # split()
-Divide uma string em um array de substrings e retrona o novo array 
+Divide uma string em um array de substrings e retrona o novo array:
 
     let texto = 'É Javascript';
     console.log(texto.split());         // retorna ["É Javascript"]
@@ -61,7 +61,7 @@ Divide uma string em um array de substrings e retrona o novo array
     console.log(texto.split('a'));      // retorna ["É J", "v", "script"]
 
 # concat()
-Retorna o resultado da junção de várias strings em uma só
+Retorna o resultado da junção de várias strings em uma só:
 
     let t1 = 'Javascript ';
     let t2 = 'é muito ';
@@ -70,7 +70,7 @@ Retorna o resultado da junção de várias strings em uma só
     console.log(t1.concat(t2, t3));   // retorna Javascript é muito legal mesmo!
     
 # trim()
-Retorna a string sem espaços
+Retorna a string sem espaços:
 
     let texto = '  É Javascript, e mais javascript!  ';
     console.log(texto.trim());   // retorna  'É Javascript, e mais javascript!'
@@ -84,31 +84,25 @@ Retorna a string sem espaços
     console.log(texto.trimRight());   // retorna '  É Javascript, e mais javascript!'
 
 # repeat()
-Repete a string determinada vezes
+Repete a string determinada vezes:
 
     let texto = 'Javascript ';
     console.log(texto.repeat(2));   // retorna Javascript Javascript
-    
-# toUpperCase()
-Converte a string para maiúscula
 
-    let texto = 'É Javascript, e mais javascript!';
-    console.log(texto.toUpperCase());   // retorna É JAVASCRIPT, E MAIS JAVASCRIPT!
+# padStart()
+Preenche a string alvo com outra string (múltiplas vezes, se necessário) até que a string resultante alcance o comprimento estipulado. O preenchimento é aplicado a partir do início (esquerda) da string alvo:
 
-# toLowerCase()
-Converte a string para minúscula
+    console.log('teste'.padStart(1));   // retorna 'teste'
+    console.log('teste'.padStart(6));   // retorna ' teste'
 
-    let texto = 'É Javascript, e mais javascript!';
-    console.log(texto.toLowerCase());   // retorna é javascript, e mais javascript!
+    console.log('teste'.padStart(10, #));   // retorna '#####teste'
+    console.log('teste'.padStart(10, #$));   // retorna '#$#$#teste'
 
-# toString()
-Converte um número para string usando diferentes bases
+# padEnd()
+Preenche a string alvo com uma outra string (repetindo-a, caso necessário) até que a string resultante alcance o comprimento estipulado. O preenchimento é aplicado a partir do fim (direita) da string alvo:
 
-    let numero = 10;
-    console.log(numero.toString());     // retorna '10'
+    console.log('teste'.padEnd(1));   // retorna 'teste'
+    console.log('teste'.padEnd(6));   // retorna 'teste '
 
-    console.log(numero.toString(2));    // retorna '1010'
-
-    console.log(numero.toString(3));    // retorna '101'
-
-    console.log(numero.toString(5));    // retorna '20'
+    console.log('teste'.padEnd(10, #));   // retorna 'teste#####'
+    console.log('teste'.padEnd(10, #$));   // retorna 'teste#$#$#'
