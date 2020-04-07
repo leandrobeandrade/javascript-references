@@ -24,49 +24,49 @@ Você pode adicionar vários ouvintes de eventos ao mesmo elemento Html assim ta
 
     function Alerta() { alert('Alô Mundo!') }
 
-- Vários ouvintes
+    - Vários ouvintes
 
-    <button id="btn">Testar</button>
+        <button id="btn">Testar</button>
 
-    var btn = document.getElementById("btn");
-    btn.addEventListener("click", Funcao1);
-    btn.addEventListener("click", Funcao2);
+        var btn = document.getElementById("btn");
+        btn.addEventListener("click", Funcao1);
+        btn.addEventListener("click", Funcao2);
 
-    function Funcao1() {
-        alert('Executando Funcao1');
-    }
+        function Funcao1() {
+            alert('Executando Funcao1');
+        }
 
-    function Funcao2() {
-        alert('Executando Funcao2');
-    }
+        function Funcao2() {
+            alert('Executando Funcao2');
+        }
 
-- Especificando a ordem
+    - Especificando a ordem
 
-    <div id="div">
-        <h2>Bubbling (dentro para fora)</h2>
-        <button id="btn">Botão 1</button>
-    </div><br>
+        <div id="div">
+            <h2>Bubbling (dentro para fora)</h2>
+            <button id="btn">Botão 1</button>
+        </div><br>
 
-    document.getElementById('btn').addEventListener('click', () => {
-        alert('Primeiro o clique do botão');
-    }, false);
+        document.getElementById('btn').addEventListener('click', () => {
+            alert('Primeiro o clique do botão');
+        }, false);
 
-    document.getElementById('div').addEventListener('click', () => {
-        alert('Depois da div');
-    }, false);
+        document.getElementById('div').addEventListener('click', () => {
+            alert('Depois da div');
+        }, false);
 
-    <div id="div">
-        <h2>Capturing (fora para dentro)</h2>
-        <p id="btn">Botão 2</p>
-    </div>
+        <div id="div">
+            <h2>Capturing (fora para dentro)</h2>
+            <p id="btn">Botão 2</p>
+        </div>
 
-    document.getElementById('btn').addEventListener('click', () => {
-        alert('Depois do botão');
-    }, true);
+        document.getElementById('btn').addEventListener('click', () => {
+            alert('Depois do botão');
+        }, true);
 
-    document.getElementById('div').addEventListener('click', () => {
-        alert('Primeiro o clique da div');
-    }, true);
+        document.getElementById('div').addEventListener('click', () => {
+            alert('Primeiro o clique da div');
+        }, true);
 
 # removeEventListener()
 
