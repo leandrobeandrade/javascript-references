@@ -21,16 +21,14 @@ Gera uma mensagem de erro para o console:
       console.error("Você cometeu um erro!")
 
 ## console.group()
-Cria um novo grupo inline no console. Isso recua as seguintes mensagens do console por um nível adicional, até que 
-*console.groupEnd()* seja chamado:
+Cria um novo grupo inline no console. Isso recua as seguintes mensagens do console por um nível adicional, até que *console.groupEnd()* seja chamado:
 
       console.log("Olá, mundo!")
       console.group()
       console.log("Olá novamente, desta vez dentro de um grupo!")
 
 ## console.groupCollapsed()
-Cria um novo grupo inline no console. No entanto, o novo grupo é criado em *colapse*. O usuário precisará usar o botão 
-de seta para expandi-lo:
+Cria um novo grupo inline no console. No entanto, o novo grupo é criado em *colapse*. O usuário precisará usar o botão de seta para expandi-lo:
       
       console.log("Olá, mundo!")
       console.groupCollapsed()

@@ -1,5 +1,5 @@
 # Promise
-É um objeto que representa a eventual conclusão ou falha de uma operação assincrona. É um objeto retornado para o qual você adiciona callbacks, em vez de passar callbacks para uma função
+É um objeto que representa a eventual conclusão ou falha de uma operação assincrona. É um objeto retornado para o qual você adiciona callbacks, em vez de passar callbacks para uma função.
 
 ## Declaração da Promise
 

@@ -10,7 +10,7 @@ Você pode adicionar vários ouvintes de eventos ao mesmo elemento Html assim ta
 
     element.addEventListener(event, listener, boolean);
 
-- **event :** tipo de evento que deve ser ouvido (click, mouseenter, keyup, etc...)
+- **event:** tipo de evento que deve ser ouvido (click, mouseenter, keyup, etc...)
 - **listener:** função que executará algo conforme o evento
 - **boolean:** Opcional, especifica se o addEventListener responderá a eventos no sentido de cima para baixo (capture phase) ou de baixo para cima (bubling phase)
 
