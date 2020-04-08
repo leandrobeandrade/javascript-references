@@ -64,12 +64,12 @@ Retorna o número de nós de atributos em um NamedNodeMap
 ## attributes.createAttribute()
 Cria um atributo em um elemento Html especificado
 
-    <button class="btn" id="bt" onclick="myFunction()">Testar</button>
+    <button id="bt" onclick="myFunction()">Testar</button>
     
     let btn = document.getElementById("bt");
     let x = btn.attributes.createAttribute('style');
     x.value = "margin: 20px"
-    console.log(x); // retorna 3
+    console.log(x); // retorna <button id="bt" onclick="myFunction()" style="margin: 20px">Testar</button>
 
 ## attributes.removeNamedItem()
 Remove um nó de um atributo especificado
@@ -85,10 +85,10 @@ Remove um nó de um atributo especificado
 ## attributes.setNamedItem()
 Define o nó do atributo especificado (por nome):
 
-    <button class="btn" id="bt" onclick="myFunction()">Testar</button>
+    <button id="bt" onclick="myFunction()">Testar</button>
     
     let btn = document.getElementById("bt");
     let attr = document.createAttribute('style');
     attr.value = 'margin: 20px';
     btn.attributes.setNamedItem(attr);
-    console.log(btn); // retorna <button class="btn" id="bt" onclick="myFunction()" style="margin: 20px">Testar</button>
+    console.log(btn); // retorna <button id="bt" onclick="myFunction()" style="margin: 20px">Testar</button>
