@@ -52,9 +52,9 @@ Retorna *true* se um nó é um descendente de um nó, caso contrário, *false*:
         </P>
     </div>
     
-    var span = document.getElementById("minhaSpan");
-    var div = document.getElementById("minhaDiv").contains(span);
-    console.log(div); // retorna true
+    var span = document.getElementById('minhaSpan');
+    var div = document.getElementById('minhaDiv').contains(span);
+    console.log(div);  // retorna true
 
 ## compareDocumentPosition()
 Compara a posição de dois elementos no documento:
@@ -62,10 +62,10 @@ Compara a posição de dois elementos no documento:
     <p id="p1">Um parágrafo</p>
     <p id="p2">Outro parágrafo</p>
     
-    var p1 = document.getElementById("p1").lastChild;
-    var p2 = document.getElementById("p2").lastChild;
+    var p1 = document.getElementById('p1').lastChild;
+    var p2 = document.getElementById('p2').lastChild;
     var x = p1.compareDocumentPosition(p2);
-    console.log(x); // retorna 4
+    console.log(x);  // retorna 4
     
 | retornos possíveis:
 
@@ -85,5 +85,5 @@ Define ou retorna o valor do atributo direção de um elemento:
     <button onclick="change()">Mudar direção</button>
 
     function change() {
-        document.getElementById("p").dir = 'rtl';
+        document.getElementById('p').dir = 'rtl';
     }

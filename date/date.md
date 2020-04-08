@@ -4,18 +4,18 @@ Ao construir uma propriedade, TODOS os objetos de data receberão a propriedade 
 Permite adicionar propriedades e métodos a um objeto:
 
     Date.prototype.myMet = function() {
-      if (this.getMonth() == 0){this.myProp = "Janeiro"};
-      if (this.getMonth() == 1){this.myProp = "Fevereiro"};
-      if (this.getMonth() == 2){this.myProp = "Março"};
-      if (this.getMonth() == 3){this.myProp = "Abril"};
-      if (this.getMonth() == 4){this.myProp = "Maio"};
-      if (this.getMonth() == 5){this.myProp = "Junho"};
-      if (this.getMonth() == 6){this.myProp = "Julho"};
-      if (this.getMonth() == 7){this.myProp = "Agosto"};
-      if (this.getMonth() == 8){this.myProp = "Setembro"};
-      if (this.getMonth() == 9){this.myProp = "Outubro"};
-      if (this.getMonth() == 10){this.myProp = "Novembro"};
-      if (this.getMonth() == 11){this.myProp = "Dezembro"};
+      if (this.getMonth() == 0){this.myProp = 'Janeiro'};
+      if (this.getMonth() == 1){this.myProp = 'Fevereiro'};
+      if (this.getMonth() == 2){this.myProp = 'Março'};
+      if (this.getMonth() == 3){this.myProp = 'Abril'};
+      if (this.getMonth() == 4){this.myProp = 'Maio'};
+      if (this.getMonth() == 5){this.myProp = 'Junho'};
+      if (this.getMonth() == 6){this.myProp = 'Julho'};
+      if (this.getMonth() == 7){this.myProp = 'Agosto'};
+      if (this.getMonth() == 8){this.myProp = 'Setembro'};
+      if (this.getMonth() == 9){this.myProp = 'Outubro'};
+      if (this.getMonth() == 10){this.myProp = 'Novembro'};
+      if (this.getMonth() == 11){this.myProp = 'Dezembro'};
     };
 
     function myFunction() {
@@ -33,7 +33,7 @@ Retorna o número de milissegundos desde a meia-noite de 1º de janeiro de 1970:
 ## parse()
 Analisa uma string de data e retorna o número de milissegundos desde 1º de janeiro de 1970:
 
-    var data = Date.parse("September 03, 2018");
+    var data = Date.parse('September 03, 2018');
     console.log(data);    // retorna 1535943600000
     
 ## toDateString()

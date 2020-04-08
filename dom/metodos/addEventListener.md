@@ -28,9 +28,9 @@ Você pode adicionar vários ouvintes de eventos ao mesmo elemento Html assim ta
 
     <button id="btn">Testar</button>
 
-    var btn = document.getElementById("btn");
-    btn.addEventListener("click", Funcao1);
-    btn.addEventListener("click", Funcao2);
+    var btn = document.getElementById('btn');
+    btn.addEventListener('click', Funcao1);
+    btn.addEventListener('click', Funcao2);
 
     function Funcao1() {
         alert('Executando Funcao1');
@@ -72,14 +72,13 @@ Você pode adicionar vários ouvintes de eventos ao mesmo elemento Html assim ta
 
 Remove os manipuladores de eventos que foram anexados ao método addEventListener()
 
-    <div id="div">
-        <button onclick="removeHandler()" id="btn">Remove</button>
-    <div>
+    <button onclick="removeHandler()" id="btn">Apertar</button>
+    <div id="div" style="width:400px;height:400px;"></div>
 
-    document.getElementById("div").addEventListener("mouseover", Funcao);
+    document.getElementById('div').addEventListener('mouseover', Funcao);
 
-    function Funcao() { alert('Disparando...') }
+    function Funcao() { console.log('Disparando...') }
 
     function removeHandler() {
-        document.getElementById("div").removeEventListener("mouseover", Funcao);
+        document.getElementById('div').removeEventListener('mouseover', Funcao);
     }

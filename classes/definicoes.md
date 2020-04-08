@@ -8,7 +8,7 @@
     }
     
     let nome = new Nome('Fulano', 'de Tal')
-    console.log(nome)           // Fulano de Tal
+    console.log(nome);  // retorna Fulano de Tal
     
 # Expressões de Classe
 
@@ -30,4 +30,4 @@
     }
     
     let nome = new Nome('Fulano', 'de Tal')
-    console.log(nome)           // Fulano de Tal
+    console.log(nome);  // retorna Fulano de Tal

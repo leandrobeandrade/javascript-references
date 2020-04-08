@@ -22,8 +22,8 @@ A palavra-chave **extends** é usada em uma declaração de classe, ou em uma ex
     let animal = new Animal('Cachorro', 'latidos');
     let sons = new Sons('Gatos', 'miados');
     
-    animal.tipo();                              // Cachorro
-    animal.barulhos();                          // Gatos emitem um barulho tipo miados.
+    animal.tipo();  // retorna Cachorro
+    animal.barulhos();  // retorna Gatos emitem um barulho tipo miados.
     
 
 ## Palavra chave super()
@@ -55,8 +55,8 @@ Se existir um construtor nas subclasses, é necessário primeiro chamar super() 
     let auto1 = new Automovel('Ford', 'SUV');
     let auto2 = new Carro('Ford', 6);
     
-    auto1.tipo();                               // Ford é do tipo SUV.
-    auto2.lugares();                            // Ford possui 6 lugares.
+    auto1.tipo();  // retorns Ford é do tipo SUV.
+    auto2.lugares();  // retorna Ford possui 6 lugares.
     
 A palavra-chave super também pode ser utilizada para chamar **métodos (funções)** que pertencem ao pai do objeto (classe pai).
 
@@ -77,8 +77,8 @@ A palavra-chave super também pode ser utilizada para chamar **métodos (funçõ
       }
     }
 
-    let leao = new Leao('Fuzzy');               // Fuzzy faça barulho.
-    leao.falar();                               // Fuzzy roars.
+    let leao = new Leao('Fuzzy');  // retorna Fuzzy faça barulho.
+    leao.falar();  // retorna Fuzzy roars.
 
 ## Herança de um objeto literal Javascript
 
@@ -97,5 +97,5 @@ A palavra-chave super também pode ser utilizada para chamar **métodos (funçõ
     Object.setPrototypeOf(Cachorro.prototype, Animal); 
 
     let cachorro = new Cachorro('Mitzie');
-    cachorro.barulho();                         // Mitzie faça barulho.
+    cachorro.barulho();  // retorna Mitzie faça barulho.
     

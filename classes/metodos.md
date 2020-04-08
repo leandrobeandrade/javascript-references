@@ -10,7 +10,7 @@
     }
 
     const nome = new Nome('Fulano');
-    console.log(nome.dizerNome());                // Eu sou: Fulano 
+    console.log(nome.dizerNome());  // retorna Eu sou: Fulano 
 
 ## Métodos com parâmetros
 
@@ -24,7 +24,7 @@
     }
 
     const nome = new Nome('Fulano');
-    console.log(nome.dizerNome('Olá...'));        // Olá... Eu sou: Fulano
+    console.log(nome.dizerNome('Olá...'));  // retorna Olá... Eu sou: Fulano
 
 ## Métodos estáticos 
 
@@ -47,10 +47,10 @@ São chamados sem a instanciação da sua classe e não podem ser chamados quand
     const p1 = new Ponto(5, 5);
     const p2 = new Ponto(10, 10);
 
-    console.log(Ponto.distancia(p1, p2));       // Chama o método após a instanciação da classe
+    console.log(Ponto.distancia(p1, p2));  // Chama o método sem a instanciação da classe
 
-    console.log(p1.distancia);                  // undefined
-    console.log(p2.distancia);                  // undefined
+    console.log(p1.distancia);  // retorna undefined
+    console.log(p2.distancia);  // retorna undefined
     
  ## Métodos por protótipos
  
@@ -65,4 +65,4 @@ São chamados sem a instanciação da sua classe e não podem ser chamados quand
     }
     
     const nome = new Nome('Fulano', 'de Tal');
-    console.log(nome.dizerNome())               // Fulano de Tal disse olá...
+    console.log(nome.dizerNome());  // retorna Fulano de Tal disse olá...

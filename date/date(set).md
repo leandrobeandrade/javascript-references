@@ -4,7 +4,7 @@ Define o dia do mês de um objeto de data:
     var data = new Date();
     data.setDate(15);
     
-    var d = new Date("January 17, 01:15:00");
+    var d = new Date('January 17, 01:15:00');
     d.setDate(15);    // retorna January 15, 01:15:00
 
 ## setFullYear()

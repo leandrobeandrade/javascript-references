@@ -18,13 +18,13 @@ Retorna o dia da semana (de 0 a 6):
     
     var data = new Date();
     var diaSemana = new Array(7);
-    diaSemana[0] = "Domingo";
-    diaSemana[1] = "Segunda";
-    diaSemana[2] = "Terça";
-    diaSemana[3] = "Quarta";
-    diaSemana[4] = "Quinta";
-    diaSemana[5] = "Sexta";
-    diaSemana[6] = "Sábado";
+    diaSemana[0] = 'Domingo';
+    diaSemana[1] = 'Segunda';
+    diaSemana[2] = 'Terça';
+    diaSemana[3] = 'Quarta';
+    diaSemana[4] = 'Quinta';
+    diaSemana[5] = 'Sexta';
+    diaSemana[6] = 'Sábado';
 
     var dia = diaSemana[data.getDay()];
     console.log(dia);   // retorna o dia da semana atual

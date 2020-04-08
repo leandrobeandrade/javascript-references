@@ -15,7 +15,7 @@ Para declarar um método de classe assíncrona, basta anexá-lo com **async**
 Se uma promessa for resolvida normalmente, await retorna o resultado da promise. Mas, no caso de uma rejeição, é gerado um erro, como se houvesse uma declaração de lançamento nessa linha
 
     async function f() {
-        await Promise.reject(new Error("Algo deu errado!"));
+        await Promise.reject(new Error('Algo deu errado!'));
     }
 
 Em situações reais, a promise pode levar algum tempo antes de ser rejeitada. Nesse caso, haverá um atraso antes de aguardar lança um erro.

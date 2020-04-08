@@ -11,7 +11,7 @@ Cria um nó de atributo
 
     let h1 = document.getElementsByTagName('h1')[0];
     let att = document.createAttribute('class');
-    att.value = "teste";
+    att.value = 'teste';
     h1.setAttributeNode(att);
     console.log(h1); // retorna <h1 class="teste">Teste</h1>
     
@@ -25,7 +25,7 @@ Cria um nó *DocumentFragment* vazio
     
     let frag = document.createDocumentFragment();
     frag.appendChild(document.getElementsByTagName('li')[0]);
-    frag.childNodes[0].childNodes[0].nodeValue = "Leite";
+    frag.childNodes[0].childNodes[0].nodeValue = 'Leite';
     document.getElementsByTagName('ul')[0].appendChild(frag);
     console.log(document.getElementsByTagName('ul')[0]); // retorna <ul><li>Chá</li><li>Leite</li></ul>
     
@@ -33,7 +33,7 @@ Cria um nó *DocumentFragment* vazio
 Cria um nó de elemento
 
     let btn = document.createElement('button');
-    btn.textContent = "Teste";
+    btn.textContent = 'Teste';
     document.body.appendChild(btn);
 
 ## document.createTextNode()
@@ -67,10 +67,10 @@ Retorna todo o conteúdo da tag **`<head>`** do documento atual
 ## document.images
 Retorna uma coleção de todos os elementos **`<img>`** no documento
 
-    let a = document.images.length;                             // pega a quantidade de imagens no documento
-    let b = document.images[0].src;                             // pega o src da imagem 1
-    let c = document.images.item(0).src;                        // pega o src da imagem 1
-    let d = document.images.namedItem('myImg').src;             // pega o src da imagem pelo id "myImg"
+    let a = document.images.length;                        // pega a quantidade de imagens no documento
+    let b = document.images[0].src;                        // pega o src da imagem 1
+    let c = document.images.item(0).src;                   // pega o src da imagem 1
+    let d = document.images.namedItem('myImg').src;        // pega o src da imagem pelo id "myImg"
 
 ## document.importNode()
 Importa um nó de outro documento

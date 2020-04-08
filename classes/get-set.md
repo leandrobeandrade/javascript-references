@@ -15,7 +15,7 @@ São utilizados principalmente quando se quer manipular os valores que os métod
     }
 
     const nomes = new Pessoa("Fulano");
-    console.log(nomes._nomes);                         // Fulano
+    console.log(nomes._nomes);  // retorna Fulano
 
     nomes._nomes = "Ciclano";
-    console.log(nomes._nomes);                         // Ciclano
+    console.log(nomes._nomes);  // retorna Ciclano
