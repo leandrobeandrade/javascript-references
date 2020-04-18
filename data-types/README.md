@@ -1,6 +1,6 @@
 # Tipos de Dados
 
-O padrão adotado pela última versão do ECMASCRIPT define como sendo 7 o número de tipos de dados na linguagem:
+O padrão adotado pela última versão do ECMASCRIPT define como sendo `7` o número de tipos de dados na linguagem:
 
 ## Boolean
 
