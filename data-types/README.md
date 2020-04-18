@@ -62,4 +62,4 @@ Assim como objetos, arrays também são implementados na linguagem como sendo do
     let vetor = [1, 2, 3, 4];
     console.log(typeof vetor);   // retorna object
 
-![](https://github.com/leandrobeandrade/javascript-references/blob/master/tipos-dados/types.png)
+![](https://github.com/leandrobeandrade/javascript-references/blob/master/data-types/types.png)
