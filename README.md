@@ -1,6 +1,6 @@
 # Referências Javascript  
 
-Referência completa da Linguagem Javascript e também suas novas especificações como ECMASCRIPT versões 6 e 7
+Referência completa da Linguagem Javascript e também suas novas especificações como ECMASCRIPT versões 6 e 7.
 
 ## Links úteis
 ##### JAVASCRIPT
