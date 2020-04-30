@@ -42,7 +42,7 @@ Substitui a primeira ocorrência encontrada por outra especificada ou várias co
 Retorna a posição da primeira ocorrência especificada e aceita um segundo parâmetro por onde deve começar a busca:
 
     let texto = 'É Javascript, e mais Javascript!';
-    console.log(texto.indexOf('Jasvascript'));      // retorna 2
+    console.log(texto.indexOf('Javascript'));      // retorna 2
 
     console.log(texto.indexOf('Javascript', 3));    // retorna 21 
 
