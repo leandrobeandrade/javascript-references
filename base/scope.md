@@ -22,5 +22,16 @@ Em JavaScript além de variáveis globais que ficam disponíveis para todo o esc
       
       console.log(texto);   // erro - texto não foi definido
       
+  Se a variável global conter o mesmo nome que uma variável local, a variável local sobrevalecerá sobre a global:
+  
+      let texto = 'Alô Mundo!!';
+      
+      function teste () {
+        let texto = 'Outra coisa.'
+        return texto;
+      }
+      
+      teste();  // retorna Outra coisa.
+  
 // implementar variaveis com o mesmo nome em escopos diferentes
 // implementar https://medium.com/opensanca/hoisting-em-javascript-9f22b1f78448 https://medium.com/weyes/entendendo-o-uso-de-escopo-no-javascript-3669172ca5ba
