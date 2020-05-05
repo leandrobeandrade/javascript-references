@@ -34,5 +34,5 @@ Em JavaScript além de variáveis globais que ficam disponíveis para todo o esc
       teste();  // retorna Outra coisa.
   
 // implementar variaveis com o mesmo nome em escopos diferentes ...
-// implementar https://medium.com/opensanca/hoisting-em-javascript-9f22b1f78448 
-// https://medium.com/weyes/entendendo-o-uso-de-escopo-no-javascript-3669172ca5ba
+https://medium.com/opensanca/hoisting-em-javascript-9f22b1f78448 
+https://medium.com/weyes/entendendo-o-uso-de-escopo-no-javascript-3669172ca5ba
