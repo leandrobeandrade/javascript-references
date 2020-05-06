@@ -33,6 +33,28 @@ Em JavaScript além de variáveis globais que ficam disponíveis para todo o esc
       
       teste();  // retorna Outra coisa.
   
-// implementar variaveis com o mesmo nome em escopos diferentes ...
-https://medium.com/opensanca/hoisting-em-javascript-9f22b1f78448 
-https://medium.com/weyes/entendendo-o-uso-de-escopo-no-javascript-3669172ca5ba
+## Funções
+
+  Escopo de funções criam uma forma de revestimento do código protegendo os dados guardados em suas variáveis e impedindo assim que outras partes do código (até mesmo dentro da própria função) alterem seus valores.
+      
+      var auto = 'Carro';
+      
+      function carros() {
+        var marca = 'BMW';
+
+        function tipos() {
+          var tipo = 'SUV'
+          console.log(`O ${auto} é do tipo ${tipo} e da marca ${marca}.`);
+        }
+
+        tipos();  // retorna O Carro é do tipo SUV e da marca BMW.
+        
+        console.log(auto);   // retorna Carro
+        console.log(marca);  // retorna BMW
+        console.log(tipo);   // retorna tipo is not defined
+      }
+      
+      carros();
+  
+  No código pode ser visto que foi criado um escopo que parte de dentro para fora, ou seja, quanto mais interna uma função `(tipos())`, mais ela tem acesso as variáveis de fora de seu escopo e quando ao contrário essa varíavel não pode ser acessada no lado mais externo. 
+  
