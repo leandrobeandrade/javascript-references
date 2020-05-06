@@ -56,5 +56,5 @@ Em JavaScript além de variáveis globais que ficam disponíveis para todo o esc
       
       carros();
   
-  No código pode ser visto que foi criado um escopo que parte de dentro para fora, ou seja, quanto mais interna uma função `(tipos())`, mais ela tem acesso as variáveis de fora de seu escopo e quando ao contrário essa varíavel não pode ser acessada no lado mais externo. 
+  No código pode ser visto que foi criado um escopo que parte de dentro para fora, ou seja, quanto mais interna uma função `(tipos())`, mais ela tem acesso as variáveis de fora de seu escopo e quando ao contrário essa varíavel não pode ser acessada quanto ao seu lado externo. 
   
