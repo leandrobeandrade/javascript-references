@@ -1,0 +1,3 @@
+# Alguma notação sobre JavaScript
+
+...

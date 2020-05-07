@@ -19,7 +19,7 @@ Mecanismos diferentes têm nomes de códigos diferentes. Por exemplo:
 
 A sintaxe do JavaScript não atende às necessidades de todos por padrão. Projetos diferentes necessitam de características diferentes, porque projetos e requisitos são diferentes entre aplicações.
 
-Recentemente, apareceu uma infinidade de novas "linguagens", que são transpiladas (convertidos) para JavaScript antes de serem executados no navegador. As ferramentas modernas tornam a transpilação muito rápida e transparente, permitindo que os desenvolvedores codifiquem em uma implementação diferente da padrão do JavaScript e a convertam automaticamente para ela.
+Recentemente, apareceu uma infinidade de novas "linguagens", que são transpiladas (convertidos) para JavaScript antes de serem executados no navegador. As ferramentas modernas tornam a transpilação muito rápida e transparente, permitindo que os desenvolvedores codifiquem em uma implementação diferente da padrão do JavaScript e a convertam automaticamente.
 
 Exemplos de tais "linguagens":
 
