@@ -1,10 +1,8 @@
 # Escopo
 
-## Variáveis
-
 Em JavaScript além de variáveis globais que ficam disponíveis para todo o escopo da aplicação, existem outros escopos de variáveis que podem ser utilizados.
 
-- **Escopos de blocos {...}**
+- **Escopo de blocos**
 
   Blocos de códigos que são delimitados por chaves, como `if/else`, `for` ou `funções`, não tendem a delimitar variáveis que sejam declaradas dentro destes blocos com a palavra reservada **`var`**:
   
@@ -32,8 +30,8 @@ Em JavaScript além de variáveis globais que ficam disponíveis para todo o esc
       }
       
       teste();  // retorna Outra coisa.
-  
-## Funções
+
+- **Escopo de funções** 
 
   Escopo de funções criam uma forma de revestimento do código protegendo os dados guardados em suas variáveis e impedindo assim que outras partes do código (até mesmo dentro da própria função) alterem seus valores.
       
