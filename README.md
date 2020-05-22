@@ -1,6 +1,7 @@
 # Referências Javascript  
 
-Referência completa da Linguagem Javascript e também suas novas especificações como ECMASCRIPT versões 6 e 7.
+Referência completa sobre a Linguagem Javascript e também suas novas especificações como ECMASCRIPT versões 6 e 7.
+Toda as referências encontradas nesse repositório são baseadas em documentações consistentes e reconhecidas como **[mdn](https://developer.mozilla.org/bm/docs/Web/JavaScript)** e **[javascript.info](https://javascript.info/)**.
 
 ## Links úteis
 ##### JAVASCRIPT
