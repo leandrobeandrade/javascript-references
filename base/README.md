@@ -11,11 +11,11 @@ Hoje, o JavaScript pode ser executado não apenas no navegador, mas também no s
 
 Mecanismos diferentes têm nomes de códigos diferentes. Por exemplo:
 
-- V8 => Chrome e Opera.
-- SpiderMonkey => Firefox.
-- Trident e Chakra => diferentes versões do IE.
-- ChakraCore => Microsoft Edge.
-- Nitro e SquirrelFish => Safari.
+- **V8 =>** Chrome e Opera.
+- **SpiderMonkey =>** Firefox.
+- **Trident e Chakra =>** diferentes versões do IE.
+- **ChakraCore =>** Microsoft Edge.
+- **Nitro e SquirrelFish** => Safari.
 
 A sintaxe do JavaScript não atende às necessidades de todos por padrão. Projetos diferentes necessitam de características diferentes, porque projetos e requisitos são diferentes entre aplicações.
 
