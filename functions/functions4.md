@@ -81,8 +81,8 @@ São funções que são passadas como parâmetro de outra(s) função(ões)
     }
 
     function processa(callback) {
-      let nome = 'Fulano de Tal';
-      callback(nome);
+        let nome = 'Fulano de Tal';
+        callback(nome);
     }
 
     processa(saudacao);   // retorna Alô Fulano de Tal
