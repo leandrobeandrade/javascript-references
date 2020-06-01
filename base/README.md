@@ -23,10 +23,10 @@ Recentemente, apareceu uma infinidade de novas "linguagens", que são transpilad
 
 Exemplos de tais "linguagens":
 
-- CoffeeScript => é um "syntactic sugar" (açúcar sintático) para JavaScript. Ele introduz uma sintaxe mais curta, permitindo escrever código mais claro e preciso. Normalmente, utilizado em com a linguagem de programação Ruby.
-- TypeScript => está concentrado na adição de "digitação estrita de dados" para simplificar o desenvolvimento e o suporte de sistemas complexos. Desenvolvido pela Microsoft.
-- Flow => é um verificador de tipo estático para o seu código JavaScript. Desenvolvido pelo Facebook.
-- Dart => é uma linguagem autônoma que possui seu próprio mecanismo que roda em ambientes que não são do navegador (como aplicativos móveis), mas também pode ser transpilada para JavaScript. Desenvolvido pelo Google.
+- `CoffeeScript =>` é um "syntactic sugar" (açúcar sintático) para JavaScript. Ele introduz uma sintaxe mais curta, permitindo escrever código mais claro e preciso. Geralmente, utilizado junto com a linguagem de programação Ruby.
+- `TypeScript =>` está concentrado na adição de "digitação estrita de dados" para simplificar o desenvolvimento e o suporte de sistemas complexos. Desenvolvido pela Microsoft.
+- `Flow =>` é um verificador de tipo estático para o seu código JavaScript. Desenvolvido pelo Facebook.
+- `Dart =>` é uma linguagem autônoma que possui seu próprio mecanismo que roda em ambientes que não são do navegador (como aplicativos móveis), mas também pode ser transpilada para JavaScript. Desenvolvido pelo Google.
 
 Existem tambeḿ sobre a linguagem JavaScript **bibliotecas** e **frameworks** que auxiliam no desenvolvimento e facilitam a abstração de técnicas mais avançadas da linguagem, fornecendo assim uma maneira mais simplificada de escrita de código.
 
@@ -35,7 +35,7 @@ Existem tambeḿ sobre a linguagem JavaScript **bibliotecas** e **frameworks** q
 - jQuery => atualmente em grande queda de uso, a biblioteca simplifica na geração de códigos nativos utilizando uma sintaxe mais amigável e familiar.
 - polymer => permite criar aplicações web utilizando a implemetação de Web Components.
 - prototype => muito utilizado para requisições **Ajax** reduz a quantidade de código para a realização de tarefas comuns.
-- modernizr => permite saber quando uma funcionalidade será apresentada para o usuário da forma como foi planejada e testada e, quando não for possível utilizá-la, definir uma outra maneira pata tal.
+- modernizr => permite saber quando uma funcionalidade será apresentada para o usuário da forma como foi planejada e testada e, quando não for possível utilizá-la, definir uma outra maneira para tal.
 - entre muitas outras...
 
 ### Frameworks
