@@ -1,5 +1,5 @@
 # Closures
-Closure é quando uma função é capaz de acessar seu escopo léxico mesmo quando ela está sendo executada fora de seu escopo léxico.
+Closure é quando uma função é capaz de acessar seu escopo léxico mesmo quando ela está sendo executada fora de seu escopo léxico
 
     let msg = function() {
         let mensagem = 'Testando Javascript';
