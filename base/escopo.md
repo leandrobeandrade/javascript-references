@@ -20,7 +20,7 @@ Em JavaScript além de variáveis globais que ficam disponíveis para todo o esc
       
       console.log(texto);   // erro - texto não foi definido
       
-  Se a variável global (possuindo ou não a palavra reservada let ou var) conter o mesmo nome que uma variável local, a variável local sobrevalecerá sobre a global:
+  Se a variável global (possuindo ou não a palavra reservada var, let ou const) conter o mesmo nome que uma variável local, a variável local sobrevalecerá sobre a global:
   
       let texto = 'Alô Mundo!!';
       
