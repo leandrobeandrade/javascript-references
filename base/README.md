@@ -28,13 +28,13 @@ Exemplos de tais "linguagens":
 - `Flow =>` é um verificador de tipo estático para o seu código JavaScript. Desenvolvido pelo Facebook.
 - `Dart =>` é uma linguagem autônoma que possui seu próprio mecanismo que roda em ambientes que não são do navegador (como aplicativos móveis), mas também pode ser transpilada para JavaScript. Desenvolvido pelo Google.
 
-Existem tambeḿ sobre a linguagem JavaScript **bibliotecas** e **frameworks** que auxiliam no desenvolvimento e facilitam a abstração de técnicas mais avançadas da linguagem, fornecendo assim uma maneira mais simplificada de escrita de código.
+Existem também sobre a linguagem JavaScript **bibliotecas** e **frameworks** que auxiliam no desenvolvimento e facilitam a abstração de técnicas mais avançadas da linguagem, fornecendo assim uma maneira mais simplificada de escrita de código.
 
 ### Bibliotecas
 
 - jQuery => atualmente em grande queda de uso, a biblioteca simplifica na geração de códigos nativos utilizando uma sintaxe mais amigável e familiar.
-- polymer => permite criar aplicações web utilizando a implemetação de Web Components.
-- prototype => muito utilizado para requisições **Ajax** reduz a quantidade de código para a realização de tarefas comuns.
+- polymer => permite criar aplicações web utilizando a implementação de `Web Components`.
+- prototype => muito utilizado para requisições `Ajax` reduz a quantidade de código para a realização de tarefas comuns.
 - modernizr => permite saber quando uma funcionalidade será apresentada para o usuário da forma como foi planejada e testada e, quando não for possível utilizá-la, definir uma outra maneira para tal.
 - entre muitas outras...
 
