@@ -1,18 +1,18 @@
 # Exemplo de uso com Ajax
 
 	let get = function(url, callback) {								// 01
-    	let http = new XMLHttpRequest();							// 02
-    	http.onreadystatechange = function() {						// 03
-   			if(http.readyState == 4 && http.status == 200) {		// 04
-   				callback(http.responseText, http.status);			// 05
+    	let http = new XMLHttpRequest();							        // 02
+    	http.onreadystatechange = function() {						        	// 03
+   			if(http.readyState == 4 && http.status == 200) {				// 04
+   				callback(http.responseText, http.status);				// 05
 			}
 		};
-    	http.open('Get', 'url', true);								// 08
-    	http.send();												// 09
+    	http.open('Get', 'url', true);									// 08
+    	http.send();											// 09
 	};
 
-	get('ajax.json', function(data, status) { 						// 12
-   		if(status == 200) console.log(data);						// 13
+	get('ajax.json', function(data, status) { 							// 12
+   		if(status == 200) console.log(data);							// 13
         else console.log('Erro!');
 	});
 
