@@ -1,20 +1,20 @@
 # Exemplo de uso com Ajax
 
-    01      let get = function(url, callback) {
-    02	    	let http = new XMLHttpRequest();
-    03		    http.onreadystatechange = function() {
-    04			    if(http.readyState == 4 && http.status == 200) {
-    05			        callback(http.responseText, http.status);
-			        }
-		        };
-    08		    http.open('Get', 'url', true);
-    09		    http.send();
-	        };
+	let get = function(url, callback) {								// 01
+    	let http = new XMLHttpRequest();							// 02
+    	http.onreadystatechange = function() {						// 03
+   			if(http.readyState == 4 && http.status == 200) {		// 04
+   				callback(http.responseText, http.status);			// 05
+			}
+		};
+    	http.open('Get', 'url', true);								// 08
+    	http.send();												// 09
+	};
 
-    12      get('ajax.json', function(data, status) { 
-    13		    if(status == 200) console.log(data);
-                else console.log('Erro!');
-	        });
+	get('ajax.json', function(data, status) { 						// 12
+   		if(status == 200) console.log(data);						// 13
+        else console.log('Erro!');
+	});
 
 - 01 => Declara a função get() com 2 parâmetros
 - 02 => Cria um novo objeto do tipo XMLHttpRequest e armazenando na variável http
