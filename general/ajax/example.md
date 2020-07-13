@@ -13,13 +13,13 @@
 
 	get('ajax.json', function(data, status) { 							// 12
    		if(status == 200) console.log(data);							// 13
-        else console.log('Erro!');
+        	else console.log('Erro!');
 	});
 
-- 01 => Declara a função get() com 2 parâmetros
-- 02 => Cria um novo objeto do tipo XMLHttpRequest e armazenando na variável http
-- 03 => Define uma função a ser chamada quando a propriedade readyState for alterada
-- 04 => Mantém o status do XMLHttpRequest.
+- 01 => Declara a função **get()** com 2 parâmetros
+- 02 => Cria um novo objeto do tipo **XMLHttpRequest** e armazenando na variável **`http`**
+- 03 => Define uma função a ser chamada quando a propriedade **readyState** for alterada
+- 04 => Checa o **estado**  o **status** do XMLHttpRequest.
         
     readyState
     - **0:** solicitação não inicializada
@@ -34,8 +34,8 @@
     - **404:** "Page not found"
     - **500:** "Internal Server Error"
     
-- 05 => Declara a função de callback com a resposta e o status
-- 08 => Especifica o método open()
-- 09 => Envia a requisição
+- 05 => Declara a função de **callback** com a resposta e o status
+- 08 => Especifica o método **open()**
+- 09 => Envia a requisição com o método **send()**
 - 12 => Executa a função get()
-- 13 => Se status da requisição for ok mostra os dados requisitados senão mostra o erro
+- 13 => Se status da requisição for **200** mostra os dados requisitados senão mostra o erro
