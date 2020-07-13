@@ -3,18 +3,18 @@
     01      let get = function(url, callback) {
     02	    	let http = new XMLHttpRequest();
     03		    http.onreadystatechange = function() {
-    04			if(http.readyState == 4 && http.status == 200) {
-    05			    callback(http.responseText, http.status);
-			}
-		    };
-    08		http.open('Get', 'url', true);
-    09		http.send();
-	    };
+    04			    if(http.readyState == 4 && http.status == 200) {
+    05			        callback(http.responseText, http.status);
+			        }
+		        };
+    08		    http.open('Get', 'url', true);
+    09		    http.send();
+	        };
 
     12      get('ajax.json', function(data, status) { 
-    13		if(status == 200) console.log(data);
+    13		    if(status == 200) console.log(data);
                 else console.log('Erro!');
-	    });
+	        });
 
 - 01 => Declara a função get() com 2 parâmetros
 - 02 => Cria um novo objeto do tipo XMLHttpRequest e armazenando na variável http
