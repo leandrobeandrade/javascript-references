@@ -38,4 +38,4 @@
 - 08 => Especifica o método open()
 - 09 => Envia a requisição
 - 12 => Executa a função get()
-- 13 => Se status da requisição for ok mostra os dados requisitados senão mostra o erro 
+- 13 => Se status da requisição for ok mostra os dados requisitados senão mostra o erro
