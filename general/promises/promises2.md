@@ -48,7 +48,7 @@ Um manipulador usado no **then()** pode criar e retornar uma promessa. Nesse cas
 
     }).then((result) => {
 
-        console.log(result); // 1
+        console.log(result);  // retorna 1
 
         return new Promise((resolve, reject) => {
             setTimeout(() => resolve(result * 2), 1000);
@@ -56,7 +56,7 @@ Um manipulador usado no **then()** pode criar e retornar uma promessa. Nesse cas
 
     }).then((result) => {
 
-        console.log(result); // 2
+        console.log(result);  // retorna 2
 
         return new Promise((resolve, reject) => {
             setTimeout(() => resolve(result * 2), 1000);
@@ -64,7 +64,7 @@ Um manipulador usado no **then()** pode criar e retornar uma promessa. Nesse cas
 
     }).then((result) => {
 
-        console.log(result); // 4
+        console.log(result);  // retorna 4
 
-    }); // retorna 1 2 4
+    });
     
