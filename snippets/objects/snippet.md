@@ -18,13 +18,13 @@
     }
 
     let classe = new Classe(5, 6)
-    console.log(classe.val1)   // retorna 5
-    console.log(classe.vals)   // retorna { "val1": 5, "val2": 6 }
+    console.log(classe.val1)    // retorna 5
+    console.log(classe.vals)    // retorna { "val1": 5, "val2": 6 }
 
     classe.val1++;
-    console.log(classe.val1)   // retorna 6
-    console.log(classe.vals)   // retorna { "val1": 6, "val2": 6 }
+    console.log(classe.val1)    // retorna 6
+    console.log(classe.vals)    // retorna { "val1": 6, "val2": 6 }
     
-    classe.vals.val1 = 200;    // não surge efeito, val1 não pode ser acessado por vals
-    console.log(classe.val1)   // retorna 6
-    console.log(classe.vals);  // retorna { "val1": 6, "valor2": 6}
+    classe.vals.val1 = 200;     // não surge efeito, val1 não pode ser acessado por vals
+    console.log(classe.val1)    // retorna 6
+    console.log(classe.vals);   // retorna { "val1": 6, "valor2": 6}
