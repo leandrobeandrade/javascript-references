@@ -47,3 +47,4 @@ Existem também sobre a linguagem JavaScript **bibliotecas** e **frameworks** qu
 - Ember
 - Mootools
 - Meteor
+- Svelte
