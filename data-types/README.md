@@ -2,7 +2,7 @@
 
 O padrão adotado pela última versão do ECMASCRIPT define como sendo `7` o número de tipos de dados na linguagem:
 
-## Boolean
+## boolean
 
 Representa um tipo de dado lógico que pode conter apenas 1 de 2 valores possíveis **verdadeiro (true)** ou **falso (false)**, sendo um tipo de dado muito utilizado para realizar tarefas que dependam de alguma condição, por exemplo junto aos métodos `if/else` e `while`.
 
@@ -22,7 +22,7 @@ Um valor automaticamente atribuido para variaveis que foram recentemente declara
     let valor;
     console.log(valor);  // retorna undefined
 
-## Number
+## number
 
 Os números são sempre armazenados como números de ponto flutuante de precisão dupla, seguindo o padrão internacional IEEE 754. Ao contrário de muitas outras linguagens de programação, o JavaScript não define tipos diferentes de números, como números inteiros, curtos, longos, ponto flutuante, etc...
 
@@ -30,13 +30,13 @@ Esse formato armazena números em 64 bits, onde o número (a fração) é armaze
 
     let valor = 100;
 
-## String
+## string
 
 É uma sequência de caracteres usados para representar texto.
 
     let valor = '100';
 
-## Symbol
+## symbol
 
 Valores desse tipo podem ser usados para fazer propriedades de objetos anônimos. Ele pode ser usado como chave de uma propriedade de objeto quando este tem a intenção de ser privada, para uso interno da classe ou do tipo do objeto em questão.
 
@@ -48,7 +48,7 @@ Valores desse tipo podem ser usados para fazer propriedades de objetos anônimos
     usuario[id] = 1;
     console.log(usuario[id]);   // retorna 1
 
-## Object
+## object
 
 Um objeto é uma coleção de propriedades, e uma propriedade é uma associação entre um nome (ou chave) e um valor. Um valor de propriedade pode ser uma função, que é então considerada um método do objeto. Além dos objetos que são pré-definidos no browser, você pode definir seus próprios objetos.
 
