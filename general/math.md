@@ -28,7 +28,7 @@ Math é um objeto embutido que tem propriedades e métodos para constantes e fun
       Math.acos(1);   // 0
       Math.acos(2);   // NaN
       
-- **`Math.acosh(x)`** Retorna o arco-coseno hiperbólico de um número. Para valores menores que 1, Math.acosh() retornará NaN
+- **`Math.acosh(x)`** Retorna o arco-coseno hiperbólico de um número. Para valores menores que 1, Math.acosh() retornará NaN. *`Experimental até o momento`*
 
       Math.acosh(-1);  // NaN
       Math.acosh(0);   // NaN
@@ -45,7 +45,7 @@ Math é um objeto embutido que tem propriedades e métodos para constantes e fun
       Math.asin(1);   // 1.5707963267948966 (pi/2)
       Math.asin(2);   // NaN      
 
-- **`Math.asinh(x)`** Retorna o arco-seno hiperbólico de um número
+- **`Math.asinh(x)`** Retorna o arco-seno hiperbólico de um número. *`Experimental até o momento`*
 
       Math.asinh(1);  // 0.881373587019543
       Math.asinh(0);  // 0
@@ -56,7 +56,7 @@ Math é um objeto embutido que tem propriedades e métodos para constantes e fun
       Math.atan(0);   // 0
       Math.atan(-0);  // -0
 
-- **`Math.atanh(x)`** Retorna o arco-tangente hiperbólico de um número (arctanx). Para valores menores que -1 ou maiores que 1, NaN é retornado
+- **`Math.atanh(x)`** Retorna o arco-tangente hiperbólico de um número (arctanx). Para valores menores que -1 ou maiores que 1, NaN é retornado. *`Experimental até o momento`*
       
       Math.atanh(-2);  // NaN
       Math.atanh(-1);  // -Infinity
@@ -82,7 +82,7 @@ Math é um objeto embutido que tem propriedades e métodos para constantes e fun
       Math.atan2(±Infinity, -Infinity); // ±3*PI/4.
       Math.atan2(±Infinity, +Infinity); // ±PI/4.
 
-- **`Math.cbrt(x)`** Retorna a raiz cúbica de um número (cbrt)
+- **`Math.cbrt(x)`** Retorna a raiz cúbica de um número (cbrt). *`Experimental até o momento`*
 
       Math.cbrt(NaN); // NaN
       Math.cbrt(-1); // -1
@@ -110,7 +110,7 @@ Math é um objeto embutido que tem propriedades e métodos para constantes e fun
       Math.cos(Math.PI);     // -1
       Math.cos(2 * Math.PI); // 1
 
-- **`Math.cosh(x)`** Retorna o coseno hiperbólico de um número
+- **`Math.cosh(x)`** Retorna o coseno hiperbólico de um número. *`Experimental até o momento`*
 
       Math.cosh(0);  // 1
       Math.cosh(1);  // 1.5430806348152437
@@ -122,7 +122,7 @@ Math é um objeto embutido que tem propriedades e métodos para constantes e fun
       Math.exp(0);  // 1
       Math.exp(1);  // 2.718281828459045
 
-- **`Math.expm1(x)`** Retorna e levado a x-1
+- **`Math.expm1(x)`** Retorna e levado a x-1. *`Experimental até o momento`*
 
       Math.expm1(-1); // -0.6321205588285577 
       Math.expm1(0);  // 0
@@ -133,13 +133,14 @@ Math é um objeto embutido que tem propriedades e métodos para constantes e fun
       Math.floor( 45.95); //  45
       Math.floor(-45.95); // -46
 
-- **`Math.fround(x)`** Retorna a mais próxima representação de ponto flutuante de precisão-única de um número
+- **`Math.fround(x)`** Retorna a mais próxima representação de ponto flutuante de precisão-única de um número. *`Experimental até o momento`*
       
       // O número 1,5 pode ser representado com precisão no sistema numérico binário e é idêntico em 32 bits e 64 bits
       Math.fround(1.5); // 1.5
       Math.fround(1.5) === 1.5; // true
       
-      // No entanto, o número 1,337 não pode ser representado com precisão no sistema numérico binário, por isso é diferente em 32 bits e 64 bits
+      // No entanto, o número 1,337 não pode ser representado com precisão no sistema numérico binário, por isso é 
+      // diferente em 32 bits e 64 bits
       Math.fround(1.337); // 1.3370000123977661
       Math.fround(1.337) === 1.337; // false
       
@@ -160,7 +161,7 @@ Math é um objeto embutido que tem propriedades e métodos para constantes e fun
       Math.hypot(3, 4, '5');   // 7.0710678118654755, +'5' => 5
       Math.hypot(-3);          // 3, the same as Math.abs(-3)
       
-- **`Math.imul(x)`** Retorna o resultado de uma multiplicação de inteiro de 32-bit      
+- **`Math.imul(x)`** Retorna o resultado de uma multiplicação de inteiro de 32-bit. *`Experimental até o momento`*
       
       Math.imul(2, 4);          // 8
       Math.imul(-1, 8);         // -8
@@ -175,14 +176,14 @@ Math é um objeto embutido que tem propriedades e métodos para constantes e fun
       Math.log(1);  // 0
       Math.log(10); // 2.302585092994046
       
-- **`Math.log1p(x)`** Retorna o logaritmo natural de um número
+- **`Math.log1p(x)`** Retorna o logaritmo natural de um número. *`Experimental até o momento`*
 
       Math.log1p(1);  // 0.6931471805599453
       Math.log1p(0);  // 0
       Math.log1p(-1); // -Infinity
       Math.log1p(-2); // NaN
 
-- **`Math.log10(x)`** Retorna o logaritmo de x na base 10
+- **`Math.log10(x)`** Retorna o logaritmo de x na base 10. *`Experimental até o momento`*
 
       Math.log10(2);      // 0.3010299956639812
       Math.log10(1);      // 0
@@ -190,7 +191,7 @@ Math é um objeto embutido que tem propriedades e métodos para constantes e fun
       Math.log10(-2);     // NaN
       Math.log10(100000); // 5
 
-- **`Math.log2(x)`** Retorna o logaritmo de x na base 2
+- **`Math.log2(x)`** Retorna o logaritmo de x na base 2. *`Experimental até o momento`*
 
       Math.log2(3);    // 1.584962500721156
       Math.log2(2);    // 1
@@ -268,7 +269,7 @@ Math é um objeto embutido que tem propriedades e métodos para constantes e fun
       x = Math.round(-20.51); // Retorna o valor -21
       x = Math.round(1.005*100)/100;
 
-- **`Math.sign(x)`** Retorna o sinal de x, indicando se é positivo, negativo ou zero. Se o argumento é um número positivo, o retorno será 1, se o numero passado for negativo, o retorno será -1, se o argumento for um zero positivo , o retorno será +0, se o argumento for 0 negativo , o retorno será -0. Qualquer outro valor que não seja numérico (string transformada em numero por ex.), o retorno será NaN 
+- **`Math.sign(x)`** Retorna o sinal de x, indicando se é positivo, negativo ou zero. Se o argumento é um número positivo, o retorno será 1, se o numero passado for negativo, o retorno será -1, se o argumento for um zero positivo , o retorno será +0, se o argumento for 0 negativo , o retorno será -0. Qualquer outro valor que não seja numérico (string transformada em numero por ex.), o retorno será NaN. *`Experimental até o momento`*
 
       Math.sign(3);     //  1
       Math.sign(-3);    // -1
@@ -285,7 +286,7 @@ Math é um objeto embutido que tem propriedades e métodos para constantes e fun
       Math.sin(1);           // 0.8414709848078965
       Math.sin(Math.PI / 2); // 1
 
-- **`Math.sinh(x)`** Retorna o seno hiperbólico de um número (sinhx)
+- **`Math.sinh(x)`** Retorna o seno hiperbólico de um número (sinhx). *`Experimental até o momento`*
 
       Math.sinh(0); // 0
       Math.sinh(1); // 1.1752011936438014
@@ -304,7 +305,7 @@ Math é um objeto embutido que tem propriedades e métodos para constantes e fun
         return Math.tan(x);
       }
 
-- **`Math.tanh(x)`** Retorna a tangente hiperbólica de um número (tanhx)
+- **`Math.tanh(x)`** Retorna a tangente hiperbólica de um número (tanhx). *`Experimental até o momento`*
 
       Math.tanh(0);        // 0
       Math.tanh(Infinity); // 1
@@ -312,7 +313,7 @@ Math é um objeto embutido que tem propriedades e métodos para constantes e fun
 
 - **`Math.toSource()`** Retorna a string "Math". *Não implementada nos navegadores*
 
-- **`Math.trunc(x)`** Retorna a parte inteira de x, removendo quaisquer dígitos fracionários. O argumento passado a esse método será convertido a um tipo numérico implicitamente
+- **`Math.trunc(x)`** Retorna a parte inteira de x, removendo quaisquer dígitos fracionários. O argumento passado a esse método será convertido a um tipo numérico implicitamente. *`Experimental até o momento`*
 
       Math.trunc(13.37);    // 13
       Math.trunc(42.84);    // 42
