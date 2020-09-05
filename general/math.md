@@ -102,6 +102,19 @@ Math é um objeto embutido que tem propriedades e métodos para constantes e fun
       Math.ceil(-0.95);  // -0
       Math.ceil(-4);     // -4
       Math.ceil(-7.004); // -7
+      
+- **`Math.cos(x)`** Retorna o coseno de um número (cosx)
+
+      Math.cos(0);           // 1
+      Math.cos(1);           // 0.5403023058681398
+      Math.cos(Math.PI);     // -1
+      Math.cos(2 * Math.PI); // 1
+
+- **`Math.cosh(x)`** Retorna o coseno hiperbólico de um número
+
+      Math.cosh(0);  // 1
+      Math.cosh(1);  // 1.5430806348152437
+      Math.cosh(-1); // 1.5430806348152437
 
 - **`Math.exp(ex)`** Retorna e elevado a x, onde x é o argumento, e e é a constante de Euler (2.718...), a base do logaritmo natural
 
@@ -109,12 +122,35 @@ Math é um objeto embutido que tem propriedades e métodos para constantes e fun
       Math.exp(0);  // 1
       Math.exp(1);  // 2.718281828459045
 
+- **`Math.expm1(x)`** Retorna e levado a x-1
+
+      Math.expm1(-1); // -0.6321205588285577 
+      Math.expm1(0);  // 0
+      Math.expm1(1);  // 1.718281828459045
+
 - **`Math.floor(x)`** Retorna o maior inteiro que é menor ou igual a um número
 
       Math.floor( 45.95); //  45
       Math.floor(-45.95); // -46
 
-- **`Math.hypot([x[,y[,…]]])`** Retorna a raiz quadrada da soma dos quadrados dos argumentos ()
+- **`Math.fround(x)`** Retorna a mais próxima representação de ponto flutuante de precisão-única de um número
+      
+      // O número 1,5 pode ser representado com precisão no sistema numérico binário e é idêntico em 32 bits e 64 bits
+      Math.fround(1.5); // 1.5
+      Math.fround(1.5) === 1.5; // true
+      
+      // No entanto, o número 1,337 não pode ser representado com precisão no sistema numérico binário, por isso é diferente em 32 bits e 64 bits
+      Math.fround(1.337); // 1.3370000123977661
+      Math.fround(1.337) === 1.337; // false
+      
+      // 2 elevado a 150 é muito grande para um float de 32 bits, então Infinity é retornado:
+      Math.fround(2 ** 150); // Infinity
+      
+      // Se o parâmetro não puder ser convertido em um número ou não for um número (NaN), Math.fround () retornará NaN
+      Math.fround('abc'); // NaN
+      Math.fround(NaN); // NaN
+
+- **`Math.hypot([x[,y[,…]]])`** Retorna a raiz quadrada da soma dos quadrados dos argumentos
 
       Math.hypot(3, 4);        // 5
       Math.hypot(3, 4, 5);     // 7.0710678118654755
@@ -123,15 +159,30 @@ Math é um objeto embutido que tem propriedades e métodos para constantes e fun
       Math.hypot(3, 4, 'foo'); // NaN, +'foo' => NaN
       Math.hypot(3, 4, '5');   // 7.0710678118654755, +'5' => 5
       Math.hypot(-3);          // 3, the same as Math.abs(-3)
+      
+- **`Math.imul(x)`** Retorna o resultado de uma multiplicação de inteiro de 32-bit      
+      
+      Math.imul(2, 4);          // 8
+      Math.imul(-1, 8);         // -8
+      Math.imul(-2, -2);        // 4
+      Math.imul(0xffffffff, 5); // -5
+      Math.imul(0xfffffffe, 5); // -10
 
-- **`Math.log(x)`** Retorna o logaritmo natural (logex ou lnx) de um número
+- **`Math.log(x)`** Retorna o logaritmo natural de um número
 
-      Math.log(-1); // NaN, out of range
+      Math.log(-1); // NaN, fora de alcance
       Math.log(0);  // -Infinity
       Math.log(1);  // 0
       Math.log(10); // 2.302585092994046
+      
+- **`Math.log1p(x)`** Retorna o logaritmo natural de um número
 
-- **`Math.log10(x)`** Retorna o logaritmo de x na base 10 (log10x)
+      Math.log1p(1);  // 0.6931471805599453
+      Math.log1p(0);  // 0
+      Math.log1p(-1); // -Infinity
+      Math.log1p(-2); // NaN
+
+- **`Math.log10(x)`** Retorna o logaritmo de x na base 10
 
       Math.log10(2);      // 0.3010299956639812
       Math.log10(1);      // 0
@@ -139,7 +190,7 @@ Math é um objeto embutido que tem propriedades e métodos para constantes e fun
       Math.log10(-2);     // NaN
       Math.log10(100000); // 5
 
-- **`Math.log2(x)`** Retorna o logaritmo de x na base 2 (log2x)
+- **`Math.log2(x)`** Retorna o logaritmo de x na base 2
 
       Math.log2(3);    // 1.584962500721156
       Math.log2(2);    // 1
@@ -182,16 +233,92 @@ Math é um objeto embutido que tem propriedades e métodos para constantes e fun
       Math.pow(-7, 0.5); // NaN (números negativos não tem uma raiz quadrada real)
       
       // devido ao fato que raízes "par" e "ímpar" são próximas, e limitam a precisão de ponto flutuante, 
-      bases negativas com expoentes fracionários sempre retornam NaN
+      // bases negativas com expoentes fracionários sempre retornam NaN
       Math.pow(-7, 1/3); // NaN
 
-- **`Math.random()`** Retorna um número pseudo-aleatório entre 0 e 1
+- **`Math.random()`** Retorna um número pseudo-aleatório entre 0 e 1 ou entre números fornecidos
+
+      Math.random(); // 0.032225599421034756
+      Math.random(); // 0.4313038342210038
+      
+      // Gera um número aleatório entre dois valores
+      function getRandomArbitrary(min, max) {
+        return Math.random() * (max - min) + min;
+      }
+      
+      // Gera um número inteiro aleatório entre dois valores, retorna inclusive o min se for inteiro
+      function getRandomInt(min, max) {
+        let min = Math.ceil(min);
+        let max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min)) + min;
+      }
+      
+      // Gera um número inteiro aleatório entre dois valores, retorna inclusive o min e o max se esses forem inteiros
+      function getRandomIntInclusive(min, max) {
+        let min = Math.ceil(min);
+        let max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+      }
+
 - **`Math.round(x)`** Retorna o valor arrendodado de x, para o valor inteiro mais próximo
-- **`Math.sign(x)`** Retorna o sinal de x, indicando se é positivo, negativo ou zero
+
+      x = Math.round(20.49);  // Retorna o valor 20
+      x = Math.round(20.5);   // Retorna o valor 21
+      x = Math.round(-20.5);  // Retorna o valor -20
+      x = Math.round(-20.51); // Retorna o valor -21
+      x = Math.round(1.005*100)/100;
+
+- **`Math.sign(x)`** Retorna o sinal de x, indicando se é positivo, negativo ou zero. Se o argumento é um número positivo, o retorno será 1, se o numero passado for negativo, o retorno será -1, se o argumento for um zero positivo , o retorno será +0, se o argumento for 0 negativo , o retorno será -0. Qualquer outro valor que não seja numérico (string transformada em numero por ex.), o retorno será NaN 
+
+      Math.sign(3);     //  1
+      Math.sign(-3);    // -1
+      Math.sign('-3');  // -1
+      Math.sign(0);     //  0
+      Math.sign(-0);    // -0
+      Math.sign(NaN);   // NaN
+      Math.sign('foo'); // NaN
+      Math.sign();      // NaN
+
 - **`Math.sin(x)`** Retorna o seno de um número (sinx)
+
+      Math.sin(0);           // 0
+      Math.sin(1);           // 0.8414709848078965
+      Math.sin(Math.PI / 2); // 1
+
 - **`Math.sinh(x)`** Retorna o seno hiperbólico de um número (sinhx)
-- **`Math.sqrt(x)`** Retorna a raiz quadrada positiva de um número (x)
+
+      Math.sinh(0); // 0
+      Math.sinh(1); // 1.1752011936438014
+
+- **`Math.sqrt(x)`** Retorna a raiz quadrada positiva de um número (x). Se o valor de x for negativo, Math.sqrt() retorna NaN
+      
+      Math.sqrt(9); // 3
+      Math.sqrt(2); // 1.414213562373095
+      Math.sqrt(1);  // 1
+      Math.sqrt(0);  // 0
+      Math.sqrt(-1); // NaN
+
 - **`Math.tan(x)`** Retorna a tangente de um número (tanx)
+
+      function getTan(x) {
+        return Math.tan(x);
+      }
+
 - **`Math.tanh(x)`** Retorna a tangente hiperbólica de um número (tanhx)
-- **`Math.toSource()`** Retorna a string "Math"
-- **`Math.trunc(x)`** Retorna a parte inteira de x, removendo quaisquer dígitos fracionários
+
+      Math.tanh(0);        // 0
+      Math.tanh(Infinity); // 1
+      Math.tanh(1);        // 0.7615941559557649
+
+- **`Math.toSource()`** Retorna a string "Math". *Não implementada nos navegadores*
+
+- **`Math.trunc(x)`** Retorna a parte inteira de x, removendo quaisquer dígitos fracionários. O argumento passado a esse método será convertido a um tipo numérico implicitamente
+
+      Math.trunc(13.37);    // 13
+      Math.trunc(42.84);    // 42
+      Math.trunc(0.123);    //  0
+      Math.trunc(-0.123);   // -0
+      Math.trunc('-1.123'); // -1
+      Math.trunc(NaN);      // NaN
+      Math.trunc('foo');    // NaN
+      Math.trunc();         // NaN
