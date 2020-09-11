@@ -21,5 +21,12 @@ Classes em JavaScript são consideradas funções com poderes especiais e como f
     class Retangulo {...}
 
     const r = new Retangulo(); // Correto uso
+    
+## Definições de classes no geral
+
+- **Classe Abstrata:** Classes abstratas não podem ser instanciadas e são utilizadas por uma classe com a palavara reservada `extends`, uma classe pode extender apenas 1 classe abstrata. Servem apenas para que outras classes usem-na como modelo (herdem os atributos/propriedades e métodos delas). Elas podem ter métodos abstratos ou não abstratos. Os métodos abstratos não podem ter corpo, ou seja, deve-se declarar apenas a assinatura do método e eles obrigatoriamente terão que ser implementados na classe filha (a classe que herda), já os métodos que não forem assinados como abstract devem ter corpo e podem ou não ser sobrescritos na classe filha.
+- **Interface:** Classes abstratas não podem ser instanciadas e são utilizadas por uma classe com a palavra reservada `implements`, uma classe pode implementar várias interfaces ao mesmo tempo. As interfaces são formadas pela declaração de um ou mais métodos, os quais obrigatoriamente não possuem corpo. Quando uma classe implementa uma interface a classe deve implementar todos os métodos ou propriedades da mesma (embora a classe possa declarar mais métodos ou propriedades dentro dela, ou seja, métodos e propriedades que não estejam implementados na interface).
+    
+
 
 ![](https://github.com/leandrobeandrade/javascript-references/blob/master/classes/classes.png)
