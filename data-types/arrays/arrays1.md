@@ -36,7 +36,7 @@
     times.shift();
     console.log(times); // retorna ["Palmeiras", "Grêmio", "Vasco", "Atlético-MG", "Coritiba"]
 
-**splice(x,x,x) =>** posição do elemento(parametro 1), quantidade de elementos (parametro 2), opcional (parametro 3)
+**splice(x,x,x) =>** retorna uma lista com os elementos removidos, posição do elemento(parametro 1), quantidade de elementos (parametro 2), elemento para ser inserido (parametro 3 - opcional)
     
     // adiciona sem retirar elementos
     times.splice(1, 0, 'Ceará')
@@ -84,7 +84,7 @@
     times.join('-');
     console.log(times); // retorna "Vasco-Palmeiras-Grêmio-Coritiba-Atlético-MG"
     
-**includes() =>** retorna true ou false fazendo uma bsuca no array
+**includes() =>** retorna true ou false fazendo uma busca no array
 
     console.log(times.include('Palmeiras')); // retrona true
 
