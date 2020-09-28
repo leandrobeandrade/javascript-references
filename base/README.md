@@ -19,7 +19,7 @@ Mecanismos diferentes têm nomes de códigos diferentes. Por exemplo:
 
 A sintaxe do JavaScript não atende às necessidades de todos por padrão. Projetos diferentes necessitam de características diferentes, porque projetos e requisitos são diferentes entre aplicações.
 
-Recentemente, apareceu uma infinidade de novas "linguagens", que são transpiladas (convertidos) para JavaScript antes de serem executados no navegador. As ferramentas modernas tornam a transpilação muito rápida e transparente, permitindo que os desenvolvedores codifiquem em uma implementação diferente da padrão do JavaScript e a convertam automaticamente.
+Recentemente, apareceu uma infinidade de novas "linguagens", que são transpiladas (convertidas) para JavaScript antes de serem executadas no navegador. As ferramentas modernas tornam a transpilação muito rápida e transparente, permitindo que os desenvolvedores codifiquem em uma implementação diferente da padrão do JavaScript e a convertam automaticamente.
 
 Exemplos de tais "linguagens":
 
@@ -28,7 +28,7 @@ Exemplos de tais "linguagens":
 - `Flow =>` é um verificador de tipo estático para o seu código JavaScript. Desenvolvido pelo Facebook.
 - `Dart =>` é uma linguagem autônoma que possui seu próprio mecanismo que roda em ambientes que não são do navegador (como aplicativos móveis), mas também pode ser transpilada para JavaScript. Desenvolvido pelo Google.
 
-Existem também sobre a linguagem JavaScript **bibliotecas** e **frameworks** que auxiliam no desenvolvimento e facilitam a abstração de técnicas mais avançadas da linguagem, fornecendo assim uma maneira mais simplificada de escrita de código.
+Encontram-se também na linguagem JavaScript **bibliotecas** e **frameworks** que auxiliam no desenvolvimento e facilitam a abstração de técnicas mais avançadas da linguagem, fornecendo assim uma maneira mais simplificada de escrita de código.
 
 ### Bibliotecas
 
