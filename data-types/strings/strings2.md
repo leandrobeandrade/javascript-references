@@ -45,7 +45,7 @@ Extrai uma parte de uma string a partir da posição indicada:
     console.log(texto.substring(texto.length -1));  // retorna !
 
 # split()
-Divide uma string em um array de substrings e retrona o novo array:
+Divide uma string em um array de substrings e retorna o novo array:
 
     let texto = 'É Javascript';
     console.log(texto.split());         // retorna ["É Javascript"]
