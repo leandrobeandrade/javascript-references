@@ -75,9 +75,9 @@ Retorna a string sem espaços:
     let texto = '  É Javascript, e mais javascript!  ';
     console.log(texto.trim());   // retorna  'É Javascript, e mais javascript!'
     
-    console.log(texto.trimstart());   // retorna '  É Javascript, e mais javascript!'
+    console.log(texto.trimstart());   // retorna 'É Javascript, e mais javascript!  '
     
-    console.log(texto.trimEnd());   // retorna 'É Javascript, e mais javascript!  '
+    console.log(texto.trimEnd());   // retorna '  É Javascript, e mais javascript!'
     
     console.log(texto.trimLeft());   // retorna 'É Javascript, e mais javascript!  '
     
