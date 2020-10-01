@@ -48,4 +48,4 @@ Converte a string recebida como argumento e a retorna como um número de ponto f
     let numero = '10';
     
     console.log(valueOf(numero));       // retorna 10
-    console.log((10 + 10).valueOf());   // retrona 20
+    console.log((10 + 10).valueOf());   // retorna 20
