@@ -47,10 +47,10 @@ Um objeto pode ser criado com colchetes {…} com uma lista opcional de propried
 
     // ordenando pelas chaves
     let paises = {
-  	49: 'Alemanha',
-  	41: 'Suíça',
-  	44: 'Inglaterra',
-	1: 'Estados Unidos'
+  	   49: 'Alemanha',
+  	   41: 'Suíça',
+  	   44: 'Inglaterra',
+	   1: 'Estados Unidos'
     };
 
     for(let pais in paises) console.log(pais); // retorna 1, 41, 44, 49
