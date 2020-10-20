@@ -2,7 +2,7 @@
 
 ## Descrição
 
-Math é um objeto embutido que tem propriedades e métodos para constantes e funções matemáticas. Ao contrário de outros objetos globais, Math não é um construtor. Todas as propriedades e métodos de Math são [estáticos](https://github.com/leandrobeandrade/javascript-references/blob/master/classes/metodos.md#m%C3%A9todos-est%C3%A1ticos), ou seja, **não precisa ser instanciado**.
+Math é um objeto embutido que tem propriedades e métodos para constantes e funções matemáticas. Ao contrário de outros objetos globais, Math não é um construtor. Todas as propriedades e métodos de Math são [estáticos](https://github.com/leandrobeandrade/javascript-references/blob/master/classes/metodos.md#m%C3%A9todos-est%C3%A1ticos), ou seja, **não precisam ser instanciados**.
 
 ## Métodos
 
