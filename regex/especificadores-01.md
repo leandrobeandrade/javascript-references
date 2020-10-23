@@ -42,7 +42,7 @@
       let ret = str.match(regexp);
       console.log(ret); // retorna ["1", "0"]
 
-- **\D (não-digíto)** => o mesmo que [^0-9]
+- **\D (não-dígito)** => o mesmo que [^0-9]
 
       let str = "Regex é 10.";
       let regexp = new RegExp(/[^\d]/g);
