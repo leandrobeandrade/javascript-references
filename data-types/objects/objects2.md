@@ -22,21 +22,21 @@ Adiciona a propriedade nomeada descrita por um determinado descritor a um objeto
 
     var obj = {};
     Object.defineProperties(obj, {
-	  	'nome': {
-	    	value: 'Fulano',
-	    	writable: true
-	  	},
-	  	'idade': {
-	    	value: 36,
-	    	writable: false		// o valor não pode ser alterado
-	  	},
-			'casado': {
-	    	value: true,
-	    	writable: false		// o valor não pode ser alterado
-	  	}
-		});
+	    'nome': {
+	      value: 'Fulano',
+	      writable: true
+	  },
+      'idade': {
+        value: 36,
+        writable: false		// o valor não pode ser alterado
+    },
+      'casado': {
+        value: true,
+        writable: false		// o valor não pode ser alterado
+        }
+    });
 		
-		console.log(obj);		// retorna {nome: "Fulano", idade: 36, casado: true}
+    console.log(obj);		// retorna {nome: "Fulano", idade: 36, casado: true}
 
 # Object.keys()
 Retorna um array cujo os elementos são strings correspondentes para a propriedade enumerável encontrada diretamente sobre o objeto
