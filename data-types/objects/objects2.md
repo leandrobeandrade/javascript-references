@@ -18,9 +18,23 @@ Cria um novo objeto, utilizando um outro objeto existente como protótipo para o
     console.log(obj2.a +' - '+ obj2.b);  // retorna 10 - 20
     
 # Object.defineProperty()
-Adiciona a propriedade nomeada descrita por um determinado descritor a um objeto. Define uma nova propriedade diretamente em um objeto, ou modifica uma propriedade já existente em um objeto, e retorna o objeto.
+Define uma nova propriedade diretamente em um objeto, ou modifica uma propriedade já existente em um objeto, e retorna o objeto
 
-    var obj = {};
+    let obj = {};
+    Object.defineProperty(obj, 'nome', {
+      value: 'Fulano',
+      writable: true,     // Quando true o valor poderá ser alterado posteriormente
+      enumerable: true,   // Quando true define se ela deve ser exibida em uma repetição for...in e por Object.keys()  
+      configurable: true  // Quando true controla se uma propriedade pode ser deletada do objeto, e se seus atributos 
+                          // (exceto a mudança de writable para false) podem ser alterados
+    });
+		
+    console.log(obj);		// retorna {nome: "Fulano"}
+    
+# Object.defineProperties()
+Define uma nova propriedade ou modifica uma existente no objeto, retornando o objeto
+
+    let obj = {};
     Object.defineProperties(obj, {
 	    'nome': {
 	      value: 'Fulano',
@@ -37,6 +51,28 @@ Adiciona a propriedade nomeada descrita por um determinado descritor a um objeto
     });
 		
     console.log(obj);		// retorna {nome: "Fulano", idade: 36, casado: true}
+    
+# Object.entries()	
+Retorna um array cujos elementos são também arrays correspondentes aos pares de propriedades [key, value] enumeráveis encontrados diretamente sobre o objeto
+
+    let usuario = {
+      nome: "Fulano",
+      idade: 30
+    };
+	
+	console.log(Object.entries(user)); // retorna ["nome", "Fulano"] ["idade", 30]
+	
+	console.log(Object.fromEntries(Object.entries(user)));	// retorna {nome: "Fulano", idade: 30}
+
+	let idadeDobrada = Object.fromEntries(Object.entries(user).map(([key, value]) => [key, value * 2]));
+
+	console.log(idadeDobrada.idade); // retorna {idade: 60}
+  
+# Object.freeze()
+Congela um objeto, outro código não pode excluir ou alterar nenhuma propriedade. Impede que novas propriedades sejam adicionadas a ele; impede que as propriedades existentes sejam removidas; e impede que propriedades existentes, ou sua inumerabilidade, configurabilidade, ou capacidade de escrita sejam alteradas. Em essência o objeto é efetivamente imutável. O método retorna o objeto congelado.
+
+    ....
+    ....
 
 # Object.keys()
 Retorna um array cujo os elementos são strings correspondentes para a propriedade enumerável encontrada diretamente sobre o objeto
@@ -65,29 +101,13 @@ Retorna um array cujos elementos são os valores das propriedades enumeradas enc
 	// ordena pela chave
 	let nums = { 100: 'a', 2: 'b', 7: 'c' };
 	console.log(Object.keys(nums)); // retorna ["b", "c", "a"]
-
-# Object.entries()	
-Retorna um array cujos elementos são também arrays correspondentes aos pares de propriedades [key, value] enumeráveis encontrados diretamente sobre o objeto
-
-	let usuario = {
-  	nome: "Fulano",
-  	idade: 30
-	};
-	
-	console.log(Object.entries(user)); // retorna ["nome", "Fulano"] ["idade", 30]
-	
-	console.log(Object.fromEntries(Object.entries(user)));	// retorna {nome: "Fulano", idade: 30}
-
-	let idadeDobrada = Object.fromEntries(Object.entries(user).map(([key, value]) => [key, value * 2]));
-
-	console.log(idadeDobrada.idade); // retorna {idade: 60}
     
  # Object.hasOwnProperty()
  Retorna um booleano indicando se o objeto possui a propriedade especificada como uma propriedade definida no próprio objeto em questão
     
     let usuario = {
-  	  nome: "Fulano",
-  	  idade: 30
+      nome: "Fulano",
+      idade: 30
     };
     
     console.log(user.hasOwnProperty('nome'));   // retorna true
@@ -104,15 +124,15 @@ Retorna um array cujos elementos são também arrays correspondentes aos pares d
   # Object.getOwnPropertyNames()
   Retorna um vetor com todas as propriedades (enumeráveis ou não) encontradas diretamente em um dado objeto
   
-    var obj = { 0: 'a', 1: 'b', 2: 'c' };
+    let obj = { 0: 'a', 1: 'b', 2: 'c' };
     console.log(Object.getOwnPropertyNames(obj).sort()); // retorna ["0", "1", "2"]
     
     Object.getOwnPropertyNames(obj).forEach(function(val, idx, array) {  
-        console.log(val + ' -> ' + obj[val] + 'index ->' + idx);
-        /* retorna 0 -> a - index -> 0 
-                   1 -> b - index -> 1 
-                   2 -> c - index -> 2 
-                   3 -> d - index -> 3 
-                   4 -> e - index -> 4 */
-    })
+      console.log(val + ' -> ' + obj[val] + 'index ->' + idx);
+      /* retorna 0 -> a - index -> 0 
+                 1 -> b - index -> 1 
+                 2 -> c - index -> 2 
+                 3 -> d - index -> 3 
+                 4 -> e - index -> 4 */
+      })
     
