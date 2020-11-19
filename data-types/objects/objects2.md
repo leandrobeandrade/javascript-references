@@ -5,9 +5,9 @@ Copia os valores de todas as propriedades próprias enumeráveis ​​de um ou 
     let obj2 = { b: 20, c: 20 }; 
     let obj3 = { c: 30 }; 
 
-    let new_obj = Object.assign({}, obj1, obj2, obj3); 
+    let novo_obj = Object.assign({}, obj1, obj2, obj3); 
 
-    console.log(new_obj); // retorna { a: 10, b: 20, c: 30 }
+    console.log(novo_obj); // retorna { a: 10, b: 20, c: 30 }
 
 # Object.create()
 Cria um novo objeto, utilizando um outro objeto existente como protótipo para o novo objeto a ser criado.
@@ -20,12 +20,28 @@ Cria um novo objeto, utilizando um outro objeto existente como protótipo para o
 # Object.defineProperty()
 Adiciona a propriedade nomeada descrita por um determinado descritor a um objeto. Define uma nova propriedade diretamente em um objeto, ou modifica uma propriedade já existente em um objeto, e retorna o objeto.
 
-    ACHAR EXEMPLOS !!!!!!!!!
+    var obj = {};
+    Object.defineProperties(obj, {
+	  	'nome': {
+	    	value: 'Fulano',
+	    	writable: true
+	  	},
+	  	'idade': {
+	    	value: 36,
+	    	writable: false		// o valor não pode ser alterado
+	  	},
+			'casado': {
+	    	value: true,
+	    	writable: false		// o valor não pode ser alterado
+	  	}
+		});
+		
+		console.log(obj);		// retorna {nome: "Fulano", idade: 36, casado: true}
 
 # Object.keys()
 Retorna um array cujo os elementos são strings correspondentes para a propriedade enumerável encontrada diretamente sobre o objeto
 	
-    let user = {
+    let usuario = {
       nome: "Fulano",
       idade: 30
     };
@@ -39,7 +55,7 @@ Retorna um array cujo os elementos são strings correspondentes para a proprieda
 # Object.values()
 Retorna um array cujos elementos são os valores das propriedades enumeradas encontradas no objeto
 	
-    let user = {
+    let usuario = {
       nome: "Fulano",
       idade: 30
     };
@@ -53,7 +69,7 @@ Retorna um array cujos elementos são os valores das propriedades enumeradas enc
 # Object.entries()	
 Retorna um array cujos elementos são também arrays correspondentes aos pares de propriedades [key, value] enumeráveis encontrados diretamente sobre o objeto
 
-	let user = {
+	let usuario = {
   	nome: "Fulano",
   	idade: 30
 	};
@@ -69,20 +85,20 @@ Retorna um array cujos elementos são também arrays correspondentes aos pares d
  # Object.hasOwnProperty()
  Retorna um booleano indicando se o objeto possui a propriedade especificada como uma propriedade definida no próprio objeto em questão
     
-    let user = {
+    let usuario = {
   	  nome: "Fulano",
   	  idade: 30
     };
     
     console.log(user.hasOwnProperty('nome'));   // retorna true
     
-    let countries = {
-      country: 'Brasil'
+    let paises = {
+      pais: 'Brasil'
     };
 
-    for(let ct in countries) {
-      if (countries.hasOwnProperty(ct)) console.log(countries[ct]); // retorna Brasil
-      else console.log(ct); // retorna qualquer outra coisa
+    for(let ps in paises) {
+      if (paises.hasOwnProperty(ct)) console.log(countries[ct]); // retorna Brasil
+      else console.log(ps); // retorna qualquer outra coisa
     }
     
   # Object.getOwnPropertyNames()
