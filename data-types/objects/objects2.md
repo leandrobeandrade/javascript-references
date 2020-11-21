@@ -112,8 +112,8 @@ Congela um objeto, outro código não pode excluir ou alterar nenhuma propriedad
 	};
 
 	Object.freeze(obj1);
-	obj1.interno.name = 'Fulano';
-	console.log(obj1.interno.name) // retorna 'Fulano'
+	obj1.interno.nome = 'Fulano';
+	console.log(obj1.interno.nome) // retorna 'Fulano'
 	
 # Object.fromEntries() 
 Transforma uma lista de pares chave-valor em um objeto
@@ -204,4 +204,23 @@ Retorna o prototype (isto é, o valor da propriedade interna [[Prototype]]) do o
 
 	let proto = {};
 	let obj = Object.create(proto);
-	Object.getPrototypeOf(obj) === proto;  // retorna
+	Object.getPrototypeOf(obj) === proto;  // retorna true
+	
+# Object.hasOwnProperty()
+ Retorna um booleano indicando se o objeto possui a propriedade especificada como uma propriedade definida no próprio objeto em questão
+    
+    let usuario = {
+      nome: 'Fulano',
+      idade: 30
+    };
+    
+    console.log(usuario.hasOwnProperty('nome'));   // retorna true
+    
+    let paises = {
+      pais: 'Brasil'
+    };
+
+    for(let ps in paises) {
+      if (paises.hasOwnProperty('pais')) console.log(paises[ps]);  // retorna Brasil
+      else console.log(ps);  // retorna pais (chave do objeto)
+    }
