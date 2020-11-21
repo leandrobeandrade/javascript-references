@@ -10,7 +10,7 @@ Copia os valores de todas as propriedades próprias enumeráveis ​​de um ou 
     console.log(novo_obj); // retorna { a: 10, b: 20, c: 30 }
 
 # Object.create()
-Cria um novo objeto, utilizando um outro objeto existente como protótipo para o novo objeto a ser criado.
+Cria um novo objeto, utilizando um outro objeto existente como protótipo para o novo objeto a ser criado
 
     let obj1 = { a: 10, b: 20 };
     let obj2 = Object.create(obj1);
@@ -29,25 +29,25 @@ Define uma nova propriedade diretamente em um objeto, ou modifica uma propriedad
                           // (exceto a mudança de writable para false) podem ser alterados
     });
 		
-    console.log(obj);		// retorna {nome: "Fulano"}
+    console.log(obj);     // retorna {nome: "Fulano"}
     
 # Object.defineProperties()
 Define uma nova propriedade ou modifica uma existente no objeto, retornando o objeto
 
     let obj = {};
     Object.defineProperties(obj, {
-	    'nome': {
-	      value: 'Fulano',
-	      writable: true
-	  },
+      'nome': {
+        value: 'Fulano',
+	    writable: true
+      },
       'idade': {
         value: 36,
         writable: false		// o valor não pode ser alterado
-    },
-      'casado': {
+      },
+      casado': {
         value: true,
         writable: false		// o valor não pode ser alterado
-        }
+      }
     });
 		
     console.log(obj);		// retorna {nome: "Fulano", idade: 36, casado: true}
@@ -69,59 +69,108 @@ Retorna um array cujos elementos são também arrays correspondentes aos pares d
 	console.log(idadeDobrada.idade); // retorna {idade: 60}
   
 # Object.freeze()
-Congela um objeto, outro código não pode excluir ou alterar nenhuma propriedade. Impede que novas propriedades sejam adicionadas a ele; impede que as propriedades existentes sejam removidas; e impede que propriedades existentes, ou sua inumerabilidade, configurabilidade, ou capacidade de escrita sejam alteradas. Em essência o objeto é efetivamente imutável. O método retorna o objeto congelado.
+Congela um objeto, outro código não pode excluir ou alterar nenhuma propriedade. Impede que novas propriedades sejam adicionadas a ele; impede que as propriedades existentes sejam removidas; e impede que propriedades existentes, ou sua inumerabilidade, configurabilidade, ou capacidade de escrita sejam alteradas. Em essência o objeto é efetivamente imutável. O método retorna o objeto congelado
 
-    ....
-    ....
-
-# Object.keys()
-Retorna um array cujo os elementos são strings correspondentes para a propriedade enumerável encontrada diretamente sobre o objeto
-	
-    let usuario = {
-      nome: "Fulano",
-      idade: 30
+    var obj = {
+  	  prop: function() {},
+  	  nome: 'Fulano'
     };
 
-    console.log(Object.keys(user)); // retorna ["nome", "idade"]
-	
-    // ordena pela chave
-    let nums = { 100: 'a', 2: 'b', 7: 'c' };
-    console.log(Object.keys(nums)); // retorna ["2", "7", "100"]
+	// Novas propriedades podem ser adicionadas, propriedades existentes podem ser alteradas ou removidas
+	obj.nome = 'Ciclano';
+	obj.idade = 36;
+	delete obj.prop;
 
-# Object.values()
-Retorna um array cujos elementos são os valores das propriedades enumeradas encontradas no objeto
-	
-    let usuario = {
-      nome: "Fulano",
-      idade: 30
-    };
+	// Tanto o objeto que está sendo passado, bem como o objeto retornado será congelado.
+	// É desnecessário salvar o objeto retornado para congelar o objeto original.
+	var o = Object.freeze(obj);
 
-	console.log(Object.values(user)); // retorna ["Fulano", 30]
-	
-	// ordena pela chave
-	let nums = { 100: 'a', 2: 'b', 7: 'c' };
-	console.log(Object.keys(nums)); // retorna ["b", "c", "a"]
-    
- # Object.hasOwnProperty()
- Retorna um booleano indicando se o objeto possui a propriedade especificada como uma propriedade definida no próprio objeto em questão
-    
-    let usuario = {
-      nome: "Fulano",
-      idade: 30
-    };
-    
-    console.log(user.hasOwnProperty('nome'));   // retorna true
-    
-    let paises = {
-      pais: 'Brasil'
-    };
+	o === obj; // true
+	Object.isFrozen(obj); // true
 
-    for(let ps in paises) {
-      if (paises.hasOwnProperty(ct)) console.log(countries[ct]); // retorna Brasil
-      else console.log(ps); // retorna qualquer outra coisa
-    }
-    
-  # Object.getOwnPropertyNames()
+	// De agora em diante qualquer alteração irá falhar
+	obj.nome = 'Beltrano'; // silenciosamente não faz nada
+	obj.msg = 'Qualquer coisa!'; // silenciosamente não adiciona a propriedade
+
+	// ...e em modo strict tais tentativas irão lançar TypeErrors
+	function fail(){
+  	  'use strict';
+  	  obj.nome = 'Belciclano'; // throws um TypeError
+	  delete obj.nome; // throws um TypeError
+	  obj.idade = 30; // throws um TypeError
+	}
+
+	fail();
+
+	// As tentativas de alteração através de Object.defineProperty também irão lançar
+	Object.defineProperty(obj, 'male', { value: true }); // throws um TypeError
+	Object.defineProperty(obj, 'name', { value: 'Ciclano' }); // throws um TypeError
+	
+	// Valores do tipo objeto, em um objeto congelado, podem ser alterados ou seja, freeze age de maneira rasa
+	obj1 = {
+  	  interno: {}
+	};
+
+	Object.freeze(obj1);
+	obj1.interno.name = 'Fulano';
+	console.log(obj1.interno.name) // retorna 'Fulano'
+	
+# Object.fromEntries() 
+Transforma uma lista de pares chave-valor em um objeto
+
+	const entradas = new Map([
+  	  ['nome', 'Fulano'],
+  	  ['idade', 42]
+	]);
+
+	const obj = Object.fromEntries(entradas);
+
+	console.log(obj);  // retorna { nome: "Fulano", idade: 42 }
+	
+# Object.getOwnPropertyDescriptor() 
+Retorna um descritor de propriedades para uma propriedade (isto é, uma diretamente presente, e não pertencente ao objeto por força da cadeia de protótipo do objeto) de um dado objeto
+
+	let a, b;
+
+	a = { 
+	  get func() { 
+	    return 17; 
+	  } 
+	};
+	b = Object.getOwnPropertyDescriptor(a, 'func');
+	// b é { configurable: true, enumerable: true, get: /*A função getter*/, set: undefined }
+
+	a = { idade: 42 };
+	b = Object.getOwnPropertyDescriptor(a, 'idade');
+	// b é { configurable: true, enumerable: true, value: 42, writable: true }
+
+	a = {};
+	Object.defineProperty(a, 'cep', { value: 8675309, writable: false, enumerable: false });
+	b = Object.getOwnPropertyDescriptor(a, 'cep');
+	// b é { value: 8675309, writable: false, enumerable: false, configurable: false }
+	
+# Object.getOwnPropertyDescriptors() 
+Retorna todas as descrições próprias da propriedade de um dado objeto, permite examinar a descrição precisa de todas as propriedades de um objeto
+
+	// Criando um clone superficial
+	Object.create(
+  	  Object.getPrototypeOf(obj), 
+  	  Object.getOwnPropertyDescriptors(obj)
+	);
+	
+	// Criando uma subclasse
+	function superclasse() {}
+	superclasse.prototype = {
+  	  // Definir seus métodos e propriedades aqui
+	};
+	function subclass() {}
+	subclass.prototype = Object.create(
+  	  superclass.prototype, {
+	    // Definir seus métodos e propriedades aqui
+  	  }
+	);
+
+# Object.getOwnPropertyNames()
   Retorna um vetor com todas as propriedades (enumeráveis ou não) encontradas diretamente em um dado objeto
   
     let obj = { 0: 'a', 1: 'b', 2: 'c' };
@@ -135,4 +184,24 @@ Retorna um array cujos elementos são os valores das propriedades enumeradas enc
                  3 -> d - index -> 3 
                  4 -> e - index -> 4 */
       })
-    
+     
+# Object.getOwnPropertySymbols() 
+Retorna uma array com todas propriedades de símbolo encontradas diretamente em um determinado objeto dado
+
+	const obj = {};
+	const a = Symbol('a');
+	const b = Symbol.for('b');
+
+	obj[a] = 'localSymbol';
+	obj[b] = 'globalSymbol';
+
+	const objSymbols = Object.getOwnPropertySymbols(obj);
+	console.log(objectSymbols.length);  // retorna 2
+	console.log(objectSymbols.length);  // retorna [Symbol(a), Symbol(b)]
+	
+# Object.getPrototypeOf() 
+Retorna o prototype (isto é, o valor da propriedade interna [[Prototype]]) do objeto especificado
+
+	let proto = {};
+	let obj = Object.create(proto);
+	Object.getPrototypeOf(obj) === proto;  // retorna
