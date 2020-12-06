@@ -7,15 +7,15 @@ São utilizados principalmente quando se quer manipular os valores que os métod
         this.nomePessoa = nome;
       }
       get _nomes() {
-        return this.nomePessoa;
+        return this.nomePessoa.toUpperCase();
       }
       set _nomes(valor) {
-        this.nomePessoa = valor;
+        this.nomePessoa = valor + ' ---';
       }
     }
 
     const nomes = new Pessoa("Fulano");
-    console.log(nomes._nomes);  // retorna Fulano
+    console.log(nomes._nomes);  // retorna FULANO
 
     nomes._nomes = "Ciclano";
-    console.log(nomes._nomes);  // retorna Ciclano
+    console.log(nomes._nomes);  // retorna CICLANO ---
