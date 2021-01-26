@@ -10,7 +10,7 @@ Executa uma dada função em cada elemento de um array
     
     carro.forEach(elemento => {
         carros.push(elemento);
-        total += elementos.preco;
+        total += elemento.preco;
     })
     
     console.log(carros); // retorna [{marca: 'Ford', preco: 28800}, {marca: 'GM', preco: 34750}]
