@@ -87,7 +87,7 @@ Retorna o valor do primeiro elemento do array que satisfizer a função de teste
 
     let nums = [5, 12, 8, 130, 44];
     let ret = nums.find((element) => element > 10);
-    console.log(ret);  // retorna 12
+    console.log(ret);  // retorna 5
 
     const inventario = [
         {nome: 'maças', quantidade: 2},
