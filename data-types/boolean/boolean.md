@@ -10,4 +10,4 @@ Um Booleano JavaScript representa um de dois valores: **verdadeiro** ou **falso*
     let f = Boolean(false);             // true
     let g = Boolean(1 + 7 + 3.14);      // true
     
-> Não confundir os valores `primitivos` Boolean true e false com os valores true and false do objeto Boolean.
+> Não confundir os valores `primitivos` booleanos **true** e **false** com os valores true and false do objeto Boolean.
