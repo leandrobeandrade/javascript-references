@@ -17,7 +17,7 @@ Executa uma dada função em cada elemento de um array
     console.log(total); // retorna 60000
     
 # for...of
-Executa uma dada função agindo sobre elementos iteraveis como arrays, string, etc..
+Executa uma dada função agindo sobre elementos iteraveis como arrays, string, etc...
     
     let usuarios = [
         {usuario: "Fulano", filhos: ["João", "Maria", "Carlos"]},
@@ -34,12 +34,20 @@ Executa uma dada função agindo sobre elementos iteraveis como arrays, string, 
     for (let valor of texto) console.log(valor);  // retorna t e s t e
     
 # for...in
-Interage sobre as chaves de um array, na ordem original de inserção
+Interage sobre propriedades enumeradas de um objeto, na ordem original de inserção
 	
-    let arr = ["Apple", "Orange", "Pear"];
-    let nums = [5, 12, 8, 130, 44];
-
-    for (let key in nums) console.log(nums[key]);   // retorna 5 12 8 130 44
+    let usuario = {
+    	id: 1
+    	nome: 'Fulano',
+	idade: 25,
+    }
+    
+    for (let obj in usuario) {
+    	console.log('chave: ', obj);
+	console.log('valor: ', usuario[obj]);
+    }
+    
+    // retorna chave: id  valor: 1        chave: nome  valor: Fulano       chave: idade  valor: 25
     
 # map()
 Invoca a função callback passada por argumento para cada elemento do array e devolve um novo array como resultado
@@ -115,8 +123,8 @@ Testa se ao menos **`1`** dos elementos do array passa no teste implementado pel
     console.log(nums1.some(maiorQue));  // retorna false
     console.log(nums2.some(maiorQue));  // retorna true
 
-    console.log(nums1.some(element => element > 10));  // retorna false
-    console.log(nums2.some(element => element > 10));  // retorna true
+    console.log(nums1.some(elmt => elmt > 10));  // retorna false
+    console.log(nums2.some(elmt => elmt > 10));  // retorna true
 
 # every()
 Testa se **`todos`** os elementos do array passam pelo teste implementado pela função fornecida
