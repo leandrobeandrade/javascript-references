@@ -28,3 +28,16 @@
       let b = {}    // dois objetos independentes
 
       console.log(a == b)   // false
+
+---
+
+ > Valores Falsy
+
+- Valores que se comportam como **falsos** quando declarados dentro de uma declaração `if`
+
+      false: o valor boolean false
+      0: o número zero
+      '': a string vazia, uma string sem caracteres
+      NaN: significa "Not a Number" (não é um número), geralmente causado por erros matemáticos
+      undefined: um valor de uma variável antes de ser atribuído um valor a ela
+      null: um valor em branco que pode ser atribuído a uma variável
