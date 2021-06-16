@@ -63,7 +63,7 @@
       let ret = str.match(regexp);
       console.log(ret); // retorna ["T", "e", "n", "t", "e", "o", "u", "t", "r", "a", "v", "e", "z", "!"]
       
-- **\w (alfanumérico)** => o mesmo que [a-zA-Z0-9_], embora possa incluir caracteres Unicode
+- **\w (alfanumérico)** => o mesmo que [a-zA-Z0-9_], embora possa incluir caracteres *Unicode*
 
       let str = "Tente outra vez *&(";
       let regexp = new RegExp(/\w/);
