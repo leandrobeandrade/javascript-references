@@ -1,4 +1,9 @@
-# Lookahead
+# Lookaround assertions (Lookahead - Lookbehind)
+
+Afirmações de aparência em expressões regulares em JavaScript.
+
+
+## Lookahead (Positiva/Negativa)
 
 Testa condições a direita de um marcação, ou seja, testa se uma string é seguida de um padrão. É definida pelos sinais **`?=`**
 
@@ -19,7 +24,7 @@ Negação de Lookahead pode ser feita utilizando o sinal ! depois do sinal ?
 	let ret = regexp.test(str);
 	console.log(ret);	// retorna false
 
-# Lookbehind
+## Lookbehind (Positiva/Negativa)
 
 Testa condições a esquerda de uma marcação, ou seja, testa se uma string é precedida de um padrão. É definida pelos sinais **`?<=`**
 
