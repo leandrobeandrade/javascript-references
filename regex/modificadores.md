@@ -1,4 +1,5 @@
 # Modificadores
+Os modificadores são parte opcional de uma expressão regular e nos permitem realizar pesquisas globais e não diferenciam maiúsculas de minúsculas. Os modificadores também podem ser combinados.
 
 ## g - global
 Corresponde a todas as ocorrências encontradas
