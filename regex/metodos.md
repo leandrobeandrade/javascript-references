@@ -1,4 +1,5 @@
 # Métodos
+São funções que executam as ações sobre os padrões da expressão regular
 
 ## exec()
 Um método RegExp  que execute uma pesquisa por uma correspondência em uma string. Retorna um array de informações.
