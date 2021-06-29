@@ -2,7 +2,7 @@
 
 Por default, todos os quantificadores são gulosos: tentam casar a maior quantidade possível de caracteres.
 
-- **{n}** - exatamente `n` ocorrências
+- **{n}** - Exatamente **`n`** ocorrências
 
 	  let str = "Amanda";
       let regexp = new RegExp("a{2}", "gi");
@@ -14,7 +14,7 @@ Por default, todos os quantificadores são gulosos: tentam casar a maior quantid
 	  let ret = str.match(regexp);
 	  console.log(ret); // retorna null
 
-- **{n,m}** - no mínimo `n` ocorrências e no máximo `m`
+- **{n,m}** - No mínimo **`n`** ocorrências e no máximo `m`
 
       let str = "Amanda Caandy";
 	  let regexp = new RegExp("a{1,2}", "gi");
@@ -26,14 +26,14 @@ Por default, todos os quantificadores são gulosos: tentam casar a maior quantid
 	  let ret = str.match(regexp);
 	  console.log(ret); // retorna ["A", "a", "a", "aa", "aaa", "a"]	
 
-- **{n,}** - no mínimo `n` ocorrências
+- **{n,}** - No mínimo **`n`** ocorrências
 
 	  let str = "Amanda Caandy testaaaa";
 	  let regexp = new RegExp("a{1,}", "gi");
 	  let ret = str.match(regexp);
 	  console.log(ret); // retorna ["A", "a", "a", "aa", "aaaa"]
 
-- **?** - equivalente a {0,1} e também pode ser considerado como um operador para especificar algo opcional.
+- **?** - Equivalente a **`{0,1}`** e também pode ser considerado como um operador para especificar algo opcional
 
       let str = "Amanda";
 	  let regexp = new RegExp("a?", "gi");
@@ -45,7 +45,7 @@ Por default, todos os quantificadores são gulosos: tentam casar a maior quantid
       let ret = str.match(regexp);
       console.log(ret); // retorna ["m", "n", "d"]
 
-- <b>*</b> - 0 ou mais vezes, equivalente a {0,}
+- <b>*</b> - Zero ou mais vezes, equivalente a **`{0,}`**
         
       let str = "Amanda";
 	  let regexp = new RegExp("a*", "gi");
@@ -57,14 +57,14 @@ Por default, todos os quantificadores são gulosos: tentam casar a maior quantid
       let ret = str.match(regexp);
       console.log(ret); // retorna ["m", "n", "d"]
 
-- **+** - 1 ou mais vezes, equivalente a {1,}
+- **+** - Uma ou mais vezes, equivalente a **`{1,}`**
 
       let stri = "Amanda caandy";
       let regexpi = new RegExp("a+", "gi");
       let reti = stri.match(regexpi);
       console.log(reti); // retorna ["A", "a", "a", "aa"]
       
-- **...?** - modera a captura se combinado com outros os outros quantificadores (* + ? {})
+- **...?** - Modera a captura se combinado com outros os outros quantificadores **`(* + ? {})`**
 
       let str = "<h1>Regex</h1>";
       let regexp = new RegExp("<.+>", "gi");   // sem o ? moderador
