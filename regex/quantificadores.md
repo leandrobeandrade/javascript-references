@@ -1,6 +1,6 @@
 # Quantificadores
 
-Por default, todos os quantificadores são gulosos: tentam casar a maior quantidade possível de caracteres.
+Por default, todos os quantificadores são gulosos: tentam casar a maior quantidade possível de caracteres
 
 - **{n}** - Exatamente **`n`** ocorrências
 
@@ -14,7 +14,7 @@ Por default, todos os quantificadores são gulosos: tentam casar a maior quantid
 	  let ret = str.match(regexp);
 	  console.log(ret); // retorna null
 
-- **{n,m}** - No mínimo **`n`** ocorrências e no máximo `m`
+- **{n,m}** - No mínimo **`n`** ocorrências e no máximo **`m`**
 
       let str = "Amanda Caandy";
 	  let regexp = new RegExp("a{1,2}", "gi");
