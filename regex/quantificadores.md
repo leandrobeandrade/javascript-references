@@ -1,6 +1,6 @@
 # Quantificadores
 
-Por default, todos os quantificadores são gulosos: tentam casar a maior quantidade possível de caracteres
+Por default, todos os quantificadores são gulosos: tentam casar a maior quantidade possível de caracteres.
 
 - **{n}** - Exatamente **`n`** ocorrências
 
@@ -75,4 +75,3 @@ Por default, todos os quantificadores são gulosos: tentam casar a maior quantid
       let regexp = new RegExp("<.+?>", "gi");  // com o ? moderador
       let ret = str.match(regexp);
       console.log(ret); // retorna ["<h1>", "</h1>"]
-
