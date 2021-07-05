@@ -1,6 +1,6 @@
 # Agrupadores
 
-Uma parte de uma expressão regular delimitada por (). Servem para facilitar a aplicação de quantificadores, para indicar trechos repetidos de uma regex (através de metacarateres numéricos, como \1) ou para extração de partes específicas do texto através dos métodos
+Uma parte de uma expressão regular delimitada por (). Servem para facilitar a aplicação de quantificadores, para indicar trechos repetidos de uma regex (através de metacarateres numéricos, como \1) ou para extração de partes específicas do texto através dos métodos.
 
     let str = 'Nº 1234';
     let regexp = /(Nº\s)[0-9]{4}/;
