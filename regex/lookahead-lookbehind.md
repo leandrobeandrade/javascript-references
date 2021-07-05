@@ -1,6 +1,6 @@
 # Lookaround assertions (Lookahead - Lookbehind)
 
-Afirmações de aparência em expressões regulares em JavaScript.
+Afirmações indiretas em expressões regulares em JavaScript.
 
 
 ## Lookahead (Positiva/Negativa)
