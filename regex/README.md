@@ -12,6 +12,15 @@ Há duas maneiras de construir uma expressão regular:
          
       let regexp = new RegExp("ab+c");          indicado quando o padrão for ser alterado
 
+## SEQUÊNCIA SUGERIDA PARA ESTUDOS
+
+> - Métodos
+> - Modificadores
+> - Especificadores
+> - Agrupadores
+> - Quantificadores
+> - Afirmações (Lookaround)
+
 <h3><u>Sites para testar regex</u></h3>
 
 - **https://regex101.com**
