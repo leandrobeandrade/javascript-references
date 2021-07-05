@@ -1,4 +1,5 @@
-## Especificam o conjunto de caracteres a casar em uma posição.
+## Especificadores
+Especificam o conjunto de caracteres a casar em uma posição.
 
 - **\b (borda ou fronteira de caractere)** => corresponde a posição onde um caractere/palavra não é seguido ou antecedido por outro caractere/palavra
 
