@@ -1,4 +1,5 @@
-## Especificam o conjunto de caracteres a casar em uma posição.
+## Especificadores 
+Especificam o conjunto de caracteres a casar em uma posição.
 
 - **. (curinga)** => corresponde a qualquer caractere, exceto a quebra de linha **`\n`**
 
