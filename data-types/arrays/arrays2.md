@@ -50,7 +50,7 @@ Interage sobre propriedades enumeradas de um objeto, na ordem original de inser�
     // retorna chave: id  valor: 1        chave: nome  valor: Fulano       chave: idade  valor: 25
     
 # map()
-Invoca a função callback passada por argumento para cada elemento do array e devolve um novo array como resultado
+Invoca a função callback passada por argumento para cada elemento do array e `retorna um novo array` como resultado
     
     let carros = [
 	    {marca: 'Ford', modelo: 'Ka'},
@@ -63,7 +63,7 @@ Invoca a função callback passada por argumento para cada elemento do array e d
     console.log(mapeia) // retorna [2, 5, 5]
 
 # filter()
-Cria um novo array com todos os elementos que passarem no teste implementado pela função fornecida
+Filtra o array e `retorna um novo array` com todos os elementos que passarem no teste implementado pela função fornecida
 
     let carros = [
 	    {marca: 'Ford', modelo: 'Ka'},
@@ -76,7 +76,7 @@ Cria um novo array com todos os elementos que passarem no teste implementado pel
     console.log(filtra); // retona { marca: "Ford", modelo: "Ka"}
 
 # reduce()
-Executa uma função reducer para cada membro do array, resultando num único valor de retorno
+Executa uma função reducer para cada membro do array, `resultando num único valor de retorno`
 
     let carro = [
         {marca: 'Ford', preco: 28800},
@@ -91,7 +91,7 @@ Executa uma função reducer para cada membro do array, resultando num único va
     console.log(reduz); // retorna 95550
 
 # find()
-Retorna o valor do primeiro elemento do array que satisfizer a função de teste provida
+Peracorre o array e `retorna o valor do primeiro elemento do array` que satisfizer a função de teste provida
 
     let nums = [5, 12, 8, 130, 44];
     let ret = nums.find((element) => element > 10);
@@ -111,7 +111,7 @@ Retorna o valor do primeiro elemento do array que satisfizer a função de teste
     console.log(inventario.find(frutas => frutas.nome == 'peras')) // retorna {"nome": "peras", "quantidade": 5}
 
 # some()
-Testa se ao menos **`1`** dos elementos do array passa no teste implementado pela função atribuída
+Testa se ao menos `um` dos elementos do array satisfaz o teste implementado pela função atribuída
 
     function maiorQue(elemento) {
       return elemento > 10;
@@ -127,7 +127,7 @@ Testa se ao menos **`1`** dos elementos do array passa no teste implementado pel
     console.log(nums2.some(elmt => elmt > 10));  // retorna true
 
 # every()
-Testa se **`todos`** os elementos do array passam pelo teste implementado pela função fornecida
+Testa se `todos` os elementos do array satisfazem o teste implementado pela função fornecida
 
     function maiorQue(elemento) {
       return elemento > 10;
@@ -141,7 +141,7 @@ Testa se **`todos`** os elementos do array passam pelo teste implementado pela f
 
 
 # findIndex()
-Retorna o índice do primeiro elemento em um array que passar no teste pela função fornecida
+Percorre o array e `retorna o índice do primeiro elemento` que satisfazer o teste pela função fornecida
 
 
     let idades = [3, 10, 18, 20];
@@ -154,7 +154,7 @@ Retorna o índice do primeiro elemento em um array que passar no teste pela fun�
     console.log(idades.findIndex(idade => idade >= 18)); // retorna 2
     
 # fill()
-Preenche o array com elementos preeviamente fornecidos
+Preenche o array com elementos previamente fornecidos `retornando este array`
 
     let array = ["BMW", "GM", "Honda", "Audi"];
     array.fill("Jeep");
@@ -169,14 +169,14 @@ Preenche o array com elementos preeviamente fornecidos
     console.log(array); // retorna ["BMW", "Jeep", "Jeep", "Audi"]
 
 # Array.from()
-Cria uma nova instância de um Array quando for passado um array-like ou um iterable object como argumento
+Cria uma nova instância de um Array quando for passado um `array-like` ou um `iterable object` como argumento
 
     let texto = "Hello";
     
     console.log(Array.from(texto)); // retorna ["H", "e", "l", "l", "o"]
     
 # Array.of()
-Cria um nova instância do Array com um número variável de argumentos, independentemente do número ou do tipo dos argumentos
+Cria um nova instância do Array `com um número variável de argumentos`, independentemente do número ou do tipo dos argumentos
 
     const array = Array.of(1, 10, "teste", {nome: "Fulano"}, [2, 3, 4]);
     console.log(array); // retorna [1, 10, "teste", {nome: "Fulano"}, [2, 3, 4]]
