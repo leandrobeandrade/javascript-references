@@ -14,7 +14,7 @@
 
 > **Função expressa nomeada =>** sua execução é dada pelo uso da variável onde a função foi declarada 
 
-    var somar = function somar(a,b) {
+    let somar = function somar(a,b) {
 	    return a + b;
     }
 
