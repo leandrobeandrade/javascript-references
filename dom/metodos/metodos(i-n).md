@@ -49,7 +49,7 @@ Insere um novo nó filho antes de um nó filho especificado, existente:
 #### Resultado
 
     <ul id="lista">
-        <Palmeiras></Palmeiras>
+        <li>Palmeiras</li>
         <li>Grêmio</li>
         <li>Vasco</li>
     </ul>
