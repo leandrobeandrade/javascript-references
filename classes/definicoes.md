@@ -21,7 +21,7 @@
     }
 
     // nomeada
-    var Nome = class _Nome {
+    let Nome = class _Nome {
        constructor(nome, sobrenome) {
           this.nome = nome;
           this.sobrenome = sobrenome;
@@ -30,4 +30,4 @@
     }
     
     let nome = new Nome('Fulano', 'de Tal')
-    console.log(nome);  // retorna Fulano de Tal
+    console.log(nome);  // retorna {nome: 'Fulano', sobrenome: 'de Tal'}
