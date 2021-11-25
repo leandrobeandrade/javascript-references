@@ -27,4 +27,4 @@
     
     classe.vals.val1 = 200;     // não surge efeito, val1 não pode ser acessado por vals
     console.log(classe.val1)    // retorna 6
-    console.log(classe.vals);   // retorna { "val1": 6, "valor2": 6}
+    console.log(classe.vals);   // retorna { "val1": 6, "valor2": 6 }
