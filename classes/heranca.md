@@ -15,7 +15,7 @@ A palavra-chave **extends** é usada em uma declaração de classe, ou em uma ex
 
     class Sons extends Animal {
       barulhos() {
-        console.log(`${this.tipoAnimal} emitem um barulho tipo ${this.tipoBarulho}.` );
+        console.log(`${this.tipoAnimal} emitem um barulho tipo ${this.tipoBarulho}.`);
       }
     }
 
