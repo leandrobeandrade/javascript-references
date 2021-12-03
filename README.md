@@ -8,7 +8,6 @@ Toda as referências encontradas nesse repositório são baseadas em documentaç
 * https://developer.mozilla.org/bm/docs/Web/JavaScript
 * https://developer.mozilla.org/en-US/docs/Learn/JavaScript
 * https://javascript.info/
-* https://www.todoespacoonline.com/w/2014/05/aprender-javascript/
 
 ##### ECMASCRIPT
 * http://es6-features.org
