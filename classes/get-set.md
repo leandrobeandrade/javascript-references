@@ -6,9 +6,11 @@ São utilizados principalmente quando se quer manipular os valores que os métod
       constructor(nome) {
         this.nomePessoa = nome;
       }
+      
       get _nomes() {
         return this.nomePessoa.toUpperCase();
       }
+      
       set _nomes(valor) {
         this.nomePessoa = valor + ' ---';
       }
