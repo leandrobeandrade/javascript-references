@@ -4,6 +4,7 @@
       constructor(nome) {
         this.nomePessoa = nome;
       }
+      
       dizerNome() {
         return 'Eu sou: ' + this.nomePessoa;
       }
@@ -18,6 +19,7 @@
       constructor(nome) {
         this.nomePessoa = nome;
       }
+      
       dizerNome(msg) {
         return msg + ' Eu sou: ' + this.carname;
       }
