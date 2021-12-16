@@ -83,7 +83,7 @@ Remove um nó de um atributo especificado
    
 
 ## attributes.setNamedItem()
-Define o nó do atributo especificado (por nome):
+Define o nó do atributo especificado (por nome)
 
     <button id="bt" onclick="myFunction()">Testar</button>
     
