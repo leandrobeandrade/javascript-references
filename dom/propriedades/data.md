@@ -23,7 +23,7 @@ Atributos data são atributos em HTML puro, e você pode inclusive acessá-los v
       content: attr(data-nome);
     }
     
-Pode-se também usar os seletores de atributos em CSS para alterar estilos de acordo com o atributo data:
+Pode-se também usar os seletores de atributos em CSS para alterar estilos de acordo com o atributo data
 
     article[data-colunas='3'] {
       width: 400px;
