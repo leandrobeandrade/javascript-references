@@ -84,7 +84,7 @@ Importa um nó de outro documento
 Retorna a data e horário em que o documento foi modificado pela última vez
 
 ## document.links
-Retorna uma coleção de todos os elementos **`<a>`** e **`<area>`** no documento que possuem um atributo href:
+Retorna uma coleção de todos os elementos **`<a>`** e **`<area>`** no documento que possuem um atributo href
 
     <p>
       <a href="https://www.google.com">HTML</a>
