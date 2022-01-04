@@ -3,7 +3,7 @@ Define ou retorna o atributo accesskey de um elemento:
 
     <a id="teste" href="https://www.google.com/">Google</a>
     
-    document.getElementById('teste').accessKey = "w"; // acessa a url por shift+w no Chrome ou alt-shift+w
+    document.getElementById('teste').accessKey = 'w';       // acessa a url por shift+w no Chrome ou alt-shift+w
     
 ---
 
@@ -16,7 +16,7 @@ Retorna o número de elementos filhos que um elemento possui:
     </div>
     
     var x = document.getElementById('minhaDiv').childElementCount;
-    console.log(x); // retorna 2
+    console.log(x);      // retorna 2
     
 ## childNodes 
 Retorna uma coleção dos nós filhos de um elemento (incluindo nós de texto e comentário):
@@ -34,7 +34,7 @@ Retorna uma coleção dos nós filhos de um elemento (incluindo nós de texto e 
         txt = txt + c[i].nodeName + '<br>';
     }
 
-    console.log(txt); // retorna #text<br>#comment<br>#text<br>P<br>#text<br>BUTTON<br>#text<br>
+    console.log(txt);   // retorna #text<br>#comment<br>#text<br>P<br>#text<br>BUTTON<br>#text<br>
     
 ## children
 Retorna uma coleção do elemento filho de um elemento (excluindo nós de texto e comentário):
@@ -50,22 +50,22 @@ Retorna uma coleção do elemento filho de um elemento (excluindo nós de texto 
         txt = txt + x[i].tagName + '<br>';
     }
 
-    console.log(txt); // retorna P<br>BUTTON<br>DIV
-    console.log(txt.length); // retorna 18
+    console.log(txt);    // retorna P<br>BUTTON<br>DIV
+    console.log(txt.length);    // retorna 18
     
 ## classList
 Aplica a(s) classe(s) a um determinado elemento ou mais elementos:
 
     <div id="minhaDiv" class="meuEstilo1">Teste</div>
     
-    document.getElementById('minhaDiv').classList. // Obtém o nome da classe
-    document.getElementById('minhaDiv').classList.add('meuEstilo1'); // Adiciona uma classe
+    document.getElementById('minhaDiv').classList.      // Obtém o nome da classe
+    document.getElementById('minhaDiv').classList.add('meuEstilo1');    // Adiciona uma classe
     document.getElementById('minhaDiv').classList.add('meuEstilo2, meuEstilo3'); 
-    document.getElementById('minhaDiv).classList.remove('meuEstilo1, meuEstilo3'); // Remove as classes
-    document.getElementById('minhaDiv').classList.toggle('novaClasse'); // Alterna entre duas classes
+    document.getElementById('minhaDiv).classList.remove('meuEstilo1, meuEstilo3');      // Remove as classes
+    document.getElementById('minhaDiv').classList.toggle('novaClasse');         // Alterna entre duas classes
     document.getElementById('minhaDiv').classList.length;
-    document.getElementById('minhaDiv').classList.item(0); // pega a primeira classe se houver mais
-    document.getElementById('minhaDiv').classList.contains('meuEstilo1'); // retorna true
+    document.getElementById('minhaDiv').classList.item(0);      // pega a primeira classe se houver mais
+    document.getElementById('minhaDiv').classList.contains('meuEstilo1');   // retorna true
     
 ## className
 Define ou retorna o valor do atributo de classe de um elemento:
@@ -73,9 +73,9 @@ Define ou retorna o valor do atributo de classe de um elemento:
     <p id="minhaDiv1" class="meuEstilo">Teste</p>
     <p id="minhaDiv2">Teste</p>
 
-    document.getElementById('minhaDiv1').className; // meuEstilo se tiver mais retorna todas
-    document.getElementById('minhaDiv2').className = "meuEstilo";
-    document.getElementById('minhaDiv2').className += " outroEstilo"; // adicona outro estilo
+    document.getElementById('minhaDiv1').className;     // meuEstilo se tiver mais retorna todas
+    document.getElementById('minhaDiv2').className = 'meuEstilo';
+    document.getElementById('minhaDiv2').className += ' outroEstilo';       // adicona outro estilo
     
 ## clientHeight
 Retorna a altura de um elemento, incluindo preenchimento:
@@ -83,7 +83,7 @@ Retorna a altura de um elemento, incluindo preenchimento:
     <div id="minhaDiv" style="height:400px;width:400px;"></div>
 
     var elem = document.getElementById('minhaDiv');
-    console.log('Altura é: ' + elem.clientHeight + 'px'); // retorna Altura é: 400px
+    console.log('Altura é: ' + elem.clientHeight + 'px');       // retorna Altura é: 400px
     
 ## clientLeft
 Retorna a largura da borda esquerda de um elemento:
@@ -91,7 +91,7 @@ Retorna a largura da borda esquerda de um elemento:
     <div id="minhaDiv" style="height:400px;width:400px;border-left:15px solid red;"></div>
 
     var elem = document.getElementById('minhaDiv');
-    console.log('Largura é: ' + elem.clientLeft + 'px'); // retorna Largura 15px
+    console.log('Largura é: ' + elem.clientLeft + 'px');    // retorna Largura 15px
     
 ## clientTop
 Retorna a largura da borda superior de um elemento:
@@ -99,7 +99,7 @@ Retorna a largura da borda superior de um elemento:
     <div id="minhaDiv" style="height:400px;width:400px;border-top:15px solid red;"></div>
 
     var elem = document.getElementById('minhaDiv');
-    console.log('Largura é: ' + elem.clientTop + 'px'); // retorna Largura é 15px
+    console.log('Largura é: ' + elem.clientTop + 'px');         // retorna Largura é 15px
     
 ## clientWidth
 Retorna a largura de um elemento, incluindo preenchimento :
@@ -107,7 +107,7 @@ Retorna a largura de um elemento, incluindo preenchimento :
     <div id="minhaDiv" style="height:400px;width:400px;"></div>
 
     var elem = document.getElementById('minhaDiv');
-    console.log('Largura é: ' + elem.clientHeight + 'px'); // retorna Largura é 400px
+    console.log('Largura é: ' + elem.clientHeight + 'px');      // retorna Largura é 400px
     
 ## contentEditable
 Define ou retorna se o conteúdo de um elemento é editável ou não:
