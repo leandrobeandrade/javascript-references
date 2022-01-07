@@ -8,7 +8,7 @@ Retorna o último nó filho de um elemento, não podendo haver espaços entre os
 
     <ul id="lista"><li>Palmeiras</li><li>Grêmio</li></ul>
 
-    var elem = document.getElementById('lista').lastChild.innerHTML;
+    let elem = document.getElementById('lista').lastChild.innerHTML;
     console.log(elem);   // retorna Grêmio
 
 ## lastElementChild
@@ -16,13 +16,13 @@ Retorna o último elemento filho de um elemento, não podendo haver espaços ent
 
     <ul id="lista"><li>Café</li><li>Chá</li></ul>
 
-    var elem = document.getElementById('lista').lastElementChild.innerHTML;
+    let elem = document.getElementById('lista').lastElementChild.innerHTML;
     console.log(elem);   // retorna Grêmio
 
 ## namespaceURI
 Retorna o URI do namespace de um elemento:
 
-    var x = document.documentElement.namespaceURI; 
+    let x = document.documentElement.namespaceURI; 
     console.log(x);   // retorna www.seusite.com
 
 ## nextSibling
@@ -30,7 +30,7 @@ Retorna o próximo nó no mesmo nível da árvore de nós, não podendo haver es
 
     <ul><li id="item1">Palmeiras(primeiro li)</li><li id="item2">Grêmio(segundo li)</li></ul>
     
-    var elem = document.getElementById('item1').nextSibling.innerHTML; 
+    let elem = document.getElementById('item1').nextSibling.innerHTML; 
     console.log(elem);   // retorna Grêmio (segundo li)
 
 ## nextElementSibling
@@ -38,7 +38,7 @@ Retorna o próximo elemento no mesmo nível da árvore de nós, não podendo hav
 
     <ul><li id="item1">Palmeiras (primeiro li)</li><li id="item2">Grêmio (segundo li)</li></ul>
     
-    var elem = document.getElementById('item1').nextElementSibling.innerHTML;
+    let elem = document.getElementById('item1').nextElementSibling.innerHTML;
     console.log(elem);   // retorna Grêmio (segundo li)
 
 ## nodeName
@@ -46,7 +46,7 @@ Retorna o nome de um nó:
 
     <p>Testando!</p>
 
-    var elem = document.getElementsByTagName('p')[0].nodeName;
+    let elem = document.getElementsByTagName('p')[0].nodeName;
     console.log(elem);   // retorna p
 
 ## nodeType
@@ -54,7 +54,7 @@ Retorna o tipo de nó de um nó e retorna **1** para um nó de elemento, **2** u
 
     <p>Testando!</p>
 
-    var x = document.getElementsByTagName('p')[0].nodeType;
+    let x = document.getElementsByTagName('p')[0].nodeType;
     console.log(x);   // retorna p
 
 ## nodeValue
@@ -62,6 +62,6 @@ Define ou retorna o valor de um nó:
 
     <p>Testando!</p>
 
-    var elem = document.getElementsByTagName('p')[0];
-    var nod = elem.childNodes[0].nodeValue;  
+    let elem = document.getElementsByTagName('p')[0];
+    let nod = elem.childNodes[0].nodeValue;  
     console.log(nod);   // retorna Testando!
