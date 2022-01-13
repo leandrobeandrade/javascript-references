@@ -9,8 +9,8 @@ Retorna a altura inteira de um elemento, incluindo preenchimento:
     </div>
     
     function show() {
-        var elem = document.getElementById('conteudo');
-        var y = elem.scrollHeight;
+        let elem = document.getElementById('conteudo');
+        let y = elem.scrollHeight;
         console.log('Altura é: ' + y + 'px'); // retorna Altura é: 820px      
     }
 
@@ -25,7 +25,7 @@ Rola o elemento especificado para a área visível da janela do navegador:
     </div>
     
     function show() {
-        var elem = document.getElementById('conteudo');
+        let elem = document.getElementById('conteudo');
         elem.scrollIntoView();
     }
 
@@ -40,8 +40,8 @@ Define ou retorna o número de pixels que o conteúdo de um elemento é rolado h
     </div>
     
     function show() {
-        var elem = document.getElementById("teste");
-        var x = elem.scrollLeft;
+        let elem = document.getElementById("teste");
+        let x = elem.scrollLeft;
         console.log(x);
     }
 
@@ -56,8 +56,8 @@ Define ou retorna o número de pixels que o conteúdo de um elemento é rolado v
     </div>
     
     function show() {
-        var elem = document.getElementById("teste");
-        var x = elem.scrollTop;
+        let elem = document.getElementById("teste");
+        let x = elem.scrollTop;
         console.log(x);
     }
 
@@ -72,8 +72,8 @@ Retorna toda a largura de um elemento, incluindo preenchimento:
     </div>
     
     function show() {
-        var elem = document.getElementById("conteudo");
-        var x = elem.scrollWidth;
+        let elem = document.getElementById("conteudo");
+        let x = elem.scrollWidth;
         console.log('Largura é: ' + x + 'px'); // retorna Largura é: 2020px      
     }
 
@@ -109,7 +109,7 @@ Retorna o nome da tag de um elemento:
     <p id="meuP">Testando!</p>
 
     function show() {
-      var x = document.getElementById('meuP').tagName;
+      let x = document.getElementById('meuP').tagName;
       console.log(x); // retorna p
     }
 
@@ -120,7 +120,7 @@ Define ou retorna o conteúdo textual de um nó e seus descendentes:
     <p>Testando...</p>
     
     function show() {
-      var texto = document.getElementById('btn').textContent;
+      let texto = document.getElementById('btn').textContent;
       document.getElementsByTagName('p')[0].textContent = 'Trocando o texto do p';
       console.log(texto);  // retorna Apertar
     }
@@ -132,6 +132,6 @@ Define ou retorna o valor da propriedade de título de um elemento:
     <button onclick="show()">Apertar</button>
     
     function show() {
-      var tit = document.getElementById('myAbbr').title;
+      let tit = document.getElementById('myAbbr').title;
       console.log(tit);   // retorna World Wide Web Consortium
     }
