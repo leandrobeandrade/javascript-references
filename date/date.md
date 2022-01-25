@@ -19,93 +19,95 @@ Permite adicionar propriedades e métodos a um objeto:
     };
 
     function myFunction() {
-      var data = new Date();
+      let data = new Date();
       data.myMet();
-      console.log(data);
+      return(data);
     }
+    
+    myFunction();  // Retorna uma data
     
 ## now()
 Retorna o número de milissegundos desde a meia-noite de 1º de janeiro de 1970:
 
-    var mil = Date.now();
+    let mil = Date.now();
     console.log(mil);
 
 ## parse()
 Analisa uma string de data e retorna o número de milissegundos desde 1º de janeiro de 1970:
 
-    var data = Date.parse('September 03, 2018');
+    let data = Date.parse('September 03, 2018');
     console.log(data);    // retorna 1535943600000
     
 ## toDateString()
 Converte a parte da data de um objeto Date em uma string legível:
 
-    var data = new Date();
-    var strg = data.toDateString();
+    let data = new Date();
+    let strg = data.toDateString();
     console.log(strg);    // retorna a data atual como string - Mon Sep 03 2018
     
 ## toISOString()
 Retorna a data como uma string, usando o padrão ISO:
 
-    var data = new Date();
-    var strg = data.toISOString();
+    let data = new Date();
+    let strg = data.toISOString();
     console.log(strg);
     
 ## toJSON()
 Retorna a data como uma string, formatada como uma data JSON:
 
-    var data = new Date();
-    var json = data.toJSON();
+    let data = new Date();
+    let json = data.toJSON();
 
 ## toLocaleDateString()
 Retorna a parte da data de um objeto Date como uma string, usando convenções de localidade:
 
-    var data = new Date();
-    var strg = data.toLocaleDateString();
+    let data = new Date();
+    let strg = data.toLocaleDateString();
     console.log(strg);    // retorna a data atual como uma string - 03/09/2018
 
 ## toLocaleTimeString()
 Retorna a parte da hora de um objeto Date como uma string, usando convenções de localidade:
 
-    var data = new Date();
-    var strg = data.toLocaleTimeString();
+    let data = new Date();
+    let strg = data.toLocaleTimeString();
     console.log(strg)     // retorna a data atual como uma string
 
 ## toLocaleString()
 Converte um objeto Date em uma string, usando convenções de localidade:
 
-    var data = new Date();
-    var strg = data.toLocaleString();
+    let data = new Date();
+    letrg = data.toLocaleString();
     console.log(strg);    // retorna a data atual como uma string
 
 ## toString()
 Converte um objeto Date em uma string:
 
-    var data = new Date();
-    var strg = data.toString();
+    let data = new Date();
+    let strg = data.toString();
     console.log(strg);    // retorna Mon Sep 03 2018 15:46:42 GMT-0300 (Horário Padrão de Brasília)
     
 ## toTimeString()
 Converte a parte de hora de um objeto Date em uma string:
 
-    var data = new Date();
-    var strg = data.toTimeString();
+    let data = new Date();
+    let strg = data.toTimeString();
     console.log(strg);     retorna 15:48:41 GMT-0300 (Horário Padrão de Brasília)
     
 ## toUTCString()
 Converte um objeto Date em uma string, de acordo com a hora universal:
 
-    var data = new Date();
-    var strg = data.toUTCString();
+    let data = new Date();
+    let strg = data.toUTCString();
     console.log(strg);    // retorna Mon, 03 Sep 2018 18:51:06 GMT
     
 ## UTC()
 Retorna o número de milissegundos em uma data desde a meia-noite de 1º de janeiro de 1970, de acordo com a hora UTC:
 
-    var data = Date.UTC(2018, 08, 03);
+    let data = Date.UTC(2018, 08, 03);
     console.log(data);    // retorna 1535932800000
     
 ## valueOf()
 Retorna o valor primitivo de um objeto Date:
 
-    var data = new Date(); 
-    var valor = data.valueOf();
+    let data = new Date(); 
+    let valor = data.valueOf();
