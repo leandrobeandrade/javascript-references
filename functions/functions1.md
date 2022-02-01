@@ -2,19 +2,19 @@
 
 > **Função em forma declarada =>** é carregada antes da interpretação, podendo ser invocada antes da sua declaração
 
-    function somar(a,b) {
+    function somar(a, b) {
 	    return a + b;
     }
 
 > **Função expressa em uma variável =>** sua execução é dada pelo uso da variável onde a função foi declarada 
 
-    let somar = function(a,b) {						
+    let somar = function(a, b) {						
 	    return a + b;
     }
 
 > **Função expressa nomeada =>** sua execução é dada pelo uso da variável onde a função foi declarada 
 
-    let somar = function somar(a,b) {
+    let somar = function somar(a, b) {
 	    return a + b;
     }
 
@@ -22,7 +22,7 @@
 
 > **Invocada diretamente**
 
-    function somar(a,b) {
+    function somar(a, b) {
 	    return a + b;
     }
 
