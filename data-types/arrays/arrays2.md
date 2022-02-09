@@ -37,14 +37,14 @@ Executa uma dada função agindo sobre elementos iteraveis como arrays, string, 
 Interage sobre propriedades enumeradas de um objeto, na ordem original de inserção
 	
     let usuario = {
-    	id: 1
-    	nome: 'Fulano',
-	idade: 25,
+        id: 1,
+        nome: 'Fulano',
+        idade: 25,
     }
     
     for (let obj in usuario) {
-    	console.log('chave: ', obj);
-	console.log('valor: ', usuario[obj]);
+        console.log('chave: ', obj);
+        console.log('valor: ', usuario[obj]);
     }
     
     // retorna chave: id  valor: 1        chave: nome  valor: Fulano       chave: idade  valor: 25
