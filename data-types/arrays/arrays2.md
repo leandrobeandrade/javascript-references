@@ -73,7 +73,7 @@ Filtra o array e `retorna um novo array` com todos os elementos que passarem no 
 
     let filtra = carros.filter(elemento => elemento.marca === 'Ford');
 
-    console.log(filtra); // retona { marca: "Ford", modelo: "Ka"}
+    console.log(filtra); // retorna [{ marca: "Ford", modelo: "Ka"}]
 
 # reduce()
 Executa uma função reducer para cada membro do array, `resultando num único valor de retorno`
