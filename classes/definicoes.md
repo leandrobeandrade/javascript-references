@@ -11,12 +11,12 @@ Declara-se uma classe utilizano a palavara reservada **`class`** seguido do seu 
     
     let nome = new Nome('Fulano', 'de Tal')
     console.log(nome);  // retorna Fulano de Tal
-    
----
+ 
+>
     
     let nome = new Nome();      // Erro de referência (ReferenceError)
 
-    class Nome {}
+    class Nome { ... }
     
 # Expressões de Classe
 
