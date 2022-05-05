@@ -139,4 +139,4 @@ Retorna a url do documento
 ## document.write()
 Sobrescreve todo Html do documento
   
-    document.write('Olá mundo!');  // writeln pula de linha 
+    document.write('Olá mundo!');
