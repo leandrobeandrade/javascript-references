@@ -91,7 +91,7 @@ Executa uma função reducer para cada membro do array, `resultando num único v
     console.log(reduz); // retorna 95550
 
 # find()
-Peracorre o array e `retorna o valor do primeiro elemento do array` que satisfizer a função de teste provida
+Percorre o array e `retorna o valor do primeiro elemento do array` que satisfizer a função de teste provida
 
     let nums = [5, 12, 8, 130, 44];
     let ret = nums.find((element) => element > 10);
