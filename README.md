@@ -18,4 +18,4 @@ Toda as referências encontradas nesse repositório são baseadas em documentaç
 
 ![](https://github.com/leandrobeandrade/javascript-references/blob/master/js.png)
 
-> Repositório em constante construção
+> Repositório em constante atualização
