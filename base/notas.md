@@ -6,6 +6,37 @@
 
 ---
 
+ > Tipos Primitivos
+
+- JavaScript nos permite trabalhar com primitivos (strings, números, etc.) como se fossem objetos. Eles também fornecem métodos para chamar como tal.
+
+Valor | Descrição
+--- | ---
+string | caractere ou cadeia de caracteres
+number | qualquer valor numérico
+bigint | números inteiros maiores que 253
+boolean | representa dois valores verdadeiro ou falso 
+symbol | Um símbolo no qual pode ser usado para debugar
+null | um valor em branco que pode ser atribuído a uma variável
+undefined | um valor de uma variável antes de ser atribuído um valor a ela
+
+---
+
+ > Valores Falsy
+
+- Valores que se comportam como **falsos** quando declarados dentro de uma declaração `if`
+
+Valor | Descrição
+--- | ---
+false | valor boolean false 
+0 | número zero 
+'' | string vazia, uma string sem caracteres 
+NaN | significa "Not a Number" (não é um número), geralmente causado por erros matemáticos 
+undefined | um valor de uma variável antes de ser atribuído um valor a ela 
+null | um valor em branco que pode ser atribuído a uma variável 
+
+---
+
 > Referência a Objetos
 
 - Referenciar uma variável (b) com outra variável (a) que contém em seu valor um objeto, a segunda variável b será referenciada no mesmo local na memória, ou seja, se b for modificada a também será modificada
@@ -29,17 +60,4 @@
 
       console.log(a == b)   // false
 
----
 
- > Valores Falsy
-
-- Valores que se comportam como **falsos** quando declarados dentro de uma declaração `if`
-
-Valor | Descrição
---- | ---
-false | valor boolean false 
-0 | número zero 
-'' | string vazia, uma string sem caracteres 
-NaN | significa "Not a Number" (não é um número), geralmente causado por erros matemáticos 
-undefined | um valor de uma variável antes de ser atribuído um valor a ela 
-null | um valor em branco que pode ser atribuído a uma variável 
