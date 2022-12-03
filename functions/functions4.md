@@ -1,5 +1,5 @@
 # Closures
-Closure é quando uma função é capaz de acessar seu escopo léxico mesmo quando ela está sendo executada fora de seu escopo léxico
+Closure é quando uma função é capaz de acessar seu escopo léxico mesmo quando ela está sendo executada fora de seu escopo léxico, assim também como tornar variáveis e funções "privadas", ou seja, utilizáveis apenas dentro da própria função
 
     let msg = function() {
         let mensagem = 'Testando Javascript';
@@ -50,6 +50,22 @@ Closure é quando uma função é capaz de acessar seu escopo léxico mesmo quan
     op.somar();   // retorna 2
     op.somar();   // retorna 3
     op.subtrair();  // retorna 2
+    
+---    
+    
+    function oNome(nome) {
+        const msg = `Nome: ${nome}`;
+        
+        function seuNome() {
+            return `${msg} ${name}`;
+        }
+        
+        return seuNome();
+    }
+    
+    console.log(oNome('Fulano'));   // Nome: Fulano
+    console.log(oNome('Fulano').msg);  // ERRO
+    console.log(oNome('Fulano').seuNome());  // undefined
     
 # Callback
 São funções que são passadas como parâmetro de outra(s) função(ões)
