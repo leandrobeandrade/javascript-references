@@ -224,3 +224,6 @@ Retorna o prototype (isto é, o valor da propriedade interna [[Prototype]]) do o
       if (paises.hasOwnProperty('pais')) console.log(paises[ps]);  // retorna Brasil
       else console.log(ps);  // retorna pais (chave do objeto)
     }
+    
+    // Maneira de verificar a existência de propriedades com in
+    console.log('pais' in paises);   // retorna true
