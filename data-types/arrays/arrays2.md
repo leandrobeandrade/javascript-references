@@ -31,23 +31,7 @@ Executa uma dada função agindo sobre elementos iteraveis como arrays, string, 
     
     let texto = "teste";
 
-    for (let valor of texto) console.log(valor);  // retorna t e s t e
-    
-# for...in
-Interage sobre propriedades enumeradas de um objeto, na ordem original de inserção
-	
-    let usuario = {
-        id: 1,
-        nome: 'Fulano',
-        idade: 25,
-    }
-    
-    for (let obj in usuario) {
-        console.log('chave: ', obj);
-        console.log('valor: ', usuario[obj]);
-    }
-    
-    // retorna chave: id  valor: 1        chave: nome  valor: Fulano       chave: idade  valor: 25
+    for (let valor of texto) console.log(valor);  // retorna t  e  s  t  e
     
 # map()
 Invoca a função callback passada por argumento para cada elemento do array e `retorna um novo array` como resultado
