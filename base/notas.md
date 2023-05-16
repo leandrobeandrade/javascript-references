@@ -60,4 +60,12 @@ null | um valor em branco que pode ser atribuído a uma variável
 
       console.log(a == b)   // false
 
+---
 
+> Verificação de objetos
+
+- Para verificar se um objeto possui algum valor associado, primeiro testa-se se o objeto é diferente de `"undefined"` e depois testa-se se o objeto é `null`
+
+      if (myObj !== null && typeof myObj !== "undefined")  // ERRO
+      
+      if (typeof myObj !== "undefined" && myObj !== null)  // OK
