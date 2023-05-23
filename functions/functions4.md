@@ -57,7 +57,7 @@ Closure é quando uma função é capaz de acessar seu escopo léxico mesmo quan
         const msg = `Nome: ${nome}`;
         
         function seuNome() {
-            return `${msg} ${name}`;
+            return `${msg} ${nome}`;
         }
         
         return seuNome();
