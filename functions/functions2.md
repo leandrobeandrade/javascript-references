@@ -1,5 +1,7 @@
 # Funções invocadas por objetos
 
+> Também conhecidas como métodos, são funções que são invocadas a partir de objetos
+
     let carro = {
         marca: 'Ford',
         modelo: 'Mustang',
@@ -24,30 +26,113 @@
 
     console.log(carro.getModel());  // retorna Mustang
 
-# Funções invocadas pelo método call()
+# Método call()
+
+> Com este método, pode-se escrever um método que pode ser usado em diferentes objetos. Pode receber argumentos que são passados separadamente
 
     let getModelo = function(ano) {
         return this.modelo +' '+ ano
     }
 
-    let carro = {
+    const carro1 = {
         marca: 'Ford',
         modelo: 'Mustang',
         getModelo: getModelo
     }
+    
+    
+    const carro2 = {
+        marca: 'BMW',
+        modelo: 'BMW 320i',
+        getModelo: getModelo
+    }
 
-    console.log(getModel.call(carro, 2018));  // retorna Mustang 2018
+    console.log(getModelo.call(carro1, 2018));  // retorna Mustang 2018
+    console.log(getModelo.call(carro2, 2018));  // retorna BMW 320i 2022
+    
+---
 
-# Funções invocadas pelo método apply()
+    let pessoa = {
+      nomeCompleto: function(cidade, pais) {
+        return this.primeiroNome + ' ' + this.ultimoNome + ',' + cidade + ',' + pais;
+      }
+    }
+
+    const pessoa1 = {
+      primeiroNome: 'John',
+      ultimoNome: "Doe"
+    }
+    
+    const pessoa2 = {
+      primeiroNome: 'Mary',
+      ultimoNome: 'Doe'
+    }
+
+   console.log(pessoa.nomeCompleto.call(pessoa1, 'Oslo', 'Norway'));    // retorna John Doe Oslo Norway
+   console.log(pessoa.nomeCompleto.call(pessoa2, 'Beijing', 'China'));    // retorna Mary Doe Beijing China
+
+# Método apply()
+
+> Com este método, pode-se escrever um método que pode ser usado em diferentes objetos. Pode receber vários argumentos passados em forma de array
 
     let getModelo = function(ano) {
         return this.modelo +' '+ ano
     }
 
-    let carro = {
+    let carro1 = {
         marca: 'Ford',
         modelo: 'Mustang',
         getModelo: getModelo
     }
+    
+    let carro2 = {
+        marca: 'BMW',
+        modelo: 'BMW 320i',
+        getModelo: getModelo
+    }
 
-    getModelo.apply(carro, [2018]);   // retorna Mustang 2018
+    console.log(getModelo.apply(carro1, [2018]));   // retorna Mustang 2018
+    console.log(getModelo.apply(carro2, [2022]));   // retorna BMW 320i 2022
+    
+---
+    
+    
+    let pessoa = {
+      nomeCompleto: function(cidade, pais) {
+        return this.primeiroNome + ' ' + this.ultimoNome + ',' + cidade + ',' + pais;
+      }
+    }
+
+    const pessoa1 = {
+      primeiroNome: 'John',
+      ultimoNome: 'Doe'
+    }
+    
+    const pessoa2 = {
+      primeiroNome: 'Mary',
+      ultimoNome: 'Doe'
+    }
+
+    console.log(pessoa.nomeCompleto.call(pessoa1, ['Oslo', 'Norway']));    // retorna John Doe Oslo Norway
+    console.log(pessoa.nomeCompleto.call(pessoa2, ['Beijing', 'China']));    // retorna Mary Doe Beijing China
+    
+# Método bind()
+
+> Com este método, um objeto pode pegar emprestado um método de outro objeto.
+
+    const pessoa = {
+      primeiroNome: 'John',
+      ultimoNome: 'Doe',
+      nomeCompleto: function() {
+        return this.primeiroNome + ' ' + this.ultimoNome;
+      }
+    }
+
+    const membro = {
+      primeiroNome: 'Hege',
+      ultimoNome: 'Nilsen',
+    }
+
+    let nomeCompleto = pessoa.nomeCompleto.bind(membro);
+    console.log(nomecompleto);  // retorna Hege Nilsen
+
