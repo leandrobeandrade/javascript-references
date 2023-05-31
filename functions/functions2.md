@@ -1,6 +1,6 @@
 # Funções invocadas por objetos
 
-> Também conhecidas como métodos, são funções que são invocadas a partir de objetos
+> Também conhecidos como métodos, são funções que são invocadas a partir de objetos
 
     let carro = {
         marca: 'Ford',
@@ -68,8 +68,8 @@
       ultimoNome: 'Doe'
     }
 
-   console.log(pessoa.nomeCompleto.call(pessoa1, 'Oslo', 'Norway'));    // retorna John Doe Oslo Norway
-   console.log(pessoa.nomeCompleto.call(pessoa2, 'Beijing', 'China'));    // retorna Mary Doe Beijing China
+    console.log(pessoa.nomeCompleto.call(pessoa1, 'Oslo', 'Norway'));    // retorna John Doe Oslo Norway
+    console.log(pessoa.nomeCompleto.call(pessoa2, 'Beijing', 'China'));    // retorna Mary Doe Beijing China
 
 # Método apply()
 
@@ -118,7 +118,7 @@
     
 # Método bind()
 
-> Com este método, um objeto pode pegar emprestado um método de outro objeto.
+> Com este método, um objeto pode ser utilizado como base para métodos de outro objeto.
 
     const pessoa = {
       primeiroNome: 'John',
