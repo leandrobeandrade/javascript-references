@@ -33,4 +33,8 @@
     }
 
     console.log(mapString('banana'));   // retorna { "b": [0], "a": [1,3,5], "n": [2,4] }
+
+### Curiosidades do JavaScript
+
+    console(!![]+!![]);   // retorna 2
     
