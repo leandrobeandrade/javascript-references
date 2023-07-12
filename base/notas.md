@@ -24,7 +24,7 @@ undefined | um valor de uma variável antes de ser atribuído um valor a ela
 
  > Valores Falsy
 
-- Valores que se comportam como **falsos** quando declarados dentro de uma declaração `if`
+- Valores que quando forçados para booleanos são falsos e que consequentemente do contrário são truthy
 
 Valor | Descrição
 --- | ---
@@ -33,7 +33,13 @@ false | valor boolean false
 '' | string vazia, uma string sem caracteres 
 NaN | significa "Not a Number" (não é um número), geralmente causado por erros matemáticos 
 undefined | um valor de uma variável antes de ser atribuído um valor a ela 
-null | um valor em branco que pode ser atribuído a uma variável 
+null | um valor em branco que pode ser atribuído a uma variável
+
+- Exemplo
+
+      console.log(!!" "); // string com espaço em branco é truthy
+
+      console.log(!!""); // string vazia é falsy
 
 ---
 
