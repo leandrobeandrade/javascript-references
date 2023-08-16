@@ -1,3 +1,21 @@
+> Objetos literais ao invés de switch
+
+    const getDay = day => {
+      const days = {
+        1: 'Domingo',
+        2: 'Segunda',
+        3: 'Terça',
+        4: 'Quarta',
+        5: 'Quinta',
+        6: 'Sexta',
+        7: 'Sábado'
+      }
+
+      return day in days ? days[day] : 'Bom dia!'
+    }
+
+    getDay(3);  // Terça
+
 > Acessando e modificando valores de objetos
     
     class Classe {
