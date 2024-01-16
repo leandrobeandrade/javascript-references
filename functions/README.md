@@ -9,3 +9,7 @@ Para retornar um valor diferente do padrão, uma função deve ter uma instruç�
 Os parâmetros de uma função são chamados de argumentos da função. Argumentos são passados para a função por valor. Se uma função muda o valor de um argumento, esta mudança não é refletida globalmente ou na chamada da função. Contudo, referência de objetos são valores também, e eles são especiais: se a função muda as propriedades do objeto referenciado, estas mudanças são visíveis fora da função.
 
 ![](https://github.com/leandrobeandrade/javascript-references/blob/master/functions/functions.png)
+
+> Links complementares
+
+- https://alvaronascimento-dev.notion.site/JavaScript-Fun-es-67621a6581d44282b2b05110eb131c82
