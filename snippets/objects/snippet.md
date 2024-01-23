@@ -15,6 +15,27 @@
     }
 
     getDay(3);  // Terça
+    
+> Objetos literais ao invés de condicionais
+
+    // XX
+    let elements = (color) => {
+      if (color == 'blue') return '#00f'
+      else if (color == 'black') return '#000'
+      else if (color == 'red') return '#f00'
+      else return '#fff'
+    }
+
+    // OK
+    let setElements = (color) => {
+      let palette = {
+        blue: '#00f'
+        black: '#000'
+        red: '#f00'
+      }
+
+      return palette[color] || '#fff';
+    }
 
 > Acessando e modificando valores de objetos
     
