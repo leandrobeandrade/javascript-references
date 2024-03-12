@@ -30,7 +30,7 @@
     const { d = 99 } = object;
     console.log(d);  // 99
 
-## Método groupBy()
+### Método groupBy()
 
     const oportunidades = [
         { id: 1, name: 'Project A', status: 'open', value: 50 },
