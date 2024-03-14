@@ -2,7 +2,7 @@
 
     const names = ['Ka', 'Ali', 'Le', 'Mu']; 
     const love = names.filter(name => name === 'Ali').map(name => `Eu amo ${name}`);
-    console.log(love);
+    console.log(love);  // retorna Eu amo Ali 
 
 > Agrupar objetos com chaves iguais:
 
