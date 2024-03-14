@@ -1,3 +1,9 @@
+> Métodos encadeados
+
+    const names = ['Ka', 'Ali', 'Le', 'Mu']; 
+    const love = names.filter(name => name === 'Ali').map(name => `Eu amo ${name}`);
+    console.log(love);
+
 > Agrupar objetos com chaves iguais:
 
     const data = [
@@ -42,12 +48,12 @@
     ];
     
     function agrupa(lista, quantidade) {
-        const length = lista.length;
+        const tam = lista.length;
         let i = 0;
         let novoIndice = -1;
         const novaLista = [];
 
-        for (i; i < length; i++) {
+        for (i; i < tam; i++) {
             if (i === 0 || i % quantidade === 0) {
                 novoIndice++;
                 novaLista.push([]);
