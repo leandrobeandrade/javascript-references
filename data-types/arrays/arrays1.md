@@ -7,6 +7,11 @@
 **[x] =>** retorna o elemento na posição indicada pelo índice informado
 
     console.log(times[0]+' - '+times[3]);   // retorna Palmeiras - Atlético-MG
+
+**at() =>** Recebe um valor inteiro e retorna o item referente ao index dele, permitindo valores positivos ou negativos. Valores negativos contam apartir do último item do array
+
+    let index = 2;
+    console.log(`O índice ${index} retorna o time ${times.at(index)}`);
     
 **indexOf() =>** retorna o índice do primeiro elemento encontrado no array
 
