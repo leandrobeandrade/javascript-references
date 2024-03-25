@@ -21,15 +21,6 @@
     const map = new Map();  // BOA
     map.set(dynamicKey, value);
 
-### Desestruturação
-
-    const object = { a:1, b:2, c:3 };
-    const { b = 99 } = object;
-    console.log(b);  // 2
-
-    const { d = 99 } = object;
-    console.log(d);  // 99
-
 ### Método groupBy()
 
     const oportunidades = [
