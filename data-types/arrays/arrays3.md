@@ -1,4 +1,4 @@
-# Spread operator (...)
+## Spread operator (...)
 Permite distribuir o conteúdo de qualquer objeto iterável em múltiplos elementos
 
       const names = ['Lestat', 'Marius', 'Akasha'];
@@ -11,7 +11,7 @@ Permite distribuir o conteúdo de qualquer objeto iterável em múltiplos elemen
       console.log(characters); // retorna ['Lestat', 'Louis', 'Marius', 'Pandora', 'Akasha']
 
 
-# Rest params (...)
+## Rest params (...)
 Permite representar um número indefinido de elementos como um array
 
       const author = ['Anne Rice', 1941, 'USA', 'Interview With The Vampire', 'The Vampire Lestat', 'The Queen of the Damned'];
@@ -31,7 +31,7 @@ Permite representar um número indefinido de elementos como um array
       console.log(sum(1, 2));   // retorna 3
       console.log(sum(1, 10, 100, 1000));   // retorna 1111
 
-# flat()
+## flat()
 Deixa o Array plano recursivamente em uma profundidade especificada como argumento, ou seja, é uma operação que concatena os elementos de um array
 
       console.log([1, 2, [3, 4]].flat());  // retorna [ 1, 2, 3, 4] 
@@ -53,9 +53,8 @@ Deixa o Array plano recursivamente em uma profundidade especificada como argumen
       // COM flat():
       console.log([array1, array2].flat());  // retorna [1, 2, 3, 4, 5, 6]
 
-# flatMap()
-Mapeia cada elemento usando uma função de mapeamento e, em seguida, nivela o resultado em uma nova array. 
-É idêntico a um map seguido por um flat de profundidade 1
+## flatMap()
+Mapeia cada elemento usando uma função de mapeamento e, em seguida, nivela o resultado em uma nova array. É idêntico a um map seguido por um flat de profundidade 1
 
       let cestas = [
             { id: 1, itens: ["Maça", "Banana"]},
@@ -70,3 +69,24 @@ Mapeia cada elemento usando uma função de mapeamento e, em seguida, nivela o r
 
       // Com o flatMap já temos a concatenação dos elementos e conseguimos obter todos os elementos listados dentro de objetos
       console.log(cestas.flatMap(x => x.itens));    // retorna ["Maça", "Banana", "Banana", "Abacaxi"]
+
+## reduceRight()
+Aplica à uma função um acumulador e cada valor do array (da direita para esquerda) é reduzido para um valor único
+
+      let total = [0, 1, 2, 3].reduceRight(function (a, b) {
+        return a + b;
+      });
+
+      console.log(total);  // 6
+
+## toLocaleString()
+Retorna uma representaçao de elementos de um array. Os elementos são convertidos para Strings utilizando seus respectivos métodos toLocaleString e essas cadeias são separadas por uma sequência específica de localidade (separados por virgula ",").
+
+      let numero = 1337;
+      let data = new Date();
+      let meuArray = [numero, data, "Alguma coisa"];
+      
+      let resultado = meuArray.toLocaleString();
+      
+      console.log(resultado);  // retorna "1.337,25/03/2024, 10:10:54,Alguma coisa"
+
