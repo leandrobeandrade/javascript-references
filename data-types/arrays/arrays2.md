@@ -164,3 +164,14 @@ Cria um nova instância do Array `com um número variável de argumentos`, indep
 
     const array = Array.of(1, 10, "teste", {nome: "Fulano"}, [2, 3, 4]);
     console.log(array); // retorna [1, 10, "teste", {nome: "Fulano"}, [2, 3, 4]]
+
+# Array.values()
+Retorna um novo objeto de Array Iterator que contém os valores para cada índice no array.
+
+	const array1 = ['a', 'b', 'c'];
+	const iterator = array1.values();
+
+	for (const value of iterator) {
+  	    console.log(value);  // retorna "a" "b" "c"
+	}
+ 
