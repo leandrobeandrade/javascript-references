@@ -16,6 +16,16 @@
 **indexOf() =>** retorna o índice do primeiro elemento encontrado no array
 
     console.log(times.indexOf('Vasco'));  // retorna 2
+
+**lastIndexOf() =>** Retorna o ultimo índice que um certo elemento pode ser encontrado no array, ou -1 se o elemento não estiver presente. O array é pesquisado de trás para frente, começando pelo fromIndex
+
+    let array = [2, 5, 9, 2];
+    console.log(array.lastIndexOf(2));      // retorna 3
+    console.log(array.lastIndexOf(7));      // retorna -1
+    console.log(array.lastIndexOf(2, 3));   // retorna 3
+    console.log(array.lastIndexOf(2, 2));   // retorna 0
+    console.log(array.lastIndexOf(2, -2));  // retorna 0
+    console.log(array.lastIndexOf(2, -1));  // retorna 3
     
 **push() =>** adiciona um ou mais elementos no final do array
 
