@@ -19,11 +19,11 @@ Um objeto pode ser criado com colchetes {…} com uma lista opcional de propried
 
     // Exemplo 3º Forma
     function Pessoa(nome, idade) {
-    	this.nome = nome;
-	 	this.cidade = cidade;
+      this.nome = nome;
+      this.idade = idade;
     }
-
- 	const pessoa = new Pessoa('Fulano', 30);
+    
+    const pessoa = new Pessoa('Fulano', 30);
 
 ## Setando valores no objeto
     
