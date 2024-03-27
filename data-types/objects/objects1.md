@@ -17,6 +17,14 @@ Um objeto pode ser criado com colchetes {…} com uma lista opcional de propried
     usuarios.ultimoNome = "de Tal";
     usuarios.ano = 1969;
 
+    // Exemplo 3º Forma
+    function Pessoa(nome, idade) {
+    	this.nome = nome;
+	 	this.cidade = cidade;
+    }
+
+ 	const pessoa = new Pessoa('Fulano', 30);
+
 ## Setando valores no objeto
     
     usuarios.primeiroNome = 'Beltrano';
