@@ -32,6 +32,16 @@ Um objeto pode ser criado com colchetes {…} com uma lista opcional de propried
     usuario.humano = true;
     usuario.printIntroduction();
 
+    // Exemplo 4º Forma (ES6)
+    class Usuario {
+      constructor(nome, idade) {
+        this.nome = nome;
+        this.idade = idade;
+      }
+    }
+
+    const usuario = new Usuario('Fulano', 30);
+
 ## Setando valores no objeto
     
     usuarios.primeiroNome = 'Beltrano';
