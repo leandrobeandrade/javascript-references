@@ -12,15 +12,25 @@ Um objeto pode ser criado com colchetes {…} com uma lista opcional de propried
     }
     
     // Exemplo 2º Forma
-    function Pessoa(nome, idade) {
+    function Usuario(nome, idade) {
       this.nome = nome;
       this.idade = idade;
     }
     
-    const pessoa = new Pessoa('Fulano', 30);
+    const usuario = new Usuario('Fulano', 30);
 
     // Exemplo 3º Forma
-    
+    const usuarioProto = {
+      humano: false,
+      printInfos: function() {
+        console.log(`O nome é ${this.nome}. Eu sou humano? ${this.humano}`);
+      },
+    }
+
+    const usuario = Object.create(usuarioProto);
+    usuario.nome = 'Fulano';
+    usuario.humano = true;
+    usuario.printIntroduction();
 
 ## Setando valores no objeto
     
