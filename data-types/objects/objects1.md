@@ -4,26 +4,23 @@ Um objeto pode ser criado com colchetes {…} com uma lista opcional de propried
     
     // Exemplo 1º Forma
     let usuarios = {
-        primeiroNome: 'Fulano',
-        ultimoNome: 'de Tal',
-        nomeCompleto: function(){
-            return `${this.primeiroNome} ${this.ultimoNome}`
-        }
+      primeiroNome: 'Fulano',
+      ultimoNome: 'de Tal',
+      nomeCompleto: function(){
+        return `${this.primeiroNome} ${this.ultimoNome}`
+      }
     }
     
     // Exemplo 2º Forma
-    let usuarios = new Object();
-    usuarios.primeiroNome = 'Fulano';
-    usuarios.ultimoNome = "de Tal";
-    usuarios.ano = 1969;
-
-    // Exemplo 3º Forma
     function Pessoa(nome, idade) {
       this.nome = nome;
       this.idade = idade;
     }
     
     const pessoa = new Pessoa('Fulano', 30);
+
+    // Exemplo 3º Forma
+    
 
 ## Setando valores no objeto
     
