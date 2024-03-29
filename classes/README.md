@@ -1,6 +1,6 @@
 # Classes em JavaScript
 
-Classes em JavaScript foram introduzidas a partir do ECMAScript 2015 ou versão 6 da linguagem e antes desta versão classes eram representadas por meio de funções comuns:
+Classes em JavaScript foram introduzidas a partir do **`ECMAScript 2015 (versão 6)`** da linguagem e antes desta versão classes eram representadas por meio de funções comuns:
 
     function Usuario(primeiroNome, sobreNome) {
         this.primeiroNome = primeiroNome;
